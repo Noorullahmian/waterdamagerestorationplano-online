@@ -2,6 +2,7 @@
 """Renderer for gen3.py — writes the Next.js app from parsed tabs + image manifest."""
 import re, os, json, html
 from gen3 import parse_tabs, classify_and_build, LINK_PHRASES, PHONE, TEL, DOMAIN, BRAND, clean_text
+from doc_truth import load_truth
 
 BASE = os.path.expanduser('~/workspace/plano3-water-damage')
 APP = os.path.join(BASE, 'app')
@@ -189,50 +190,270 @@ def href_for(slug):
     return '/' if slug == '' else f'/{slug}/'
 
 def render_seg_text(text, self_slug, in_link=False):
-    """Render plain text with inline phrase links (max 2) + tel links."""
+    """Render plain text with tel links only.
+
+    DOC-REMATCH FIX PASS: the old phrase-map inline linking invented 134
+    EXTRA links (map phrases linked wherever the words appear, even where
+    the doc has plain text). Doc links are now applied at block level by
+    DocLinker (doc truth); this function must NOT link anything else.
+    """
     if in_link:
         return esc(text)
     # Bracketed call text inside a paragraph/list ("[Call 24/7: (972)...]")
     # must never render as literal brackets — strip the brackets; the phone
     # number inside is then tel-linked by the split below.
     text = re.sub(r'\[([^\]]*Call[^\]]*)\]', r'\1', text)
-    # tel link for phone numbers
     out = ''
-    # first apply phrase links on the raw text (case-insensitive, longest first)
-    # Work on segments split by phone numbers to keep tel handling simple.
     parts = re.split(r'(\(972\) 472-7917)', text)
     for part in parts:
         if part == '(972) 472-7917':
             out += f'<a href="{TEL}">(972) 472-7917</a>'
             continue
-        # phrase links, at most 2 per part
-        applied = 0
-        rest = part
-        while applied < 2:
-            best = None
-            for phrase, slug in LINK_PHRASES:
-                if slug == self_slug:
-                    continue
-                m = re.search(r'(?<![A-Za-z-])' + re.escape(phrase) + r'(?![A-Za-z-])', rest, re.I)
-                if m and (best is None or m.start() < best[0]):
-                    best = (m.start(), m.end(), m.group(0), slug)
-            if not best:
-                break
-            st, en, matched, slug = best
-            out += esc(rest[:st]) + f'<a href="{href_for(slug)}">{esc(matched)}</a>'
-            rest = rest[en:]
-            applied += 1
-        out += esc(rest)
+        out += esc(part)
     return out
 
+PHONE_TEXT = '(972) 472-7917'
+
+def _norm_anchor_text(s):
+    """Audit-compatible anchor normalization: dash -> space, curly quotes
+    straight, lowercase, whitespace collapsed."""
+    s = (s or '').replace('\u2014', ' ').replace('\u2013', ' ')
+    s = s.replace('\u2019', "'").replace('\u201c', '"').replace('\u201d', '"')
+    return re.sub(r'\s+', ' ', s).strip().lower()
+_norm_text = _norm_anchor_text  # same normalization, table placement matching
+
+def _clean_with_map(s):
+    """Normalize s for anchor matching, returning (cleaned, index_map)
+    where index_map[i] = original index of cleaned char i. Normalization
+    is 1:1 except whitespace runs, which collapse to one space mapped to
+    the run's first char. Original span of cleaned [a, b) is
+    [map[a], map[b-1]+1) — extended to the next map entry when the span
+    ends inside a collapsed whitespace run (handled by callers via the
+    next-entry rule in _orig_span)."""
+    out = []
+    mp = []
+    i = 0
+    n = len(s)
+    while i < n:
+        ch = s[i]
+        if ch in '\u2014\u2013':
+            out.append(' ')
+            mp.append(i)
+            i += 1
+        elif ch == '\u2019':
+            out.append("'")
+            mp.append(i)
+            i += 1
+        elif ch in '\u201c\u201d':
+            out.append('"')
+            mp.append(i)
+            i += 1
+        elif ch.isspace():
+            out.append(' ')
+            mp.append(i)
+            while i < n and s[i].isspace():
+                i += 1
+        else:
+            out.append(ch)
+            mp.append(i)
+            i += 1
+    return ''.join(out), mp
+
+def _orig_span(mp, s, e, total_len):
+    """Map cleaned span [s, e) back to an original span. End boundary uses
+    the next map entry (so a span ending before collapsed whitespace keeps
+    the whole run out of the slice only when the anchor itself ends there;
+    trailing whitespace is never part of an anchor)."""
+    if s >= e:
+        return (mp[s] if s < len(mp) else total_len, ) * 2
+    os_ = mp[s]
+    oe = mp[e] if e < len(mp) else total_len
+    return (os_, oe)
+
+class DocLinker:
+    """Applies the doc's OWN links to rendered blocks, in doc order.
+
+    The link queue is the page's non-table doc links (from doc_truth.py);
+    table links are rendered directly from cell runs and never enter the
+    queue. Candidates for a block are links whose doc heading matches the
+    current section heading, or whose heading is an orphan (no site section
+    carries it — heading transforms like group-intro carry-over, calendar
+    folds, demoted headings, tail folds all land here and are found by
+    page-order search), or — in FAQ context — links flagged in_faq.
+    Each doc link is consumed exactly once, so the rendered multiset of
+    content links equals the doc multiset: 0 MISSING, 0 PARTIAL, 0 EXTRA.
+    Self-targets are never linked (doc has zero self-links; guard anyway).
+    """
+
+    def __init__(self, links, self_slug, section_headings, faq_texts=None):
+        self.self_slug = self_slug
+        self.queue = []
+        for l in links:
+            if l['target'] == self_slug:
+                continue
+            self.queue.append({
+                'anchor': l['anchor'],
+                'anchor_norm': _norm_anchor_text(l['anchor']),
+                'target': l['target'],
+                'heading': l['heading'],
+                'in_faq': l['in_faq'],
+                'used': False,
+                'faq_orphan': False,
+            })
+        self.section_headings = {_norm_anchor_text(h) if h else '' for h in section_headings}
+        self.orphan_headings = {l['heading'] for l in self.queue
+                                if not l['in_faq'] and l['heading'] not in self.section_headings}
+        # FAQ-absorption fallback: an in_faq link whose anchor appears in NO
+        # FAQ answer (gen3.py truncated/absorbed the answer tail into a
+        # body para, e.g. burst-pipe 'McKinney') may link from a body
+        # section. Anchors present in some answer stay FAQ-only, so body
+        # text can never steal a real FAQ link.
+        if faq_texts:
+            _cleaned_faq = []
+            for _ft in faq_texts:
+                _c, _m = _clean_with_map(_ft)
+                _cleaned_faq.append(_c.lower())
+            for l in self.queue:
+                if l['in_faq'] and l['anchor_norm'] and not any(
+                        l['anchor_norm'] in _cf for _cf in _cleaned_faq):
+                    l['faq_orphan'] = True
+        self.context = ('section', '')
+        self.seen_headings = set()
+        # candidates sorted longest-anchor-first for matching at a position
+        self._by_len = sorted(range(len(self.queue)),
+                              key=lambda i: -len(self.queue[i]['anchor_norm']))
+
+    def set_section(self, heading):
+        _h = _norm_anchor_text(heading) if heading else ''
+        self.context = ('section', _h)
+        self.seen_headings.add(_h)
+
+    def note_heading(self, heading):
+        # a section skipped at render (empty, lone-CTA, group-intro) is
+        # still PAST once the loop passes it, so its doc-heading links
+        # become seen-fallback candidates for later blocks.
+        self.seen_headings.add(_norm_anchor_text(heading) if heading else '')
+
+    def set_faq(self):
+        self.context = ('faq', None)
+
+    def _candidates(self):
+        kind, heading = self.context
+        out = []
+        for i in self._by_len:
+            l = self.queue[i]
+            if l['used']:
+                continue
+            if kind == 'faq':
+                if l['in_faq']:
+                    out.append(l)
+            else:
+                if l['in_faq']:
+                    # FAQ-absorption fallback only; real FAQ links stay
+                    # FAQ-only so body text can never steal them.
+                    if l['faq_orphan']:
+                        out.append(l)
+                    continue
+                # heading match, orphan heading, or doc heading from a
+                # section already rendered (section-transform artifacts:
+                # gen3.py promotes list items/subheads to headings, so
+                # the linked text lands in a LATER section than its doc
+                # heading — about, emergency, sagging, contact). A link
+                # from a FUTURE section is never a candidate here, so
+                # this can never steal a later section's link.
+                if (l['heading'] == heading or l['heading'] in self.orphan_headings
+                        or l['heading'] in self.seen_headings):
+                    out.append(l)
+        return out
+
+    def link_heading(self, text):
+        """Link a section heading ONLY when its full normalized text
+        exactly equals an unconsumed candidate link's anchor (gen3.py
+        promoted a linked list item to a heading, e.g. about's 'West
+        Plano (75093)' / 'East Plano (75074)' — the anchor text exists
+        nowhere else on the page). Otherwise the plain heading."""
+        if not text:
+            return esc(text)
+        _norm = _norm_anchor_text(text)
+        for l in self._candidates():
+            if not l['used'] and l['anchor_norm'] == _norm:
+                l['used'] = True
+                return f'<a href="{href_for(l["target"])}">{esc(text)}</a>'
+        return esc(text)
+
+    def apply(self, text):
+        """Return HTML for plain text with doc links + tel links applied."""
+        if not text:
+            return ''
+        # bracket-call stripping, same rule as render_seg_text
+        text = re.sub(r'\[([^\]]*Call[^\]]*)\]', r'\1', text)
+        cleaned, mp = _clean_with_map(text)
+        low = cleaned.lower()
+        n = len(low)
+        pieces = []  # (kind, href_or_None, original_slice)
+        pos = 0
+        while pos < n:
+            # tel link at this original position?
+            opos = mp[pos]
+            if text.startswith(PHONE_TEXT, opos):
+                pieces.append(('link', TEL, PHONE_TEXT))
+                # advance past the phone in normalized coords (phone has
+                # no collapsible chars, so 1:1 over its length)
+                pos += len(PHONE_TEXT)
+                continue
+            matched = None
+            for l in self._candidates():
+                an = l['anchor_norm']
+                if not an or not low.startswith(an, pos):
+                    continue
+                # word-boundary guard: an anchor must not split a word
+                # (mckinney: 'allen' matched inside 'fallen', splitting it
+                # into 'f' + linked 'allen' — a word-diff + wrong link).
+                # Fail only when BOTH adjacent chars are alnum, so
+                # punctuation-adjacent anchors ('Plano's', '(75093)')
+                # still match.
+                _e = pos + len(an)
+                if pos > 0 and low[pos - 1].isalnum() and low[pos].isalnum():
+                    continue
+                if _e < n and low[_e].isalnum() and low[_e - 1].isalnum():
+                    continue
+                matched = l
+                break
+            if matched is not None:
+                s, e = pos, pos + len(matched['anchor_norm'])
+                os_, oe = _orig_span(mp, s, e, len(text))
+                pieces.append(('link', href_for(matched['target']), text[os_:oe]))
+                matched['used'] = True
+                pos = e
+                continue
+            # single normalized char -> original span (whole whitespace run)
+            os_ = mp[pos]
+            oe = mp[pos + 1] if pos + 1 < len(mp) else len(text)
+            pieces.append(('text', None, text[os_:oe]))
+            pos += 1
+        out = ''
+        for kind, href, sl in pieces:
+            if kind == 'link':
+                out += f'<a href="{href}">{esc(sl)}</a>'
+            else:
+                out += esc(sl)
+        return out
+
+    def leftover(self):
+        return [l for l in self.queue if not l['used']]
+
 def render_segs(segs, self_slug):
+    """Legacy segment renderer, kept for compatibility. DOC-REMATCH FIX
+    PASS: tgt segments no longer render as links here — DocLinker applies
+    doc-truth links at block level (segs_plain + linker.apply). Segment
+    tgt values are still KEPT (is_list_para / body_targets use them), so
+    structure and related cards are unchanged."""
     out = ''
     for text, tgt in segs:
         if text in (', ', '.'):
             out += text
             continue
-        piece = esc(text) if tgt is not None and tgt == self_slug else (
-            f'<a href="{href_for(tgt)}">{esc(text)}</a>' if tgt is not None else render_seg_text(text, self_slug))
+        piece = esc(text) if tgt is not None else render_seg_text(text, self_slug)
         # Join segments with a space unless punctuation already separates them.
         if out:
             visible_piece = re.sub(r'^<[^>]+>', '', piece)
@@ -241,6 +462,97 @@ def render_segs(segs, self_slug):
                     out += ' '
         out += piece
     return out
+
+def segs_plain(segs):
+    """Join segment texts with render_segs' spacing rules, plain text (no
+    HTML). DocLinker applies links to this text, so anchors spanning seg
+    boundaries (fragment rejoins, detached 'See <link>' merges) are found."""
+    out = ''
+    for text, _tgt in segs:
+        if text in (', ', '.'):
+            out += text
+            continue
+        if out and text and text[0] not in ' ,.;:?!%)' and not out.endswith((' ', '(', '—', '–')):
+            out += ' '
+        out += text
+    return out
+
+def render_runs(runs, self_slug):
+    """Render doc table-cell runs: adjacent same-URL runs merge into ONE
+    <a> (the audit counts <a> elements, so fragment links would fake
+    MISSING + EXTRA), bold runs -> <strong>, phone numbers -> tel links.
+    Self-targets render plain (doc has zero self-links; guard anyway)."""
+    # merge adjacent same-URL runs
+    merged = []
+    for (t, url, bold) in runs:
+        if merged and url is not None and merged[-1][1] == url and merged[-1][2] == bold:
+            merged[-1] = (merged[-1][0] + t, url, bold)
+        else:
+            merged.append((t, url, bold))
+    out = ''
+    for (t, url, bold) in merged:
+        if not t.strip():
+            continue
+        if url:
+            # same-site absolute URLs (doc links) -> relative, like every
+            # other site link; true external URLs stay absolute.
+            _m = re.match(r'^https?://waterdamagerestorationplano\.online/(.*)$', url)
+            if _m:
+                slug = _m.group(1).strip('/')
+                if slug == self_slug:
+                    piece = esc(t)
+                else:
+                    piece = f'<a href="{href_for(slug)}">{esc(t)}</a>'
+            elif url.startswith('http'):
+                piece = f'<a href="{esc(url)}">{esc(t)}</a>'
+            else:
+                slug = url.strip('/')
+                if slug == self_slug:
+                    piece = esc(t)
+                else:
+                    piece = f'<a href="{href_for(slug)}">{esc(t)}</a>'
+            if bold:
+                # bold link: strong INSIDE the link keeps anchor text exact
+                piece = re.sub(r'^(<a[^>]+>)(.*)(</a>)$',
+                               lambda m: m.group(1) + '<strong>' + m.group(2) + '</strong>' + m.group(3),
+                               piece)
+        else:
+            # tel links inside plain runs
+            parts = re.split(r'(\(972\) 472-7917)', t)
+            piece = ''.join(
+                f'<a href="{TEL}">(972) 472-7917</a>' if p == '(972) 472-7917' else esc(p)
+                for p in parts)
+            if bold:
+                piece = f'<strong>{piece}</strong>'
+        out += piece
+    return out
+
+def table_html(rows, self_slug):
+    """Render a doc table verbatim: every row/cell, no invented words.
+    First row -> <th> when every first-row cell carries a bold run (the
+    doc's header-row convention, verified on all 100 tables); else <td>.
+    Cell links come straight from cell runs (doc truth)."""
+    def cell_has_bold(cell):
+        # cell = list of ('para', style, runs) blocks from doc_truth._walk
+        return any(bold for (_tag, _style, runs) in cell for (_t, _u, bold) in runs)
+    first_is_header = bool(rows) and all(cell_has_bold(c) for c in rows[0])
+    trs = []
+    for ri, row in enumerate(rows):
+        tds = []
+        for cell in row:
+            paras = []
+            for (_tag, _style, runs) in cell:
+                txt = ''.join(r[0] for r in runs).strip()
+                if not txt:
+                    continue
+                paras.append(f'<p>{render_runs(runs, self_slug)}</p>')
+            inner = ''.join(paras)
+            if ri == 0 and first_is_header:
+                tds.append(f'<th scope="col">{inner}</th>')
+            else:
+                tds.append(f'<td>{inner}</td>')
+        trs.append(f'<tr>{"".join(tds)}</tr>')
+    return f'<table className="doc-table"><tbody>{"".join(trs)}</tbody></table>'
 
 def is_list_para(block):
     """A para made only of short phrases + 'and'/',' joiners is really a
@@ -282,38 +594,44 @@ def list_para_items(segs):
         items.append(cur)
     return items
 
-def para_html(block, self_slug):
+def para_html(block, self_slug, linker=None):
     if is_list_para(block):
         items = ''
         for it in list_para_items(block['segs']):
-            items += f'<li>{render_segs(it, self_slug)}</li>'
+            plain = segs_plain(it)
+            items += f'<li>{linker.apply(plain) if linker else render_segs(it, self_slug)}</li>'
         return f'<ul>{items}</ul>'
-    inner = render_segs(block['segs'], self_slug)
+    plain = segs_plain(block['segs'])
+    inner = linker.apply(plain) if linker else render_segs(block['segs'], self_slug)
     # clean spacing before punctuation (typographic only)
     inner = re.sub(r'\s+([,.;:?!])', r'\1', inner)
-    # bold lead: short first sentence or 'Phrase:' lead
-    m = re.match(r'^(<a[^>]+>[^<]+</a>|[^<]{1,65}?[:.])\s+(.{80,})$', inner, re.S)
+    # bold lead: short first sentence or 'Phrase:' lead. The first
+    # alternative also matches a linked lead (DocLinker may link the lead
+    # phrase); the optional [: .] after </a> keeps 'Lead:' bolded.
+    m = re.match(r'^(<a[^>]+>[^<]+</a>[:.]?|[^<]{1,65}?[:.])\s+(.{80,})$', inner, re.S)
     if m and (m.group(1).endswith(':') or m.group(1).endswith('.')):
         inner = f'<strong>{m.group(1)}</strong> {m.group(2)}'
     return f'<p>{inner}</p>'
 
-def block_html(b, self_slug):
+def block_html(b, self_slug, linker=None):
     t = b['type']
     if t == 'subhead':
-        return f'<h3>{esc(b["text"])}</h3>'
+        return f'<h3>{linker.apply(b["text"]) if linker else esc(b["text"])}</h3>'
     if t == 'para':
-        return para_html(b, self_slug)
+        return para_html(b, self_slug, linker)
+    if t == 'table':
+        return table_html(b['rows'], self_slug)
     if t == 'cta':
         return f'<p class="cta-row"><a class="btn-call" href="{TEL}">{esc(b["label"])}: <span className="nowrap">{PHONE}</span></a></p>'
     if t == 'trust':
         items = ''.join(f'<span class="check">✓ {esc(x)}</span>' for x in b['items'])
         return f'<div class="trust-band reveal">{items}</div>'
     if t == 'listhead':
-        return f'<p class="listhead"><strong>{esc(b["text"])}</strong></p>'
+        return f'<p class="listhead"><strong>{linker.apply(b["text"]) if linker else esc(b["text"])}</strong></p>'
     if t == 'list':
         items = ''
         for it in b['items']:
-            items += f'<li>{render_seg_text(it, self_slug)}</li>'
+            items += f'<li>{linker.apply(it) if linker else render_seg_text(it, self_slug)}</li>'
         return f'<ul>{items}</ul>'
     if t == 'form':
         fields = ''
@@ -339,6 +657,126 @@ def block_html(b, self_slug):
         note = f'<p class="form-note">{esc(b["note"])}</p>' if b.get('note') else ''
         return f'<form class="contact-form" method="post">{fields}<button type="submit" class="btn-call">Send Message</button></form>{note}'
     return ''
+
+def _block_plain(b):
+    if b['type'] == 'para':
+        return segs_plain(b['segs'])
+    if b['type'] == 'subhead':
+        return b['text']
+    if b['type'] == 'list':
+        return ' '.join(b['items'])
+    if b['type'] == 'listhead':
+        return b['text']
+    return ''
+
+def insert_table_block(sections, table, block, cur):
+    """Insert a doc table block into sections in doc order.
+    cur is a per-page [si, bi] cursor pointing at the last inserted block;
+    searches run forward from it (doc order is monotone), falling back to
+    a whole-page scan. Returns (where, level). Tables are inserted in doc
+    order, so the most recently inserted table is always the previous one."""
+    prev_kind = table['prev_kind']; prev_text = table['prev_text']
+    heading = table['heading']
+    def advance(si, bi):
+        if (si, bi) > (cur[0], cur[1]):
+            cur[0], cur[1] = si, bi
+    def forward_positions():
+        for si in range(cur[0], len(sections)):
+            blocks = sections[si]['blocks']
+            start = cur[1] + 1 if si == cur[0] else 0
+            for bi in range(start, len(blocks)):
+                yield si, bi
+    def all_positions():
+        for si, s in enumerate(sections):
+            for bi in range(len(s['blocks'])):
+                yield si, bi
+    if prev_kind == 'para':
+        needle = _norm_text(prev_text)[:120]
+        for positions, level in ((forward_positions(), 'para-match'),
+                                (all_positions(), 'para-match-wrapped')):
+            for si, bi in positions:
+                b = sections[si]['blocks'][bi]
+                if b['type'] in ('para', 'listhead') and _norm_text(_block_plain(b))[:120] == needle:
+                    sections[si]['blocks'].insert(bi + 1, block)
+                    advance(si, bi + 1)
+                    return (f'section {si} after block {bi}', level)
+        for positions, level in ((forward_positions(), 'para-prefix-fallback'),
+                                (all_positions(), 'para-prefix-wrapped')):
+            for si, bi in positions:
+                b = sections[si]['blocks'][bi]
+                if b['type'] in ('para', 'listhead') and _norm_text(_block_plain(b)).startswith(needle[:60]):
+                    sections[si]['blocks'].insert(bi + 1, block)
+                    advance(si, bi + 1)
+                    return (f'section {si} after block {bi}', level)
+        # demoted-heading-merged paras: gen3.py merges a heading into the
+        # following para ('Texas Homeowners Insurance & Water Damage Most
+        # standard Texas policies...'), so the doc para text sits mid-para
+        # rather than at its start. A 120-char substring match is still
+        # specific enough to place the table after the right para.
+        for positions, level in ((forward_positions(), 'para-substring-fallback'),
+                                (all_positions(), 'para-substring-wrapped')):
+            for si, bi in positions:
+                b = sections[si]['blocks'][bi]
+                if b['type'] in ('para', 'listhead') and needle in _norm_text(_block_plain(b)):
+                    sections[si]['blocks'].insert(bi + 1, block)
+                    advance(si, bi + 1)
+                    return (f'section {si} after block {bi}', level)
+    if prev_kind == 'heading':
+        for si, s in enumerate(sections):
+            if _norm_text(s.get('heading')) == _norm_text(prev_text):
+                s['blocks'].insert(0, block)
+                advance(si, 0)
+                return (f'section {si} start', 'heading-section-start')
+        for si, s in enumerate(sections):
+            for bi, b in enumerate(s['blocks']):
+                if b['type'] == 'subhead' and _norm_text(b['text']) == _norm_text(prev_text):
+                    s['blocks'].insert(bi + 1, block)
+                    advance(si, bi + 1)
+                    return (f'section {si} after subhead {bi}', 'subhead-match')
+        # demoted headings: gen3.py renders some doc headings as plain
+        # paras ('How Dangerous Is It?' standalone), merged into a para
+        # ('...equipment is set. Can Your Floors Be Saved?'), or as list
+        # items ('75024 Water Damage Calendar'). Place the table after
+        # the block carrying the heading text.
+        _hn = _norm_text(prev_text)
+        for si, s in enumerate(sections):
+            for bi, b in enumerate(s['blocks']):
+                _bt = _norm_text(_block_plain(b))
+                if b['type'] == 'para' and (_bt == _hn or _hn in _bt):
+                    s['blocks'].insert(bi + 1, block)
+                    advance(si, bi + 1)
+                    return (f'section {si} after para block {bi}', 'heading-para-match')
+                if b['type'] == 'list' and any(_norm_text(it) == _hn for it in b['items']):
+                    s['blocks'].insert(bi + 1, block)
+                    advance(si, bi + 1)
+                    return (f'section {si} after list block {bi}', 'heading-list-match')
+    if prev_kind == 'table':
+        for si in range(len(sections) - 1, -1, -1):
+            for bi in range(len(sections[si]['blocks']) - 1, -1, -1):
+                if sections[si]['blocks'][bi]['type'] == 'table':
+                    sections[si]['blocks'].insert(bi + 1, block)
+                    advance(si, bi + 1)
+                    return (f'section {si} after table block {bi}', 'prev-table')
+    for si, s in enumerate(sections):
+        if _norm_text(s.get('heading')) == _norm_text(heading):
+            s['blocks'].append(block)
+            advance(si, len(s['blocks']) - 1)
+            return (f'section {si} end', 'heading-end-fallback')
+    # All parent-end cases have prev=heading: in doc order the table sits
+    # right after the H2, before any subhead content — so it goes at the
+    # START of the first section under that parent, not its end.
+    for si, s in enumerate(sections):
+        if _norm_text(s.get('parent')) == _norm_text(heading):
+            s['blocks'].insert(0, block)
+            advance(si, 0)
+            return (f'section {si} start', 'parent-start-fallback')
+    for si in range(len(sections) - 1, -1, -1):
+        if 'Call (972)' not in (sections[si].get('heading') or ''):
+            sections[si]['blocks'].append(block)
+            advance(si, len(sections[si]['blocks']) - 1)
+            return (f'section {si} end', 'last-non-trailing-fallback')
+    sections[-1]['blocks'].append(block)
+    return ('last section end', 'desperate-fallback')
 
 def main():
     tabs = parse_tabs()
@@ -589,6 +1027,39 @@ def main():
             collect(s['blocks'])
         pages.append({'tab': tab, 'sections': sections, 'faqs': faqs, 'faq_heading': faq_heading,
                       'hero': hero, 'body_imgs': body_imgs, 'body_targets': body_targets})
+    # ---------- DOC-REMATCH FIX PASS: doc-truth links + tables ----------
+    # Per-page DocLinker (non-table doc links, self-filtered) + verbatim
+    # table blocks inserted in doc order. Image assignment, sections,
+    # section order, and body_targets above are untouched.
+    truth = load_truth()
+    fix_log = []
+    linkers = {}
+    for p in pages:
+        slug = p['tab']['slug']
+        t = truth.get(slug)
+        if t is None:
+            print(f'WARNING: no doc truth for {slug}; links unchanged')
+            linkers[slug] = None
+            continue
+        # doc headings use doc_truth.norm (no dash folding); fold them
+        # with _norm_anchor_text so they match normalized site headings.
+        _links = [{**lk, 'heading': _norm_anchor_text(lk['heading'])}
+                  for lk in t['links']]
+        linkers[slug] = DocLinker(_links, slug,
+                                  [s.get('heading') for s in p['sections']],
+                                  faq_texts=[clean_text(f['a']) for f in p['faqs']])
+        cur = [-1, -1]
+        for tb in t['tables']:
+            _pk, _pt = tb['prev'] if tb['prev'] else ('para', '')
+            _tb = {'rows': tb['rows'], 'heading': tb['heading'],
+                   'prev_kind': _pk,
+                   'prev_text': _pt if isinstance(_pt, str) else ''}
+            block = {'type': 'table', 'rows': tb['rows']}
+            placed, level = insert_table_block(p['sections'], _tb, block, cur)
+            fix_log.append(f"{slug} | heading={tb['heading']!r} prev={_pk}:{str(_pt)[:60]!r} -> {placed} ({level})")
+    with open(os.path.join(BASE, 'doc_fix_log.txt'), 'w') as fh:
+        fh.write('\n'.join(fix_log) + '\n')
+    print(f'DOC-FIX: {len(fix_log)} tables placed; log -> doc_fix_log.txt')
     hero_by_slug = {p['tab']['slug']: p['hero'] for p in pages}
     body_by_slug = {p['tab']['slug']: p['body_imgs'] for p in pages}
     # ---------- write app files ----------
@@ -655,7 +1126,14 @@ def main():
             # wet-vac worker (flood cleanup work) instead.
             _cards = dict(card_hero_by_slug)
             _cards['flood-cleanup'] = _by_file['water-extraction-6195949.webp']
-        write_page(p, _cards, by_slug, body_by_slug)
+        write_page(p, _cards, by_slug, body_by_slug, linker=linkers[p['tab']['slug']])
+    # leftover check AFTER consumption: any unconsumed doc link means its
+    # block never went through the linker — the re-audit will explain it.
+    for slug, lk in linkers.items():
+        if lk is not None and lk.leftover():
+            print(f'DOC-FIX leftover links on {slug}: {len(lk.leftover())}')
+            for _l in lk.leftover():
+                print(f'  LEFTOVER {slug}: anchor={_l["anchor"]!r} target={_l["target"]} heading={_l["heading"]!r} in_faq={_l["in_faq"]}')
     write_hub('services', 'Our Water Damage Services in Plano, TX', SERVICE_SLUGS, pages, card_hero_by_slug, by_slug, body_by_slug)
     write_hub('areas', 'Water Damage Restoration Areas Around Plano, TX', AREA_SLUGS, pages, card_hero_by_slug, by_slug, body_by_slug)
     write_hub('guides', 'Plano Water Damage Guides', GUIDE_SLUGS, pages, card_hero_by_slug, by_slug, body_by_slug)
@@ -870,6 +1348,15 @@ section.block.dark{background:#0a3550;color:#fff;padding:30px 0}section.block.da
 .radio-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.radio-row label{display:flex;gap:6px;align-items:center;font-weight:600}.radio-row input{width:auto}
 .form-note{font-size:16px;color:#33475b}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.card{transition:none;transform:none}}
+/* DOC-REMATCH FIX: verbatim doc tables. Desktop: normal table. Narrow
+   screens: the table itself scrolls horizontally inside its own box, so
+   the page never overflows at 320px. */
+.doc-table{width:100%;border-collapse:collapse;margin:18px 0;font-size:17px;line-height:1.5}
+.doc-table th,.doc-table td{border:1px solid #cbd5e1;padding:10px 12px;vertical-align:top;text-align:left}
+.doc-table th{background:#0a3550;color:#fff;font-weight:700}
+.doc-table td p{margin:0 0 8px}.doc-table td p:last-child{margin-bottom:0}
+.doc-table a{color:#064d73}
+@media(max-width:820px){.doc-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
 ''')
 
 def jsonld(obj):
@@ -946,19 +1433,29 @@ TOPUP = {
     'legacy-west': ('suburban-home-32711440.webp', 'Brick house with large windows'),
 }
 
-def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
+def write_page(p, hero_by_slug, by_slug, body_by_slug=None, linker=None):
     tab = p['tab']; slug = tab['slug']
     sections = p['sections']; faqs = p['faqs']
     hero = p['hero']; body_imgs = p['body_imgs']
+    # CTA labels already rendered on this page (hero CTA is 'Call Now',
+    # hardcoded in the hero below) — used by the lone/trust CTA rules so
+    # a doc CTA line is never dropped when it has no other rendering
+    # (DOC-REMATCH FIX: about lost one [Call 24/7] line to the old strip).
+    rendered_cta_labels = {'Call Now'}
+    # section headings through the linker (exact full-heading matches
+    # only — see DocLinker.link_heading); plain esc when no linker.
+    _h = linker.link_heading if linker else esc
     # hero intro: first para of first section
     hero_para = ''
     secs = []
     for s in sections:
         secs.append(s)
+    if linker and secs:
+        linker.set_section(secs[0].get('heading'))
     if secs and secs[0]['blocks']:
         for bi, b in enumerate(secs[0]['blocks']):
             if b['type'] == 'para':
-                hero_para = para_html(b, slug)
+                hero_para = para_html(b, slug, linker)
                 secs[0] = dict(secs[0]); secs[0]['blocks'] = secs[0]['blocks'][:bi] + secs[0]['blocks'][bi+1:]
                 break
     # Final CTA sections (heading contains the call phone) render AFTER the
@@ -985,6 +1482,8 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
                     ('mold-after-water-damage', 'Hour-by-Hour: What Happens Inside Wet Walls and Floors')}
     pending_group = None
     for si, s in enumerate(secs):
+        if linker:
+            linker.note_heading(s.get('heading'))
         if s['heading'] is None and not s['blocks']:
             continue
         # A section containing ONLY a lone Call button (no heading, no copy)
@@ -995,9 +1494,18 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
             # Round 5: the contact exception is DELETED. The '[Tap to
             # Call]' button is moved into the Emergency section by
             # gen3.py (j3), so 'tap' still appears on the page and no
-            # lone button band can ever render again. Every lone-CTA
-            # section is suppressed: hero, header, footer and sticky
-            # bar already carry the phone.
+            # lone button band can ever render again.
+            # DOC-REMATCH FIX: suppress ONLY duplicate labels. A lone-CTA
+            # section whose label has no other rendering on the page is
+            # a doc CTA line — emit it as a plain wrap button row (no
+            # section band, so no gaping empty band) instead of dropping
+            # its words.
+            _new_ctas = [b for b in s['blocks'] if b['label'] not in rendered_cta_labels]
+            if not _new_ctas:
+                continue
+            for b in _new_ctas:
+                rendered_cta_labels.add(b['label'])
+            out_sections.append(f'<div className="wrap">{"".join(block_html(b, slug, linker) for b in _new_ctas)}</div>')
             continue
         # Round 3: a section holding ONLY trust pills + a lone Call button
         # (home trust band after hero-para removal) renders as a lone
@@ -1005,7 +1513,17 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
         # CTA row, header, footer and sticky bar already carry the phone,
         # and the CTA label is UI, never doc words.
         if s['heading'] is None and s['blocks'] and any(b['type'] == 'trust' for b in s['blocks']) and all(b['type'] in ('trust', 'cta') for b in s['blocks']):
-            s = dict(s, blocks=[b for b in s['blocks'] if b['type'] != 'cta'])
+            # DOC-REMATCH FIX: the old rule stripped EVERY CTA here,
+            # claiming the label is UI — but the audit counts CTA inner
+            # text as doc words, so about lost one [Call 24/7] line.
+            # Strip only labels already rendered elsewhere on the page
+            # (hero 'Call Now' or an earlier CTA row); keep the rest.
+            _kept = [b for b in s['blocks']
+                     if b['type'] != 'cta' or b['label'] not in rendered_cta_labels]
+            for b in _kept:
+                if b['type'] == 'cta':
+                    rendered_cta_labels.add(b['label'])
+            s = dict(s, blocks=_kept)
         # Round 5 group-intro carry-over (see above): stash and skip.
         # This section's index is 2 on both pages — not a split index
         # (1/3/5) — so no split is lost and later splits stay attached
@@ -1015,33 +1533,44 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
             pending_group = (s['heading'],
                              ' '.join(t for t, _ in s['blocks'][0]['segs']))
             continue
+        if linker:
+            linker.set_section(s.get('heading'))
         inner = ''
         if pending_group is not None:
             _gh, _gt = pending_group
             inner += f'<p className="section-kicker">{esc(_gh)}</p>'
-            inner += f'<p>{esc(_gt)}</p>'
+            # group-intro label is body copy: link it under its own
+            # (orphan) heading, then restore this section's context.
+            if linker:
+                linker.set_section(_gh)
+                inner += f'<p>{linker.apply(_gt)}</p>'
+                linker.set_section(s.get('heading'))
+            else:
+                inner += f'<p>{esc(_gt)}</p>'
             pending_group = None
         # Round 3: a calendar parent holding only a cost heading is a
         # layout fold, not a section — render the parent as a small kicker
         # above the cost H2 instead of an H2 promising a calendar section.
         if s.get('parent') and 'Calendar' in s['parent'] and s['heading'] and 'Cost' in s['heading']:
             inner += f'<p className="section-kicker">{esc(s["parent"])}</p>'
-            inner += f'<h2>{esc(s["heading"])}</h2>'
+            inner += f'<h2>{_h(s["heading"])}</h2>'
         # Round 4: "Quick Diagnosis Table" as a parent H2 promises table
         # rows that do not exist (the body is an essay). Render it as a
         # kicker above the real H2 instead — words preserved, no false
         # table promise.
         elif s.get('parent') == 'Quick Diagnosis Table' and s['heading']:
             inner += f'<p className="section-kicker">{esc(s["parent"])}</p>'
-            inner += f'<h2>{esc(s["heading"])}</h2>'
+            inner += f'<h2>{_h(s["heading"])}</h2>'
         elif s.get('parent'):
-            inner += f'<h2>{esc(s["parent"])}</h2>'
+            inner += f'<h2>{_h(s["parent"])}</h2>'
             if s['heading']:
-                inner += f'<h3>{esc(s["heading"])}</h3>'
+                inner += f'<h3>{_h(s["heading"])}</h3>'
         elif s['heading']:
-            inner += f'<h2>{esc(s["heading"])}</h2>'
+            inner += f'<h2>{_h(s["heading"])}</h2>'
         for b in s['blocks']:
-            inner += block_html(b, slug)
+            inner += block_html(b, slug, linker)
+            if b['type'] == 'cta':
+                rendered_cta_labels.add(b['label'])
         if not inner.strip():
             continue
         # Round 3: a heading + exactly one subhead block (area at-a-glance
@@ -1067,7 +1596,11 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
             # figure inside the section, sticky on desktop, so the image
             # stays visible while its paragraph scrolls. A hidden parity
             # placeholder keeps the section-band (nth-child) order identical.
-            _text_len = len(re.sub(r'<[^>]+>', '', inner).strip())
+            # tables excluded: the 32 sticky splits stay exactly as the
+            # link+image round set them; table text must not flip a
+            # section over the 800-char sticky threshold.
+            _inner_no_tables = re.sub(r'<table.*?</table>', '', inner, flags=re.S)
+            _text_len = len(re.sub(r'<[^>]+>', '', _inner_no_tables).strip())
             if _text_len >= 800 and out_sections and out_sections[-1].startswith('<section'):
                 out_sections[-1] = f'<section className="block reveal split-sticky-sec"><div className="wrap"><div className="sticky-text">{inner}</div><figure className="split-sticky-fig">{img_tag(im["file"], alt_text(im["alt"]), "sticky")}<figcaption>{_cap_html}</figcaption></figure></div></section>'
                 out_sections.append('<div className="wrap" aria-hidden="true" hidden></div>')
@@ -1083,8 +1616,14 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
     if pending_group is not None:
         # Safety: group-intro was the last section (never happens on
         # storm/mold today) — emit its words rather than dropping them.
+        # Label linked under its own heading (same orphan-context rule).
         _gh, _gt = pending_group
-        out_sections.append(f'<div className="wrap"><p className="section-kicker">{esc(_gh)}</p><p>{esc(_gt)}</p></div>')
+        if linker:
+            linker.set_section(_gh)
+            _gt_html = linker.apply(_gt)
+        else:
+            _gt_html = esc(_gt)
+        out_sections.append(f'<div className="wrap"><p className="section-kicker">{esc(_gh)}</p><p>{_gt_html}</p></div>')
         pending_group = None
     # remaining body images if fewer sections
     while split_idx < min(2, len(body_imgs)) and sec_count >= 1:
@@ -1101,20 +1640,6 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
     if _top:
         _tf, _tcap = _top
         out_sections.append(f'<div className="wrap"><figure className="topup-figure">{img_tag(_tf, _tcap, "split")}<figcaption>{esc(_tcap)}</figcaption></figure></div>')
-    # trailing final-CTA sections (rendered after FAQ, see below)
-    trailing_sections_html = ''
-    for s in trailing_secs:
-        inner = ''
-        if s.get('parent'):
-            inner += f'<h2>{esc(s["parent"])}</h2>'
-            if s['heading']:
-                inner += f'<h3>{esc(s["heading"])}</h3>'
-        elif s['heading']:
-            inner += f'<h2>{esc(s["heading"])}</h2>'
-        for b in s['blocks']:
-            inner += block_html(b, slug)
-        if inner.strip():
-            trailing_sections_html += f'<section className="block dark"><div className="wrap">{inner}</div></section>'
     # related cards before FAQ (non-home)
     if slug != '':
         rel = []
@@ -1141,6 +1666,9 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
     # FAQ — split a final CTA that was absorbed into the last answer:
     # a sentence containing 'Call (972) 472-7917.' that is not the answer's
     # first sentence, followed by more text, belongs after the FAQ.
+    # DOC-REMATCH FIX: FAQ answers go through the linker in FAQ context
+    # (doc links live in answers on every page), and faq_html is built
+    # BEFORE trailing_html so consumption order matches doc order.
     trailing_html = ''
     faqs = [dict(f) for f in faqs]
     if faqs:
@@ -1148,21 +1676,46 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
         m = re.search(r'(?<!^)([A-Z][^.!?]*?Call \(972\) 472-7917\.)\s+(.{20,})$', last_a, re.S)
         if m and last_a[:m.start(1)].strip():
             faqs[-1]['a'] = last_a[:m.start(1)].strip()
-            trailing_html = f'<section className="block dark"><div className="wrap"><h2>{esc(m.group(1))}</h2><p>{render_seg_text(m.group(2), slug)}</p><p><a className="btn-call" href="{TEL}">Call 24/7: <span className="nowrap">{PHONE}</span></a></p></div></section>'
     # FAQ
     faq_html = ''
     if faqs:
+        if linker:
+            linker.set_faq()
         items = ''
         faq_objs = []
         for f in faqs:
             q = clean_text(f['q']); a = clean_text(f['a'])
             # strip trailing link fragments that were absorbed: keep as written (schema must match visible)
-            items += f'<div className="faq-item"><h3>{esc(q)}</h3><p>{render_seg_text(a, slug)}</p></div>'
+            _a_html = linker.apply(a) if linker else render_seg_text(a, slug)
+            items += f'<div className="faq-item"><h3>{esc(q)}</h3><p>{_a_html}</p></div>'
             faq_objs.append({'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': re.sub(r'<[^>]+>', '', render_seg_text(a, slug))}})
         faq_html = f'<section className="block"><div className="wrap"><h2>{esc(p["faq_heading"] or "Frequently Asked Questions")}</h2>{items}</div></section>'
         faq_schema = {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': faq_objs}
     else:
         faq_schema = None
+    if faqs and m and last_a[:m.start(1)].strip():
+        # trailing CTA paragraph: same FAQ context as the answer it split from
+        _trail = linker.apply(m.group(2)) if linker else render_seg_text(m.group(2), slug)
+        trailing_html = f'<section className="block dark"><div className="wrap"><h2>{esc(m.group(1))}</h2><p>{_trail}</p><p><a className="btn-call" href="{TEL}">Call 24/7: <span className="nowrap">{PHONE}</span></a></p></div></section>'
+    # trailing final-CTA sections (rendered after FAQ, see below). Built
+    # AFTER faq_html/trailing_html so FAQ answers consume their in_faq
+    # links first; trailing sections use FAQ context because in doc
+    # order they sit after the FAQ heading (their links carry in_faq).
+    trailing_sections_html = ''
+    for s in trailing_secs:
+        if linker:
+            linker.set_faq()
+        inner = ''
+        if s.get('parent'):
+            inner += f'<h2>{_h(s["parent"])}</h2>'
+            if s['heading']:
+                inner += f'<h3>{_h(s["heading"])}</h3>'
+        elif s['heading']:
+            inner += f'<h2>{_h(s["heading"])}</h2>'
+        for b in s['blocks']:
+            inner += block_html(b, slug, linker)
+        if inner.strip():
+            trailing_sections_html += f'<section className="block dark"><div className="wrap">{inner}</div></section>'
     # schemas
     schemas = []
     if faq_schema:

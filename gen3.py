@@ -478,12 +478,19 @@ def classify_and_build(tab):
                         para_after = t.lstrip('. ').strip()
                         continue
                     t2 = t.rstrip(',').strip()
-                    # 'Richardson , and' -> the 'and' belongs before the next city.
-                    # Strip the trailing comma too, or the render shows ",,".
+                    # 'Richardson, and' / 'West Plano (75093) and' -> the 'and'
+                    # belongs before the next city and is a DOC WORD: keep it
+                    # as its own segment (DOC-REMATCH FIX: the old code
+                    # dropped it and always inserted a comma). Emit ', '
+                    # only when the original item had a comma before 'and'.
                     if t2.endswith(' and'):
-                        t2 = t2[:-4].strip().rstrip(',').strip()
-                        segs.append((t2, phrase_target(t2)))
-                        segs.append((', ', None))
+                        base = t2[:-4].strip()
+                        had_comma = base.endswith(',')
+                        base = base.rstrip(',').strip()
+                        segs.append((base, phrase_target(base)))
+                        if had_comma:
+                            segs.append((', ', None))
+                        segs.append(('and', None))
                         continue
                     tgt = phrase_target(t2)
                     segs.append((t2, tgt))
