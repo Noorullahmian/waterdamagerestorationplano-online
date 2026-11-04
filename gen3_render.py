@@ -763,7 +763,7 @@ def write_css():
 *{box-sizing:border-box}html{scroll-behavior:auto}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1d2b36;background:#fff;font-size:19px;line-height:1.7}
 /* Reveal: visible by default. GSAP (components.jsx) animates FROM a translated/faded state only when JS runs — content is never hidden by CSS, so crawlers and no-JS readers always see it. */
 :focus-visible{outline:3px solid #0d7a6e;outline-offset:3px}
-a{color:#064d73;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}
+a{color:#064d73;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}p a[href^="tel:"]{text-decoration:none}
 a:hover{color:#084a70}.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
 .site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(0,0,0,.06)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;flex-wrap:wrap}
