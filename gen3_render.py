@@ -132,6 +132,59 @@ def clean_alt(s):
 def alt_text(s):
     return esc(clean_alt(s))
 
+# Responsive images (link-underline + image-optimization round): variant
+# files {stem}-400.webp / {stem}-800.webp live in public/images next to
+# the 1200w originals and are picked up by srcset ONLY when they exist on
+# disk and are smaller than the original. Filenames, alt text and the
+# 1200w src never change, so no link or audit breaks. Variants are NOT in
+# images.json, so rotation never picks them as standalone images.
+_IMG_IDX = None
+def _img_index():
+    global _IMG_IDX
+    if _IMG_IDX is None:
+        _IMG_IDX = {}
+        try:
+            _d = os.path.join(PUBLIC, 'images')
+            for _f in os.listdir(_d):
+                _p = os.path.join(_d, _f)
+                if os.path.isfile(_p):
+                    _IMG_IDX[_f] = os.path.getsize(_p)
+        except OSError:
+            pass
+    return _IMG_IDX
+
+def _stem(f):
+    return f[:-5] if f.endswith('.webp') else f
+
+def img_tag(file, alt, kind, eager=False, cls=None):
+    idx = _img_index()
+    orig = idx.get(file, 0)
+    if kind == 'hero':
+        cands = [(800, '800w')]
+        sizes = '(max-width:820px) 90vw, 600px'
+    elif kind == 'sticky':
+        cands = [(400, '400w'), (800, '800w')]
+        sizes = '(max-width:820px) 90vw, 380px'
+    elif kind == 'card':
+        cands = [(400, '400w'), (800, '800w')]
+        sizes = '(max-width:520px) 90vw, (max-width:820px) 45vw, 390px'
+    else:  # split / topup
+        cands = [(400, '400w'), (800, '800w')]
+        sizes = '(max-width:820px) 90vw, 1200px'
+    parts = []
+    for w, dw in cands:
+        vf = f'{_stem(file)}-{w}.webp'
+        vb = idx.get(vf)
+        if vb and (not orig or vb < orig):
+            parts.append(f'/images/{vf} {dw}')
+    ss = ''
+    if parts:
+        parts.append(f'/images/{file} 1200w')
+        ss = f' srcset="{", ".join(parts)}" sizes="{sizes}"'
+    extra = ' fetchpriority="high"' if eager else ' loading="lazy" decoding="async"'
+    cl = f' className="{cls}"' if cls else ''
+    return f'<img{cl} src="/images/{file}" alt="{alt}" width="1200" height="800"{ss}{extra} />'
+
 def href_for(slug):
     return '/' if slug == '' else f'/{slug}/'
 
@@ -763,7 +816,7 @@ def write_css():
 *{box-sizing:border-box}html{scroll-behavior:auto}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1d2b36;background:#fff;font-size:19px;line-height:1.7}
 /* Reveal: visible by default. GSAP (components.jsx) animates FROM a translated/faded state only when JS runs — content is never hidden by CSS, so crawlers and no-JS readers always see it. */
 :focus-visible{outline:3px solid #0d7a6e;outline-offset:3px}
-a{color:#064d73;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}p a[href^="tel:"]{text-decoration:none}
+a{color:#064d73;text-decoration:none}a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}.brand:hover,.main-nav a:hover,.card-body h3 a:hover,.btn-call:hover,.header-call:hover,.mobile-call-bar:hover{text-decoration:none}p a[href^="tel:"]{text-decoration:none}p a[href^="tel:"]:hover,p a[href^="tel:"]:focus-visible{text-decoration:none}
 a:hover{color:#084a70}.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
 .site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(0,0,0,.06)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;flex-wrap:wrap}
@@ -789,6 +842,9 @@ p{margin:0 0 14px}ul{margin:0 0 16px;padding-left:22px}li{margin-bottom:8px;line
 .split img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
 .split figcaption{padding:18px;font-size:16px;color:#33475b;display:block}
 .split.rev figcaption{order:0}
+.split-sticky-fig{margin:28px 0 0}.split-sticky-fig img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;border-radius:14px}.split-sticky-fig figcaption{padding:14px 4px 0;font-size:16px;color:#33475b}
+@media(min-width:821px){.split-sticky-sec .wrap{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start}.split-sticky-fig{position:sticky;top:96px;margin:0}}
+.topup-figure{display:block;margin:28px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}.topup-figure img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}.topup-figure figcaption{padding:18px;font-size:16px;color:#33475b;display:block}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:10px 0 30px}
 @media(max-width:820px){.cards{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.cards{grid-template-columns:1fr}}
@@ -837,6 +893,57 @@ SPLIT_CAPTION = {
     # listing copy the old white-modern-house file carried.
     ('allen', 1): 'Brick suburban home with garage and basketball hoop',  # ROUND 6: neutral pixels-only caption — old caption overclaimed a verified Allen home the pixels cannot prove
     ('mold-after-water-damage', 0): 'Black mold spotting on an interior wall',  # ROUND 6: neutral caption for the 18351809 mold figure — no place claim, no abandoned-building framing
+}
+
+# Top-up figures (link-underline + image-optimization round): one genuinely
+# relevant figure per page below 5 content images (hero + splits). Every
+# file was checked against the page's full image set (no same-page
+# duplicate) and viewed-pixel verified where it is a new pool file.
+# Captions describe only the pixels — no city, damage or job claim.
+# 8 pages have NO fitting unused file and stay honestly at 4 content
+# images: sewage-cleanup, water-heater-leak, ac-overflow,
+# crawl-space-drying, fire-sprinkler-cleanup, water-damage-cost,
+# water-damage-insurance-texas, shut-off-valve. Hubs already show 10-20
+# card images and get no top-up. Deliberate shares (same fitting file on
+# two pages): steel-studs wall/structural, ceiling-crew emergency/
+# ceiling-leak, moisture-meter-8961703 moisture/about, greenbelt home/murphy,
+# suburban homes across area pages.
+TOPUP = {
+    '': ('greenbelt-home-12445995.webp', 'Rear of a suburban home with deck and lawn backed by trees'),
+    'emergency-water-damage': ('ceiling-crew-8293648.webp', 'Technician in safety vest inspecting a ceiling'),
+    'burst-pipe-cleanup': ('burst-pipe-15206136.webp', 'Leaking plastic pipe with water dripping'),
+    'slab-leak': ('plumber-work-6419128.webp', 'Plumber installing pipes'),
+    'water-extraction': ('flooded-suburban-home-28447764.webp', 'Floodwater standing across a suburban home front yard'),
+    'structural-drying': ('steel-studs-35496414.webp', 'Unfinished building with exposed metal stud framing'),
+    'moisture-mapping': ('moisture-meter-8961703.webp', 'Technician checking a wall during inspection'),
+    'attic-insulation-drying': ('attic-insulation-9043415.webp', 'Attic interior with exposed wooden beams'),
+    'wall-drying': ('steel-studs-35496414.webp', 'Unfinished building with exposed metal stud framing'),
+    'hardwood-floor-drying': ('luxury-interior-36906952.webp', 'Open-plan room with light wood plank floors'),
+    'cabinet-drying': ('cabinet-kitchen-37030080.webp', 'Blue kitchen cabinet doors'),
+    'laundry-overflow': ('laundry-room-4993073.webp', 'Laundry room with washing machine'),
+    'appliance-leak': ('appliance-fridge-36671734.webp', 'Woman reaching into an open refrigerator'),
+    'commercial-water-damage': ('commercial-office-22711217.webp', 'Office desk with computer and plant'),
+    'flood-cleanup': ('flooded-floor-7924140.webp', 'Flooded area with stairs reflecting on water'),
+    'mold-after-water-damage': ('mold-wall-4597285.webp', 'Old cement wall with mold blots'),
+    'storm-water-category-3': ('storm-flood-11537987.webp', 'House and caravan surrounded by floodwaters'),
+    'copper-pinhole-leaks': ('copper-pipes-3721272.webp', 'Copper pipe with elbow joint'),
+    'sagging-ceiling': ('ceiling-stain-14032089.webp', 'Worn ceiling with hanging lamp in a dim room'),
+    'fans-wont-dry-walls': ('drying-equipment-16243255.webp', 'Industrial fan'),
+    'warm-spot-on-floor': ('thermal-imaging-7859781.webp', 'Thermal imaging screen showing heat patterns'),
+    'ceiling-dripping': ('ceiling-stain-8624464.webp', 'Bedroom ceiling with water stains'),
+    'ceiling-leak': ('ceiling-crew-8293648.webp', 'Technician in safety vest inspecting a ceiling'),
+    'about': ('moisture-meter-8961703.webp', 'Technician checking a wall during inspection'),
+    'contact': ('flood-cut-wall-8488031.webp', 'Interior wall cut open to expose studs during reconstruction'),
+    'allen': ('suburban-home-7587470.webp', 'Brick house with garden and driveway'),
+    'mckinney': ('suburban-home-18280830.webp', 'Suburban home exterior'),
+    'richardson': ('suburban-home-32711440.webp', 'Brick house with large windows'),
+    'murphy': ('greenbelt-home-12445995.webp', 'Rear of a suburban home with deck and lawn backed by trees'),
+    'frisco': ('suburban-home-26595553.webp', 'Brick house with gable roof and greenery'),
+    'west-plano': ('suburban-home-186077.webp', 'Suburban home exterior'),
+    'north-plano': ('suburban-home-186077.webp', 'Suburban home exterior'),
+    'central-plano': ('suburban-home-26595553.webp', 'Brick house with gable roof and greenery'),
+    'east-plano': ('suburban-home-7587470.webp', 'Brick house with garden and driveway'),
+    'legacy-west': ('suburban-home-32711440.webp', 'Brick house with large windows'),
 }
 
 def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
@@ -955,7 +1062,17 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
             cap = SPLIT_CAPTION.get((slug, split_idx), alt_text(im['alt']))
             split_idx += 1
             rev = ' rev' if split_idx % 2 == 0 else ''
-            out_sections.append(f'<div className="wrap"><figure className="split{rev}"><img src="/images/{im["file"]}" alt="{alt_text(im["alt"])}" width="1200" height="800" loading="lazy" decoding="async" /><figcaption>{esc(cap) if (slug, split_idx - 1) in SPLIT_CAPTION else cap}</figcaption></figure></div>')
+            _cap_html = esc(cap) if (slug, split_idx - 1) in SPLIT_CAPTION else cap
+            # Sticky split: long sections (>=800 chars of text) get the
+            # figure inside the section, sticky on desktop, so the image
+            # stays visible while its paragraph scrolls. A hidden parity
+            # placeholder keeps the section-band (nth-child) order identical.
+            _text_len = len(re.sub(r'<[^>]+>', '', inner).strip())
+            if _text_len >= 800 and out_sections and out_sections[-1].startswith('<section'):
+                out_sections[-1] = f'<section className="block reveal split-sticky-sec"><div className="wrap"><div className="sticky-text">{inner}</div><figure className="split-sticky-fig">{img_tag(im["file"], alt_text(im["alt"]), "sticky")}<figcaption>{_cap_html}</figcaption></figure></div></section>'
+                out_sections.append('<div className="wrap" aria-hidden="true" hidden></div>')
+            else:
+                out_sections.append(f'<div className="wrap"><figure className="split{rev}">{img_tag(im["file"], alt_text(im["alt"]), "split")}<figcaption>{_cap_html}</figcaption></figure></div>')
         # homepage cards — exclude the page's own hero + splits so no card
         # repeats a photo already on the home page (Round 2 systemic).
         _page_files = ({hero['file']} if hero else set()) | {i['file'] for i in body_imgs}
@@ -974,7 +1091,16 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
         im = body_imgs[split_idx]
         cap = SPLIT_CAPTION.get((slug, split_idx), alt_text(im['alt']))
         split_idx += 1
-        out_sections.append(f'<div className="wrap"><figure className="split"><img src="/images/{im["file"]}" alt="{alt_text(im["alt"])}" width="1200" height="800" loading="lazy" decoding="async" /><figcaption>{esc(cap) if (slug, split_idx - 1) in SPLIT_CAPTION else cap}</figcaption></figure></div>')
+        out_sections.append(f'<div className="wrap"><figure className="split">{img_tag(im["file"], alt_text(im["alt"]), "split")}<figcaption>{esc(cap) if (slug, split_idx - 1) in SPLIT_CAPTION else cap}</figcaption></figure></div>')
+    # top-up figure: pages below 5 content images (hero + splits) get one
+    # genuinely relevant figure, viewed-pixel verified, never a wrong-topic
+    # filler. 8 pages have no fitting unused file and stay honestly at 4
+    # (sewage, water-heater, ac-overflow, crawl-space, fire-sprinkler,
+    # water-damage-cost, water-damage-insurance-texas, shut-off-valve).
+    _top = TOPUP.get(slug)
+    if _top:
+        _tf, _tcap = _top
+        out_sections.append(f'<div className="wrap"><figure className="topup-figure">{img_tag(_tf, _tcap, "split")}<figcaption>{esc(_tcap)}</figcaption></figure></div>')
     # trailing final-CTA sections (rendered after FAQ, see below)
     trailing_sections_html = ''
     for s in trailing_secs:
@@ -1008,7 +1134,9 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
         if rel:
             # Thin related grids (1-2 cards) centre instead of leaving
             # empty columns — never padded with irrelevant cards.
-            _page_files = ({hero['file']} if hero else set()) | {i['file'] for i in body_imgs}
+            # The top-up file (if any) is excluded too, so no related
+            # card repeats the top-up figure on the same page.
+            _page_files = ({hero['file']} if hero else set()) | {i['file'] for i in body_imgs} | ({TOPUP[slug][0]} if slug in TOPUP else set())
             out_sections.append(cards_html('Related Services & Guides', rel, hero_by_slug, by_slug, thin=len(rel) < 3, exclude=_page_files, body_by_slug=body_by_slug))
     # FAQ — split a final CTA that was absorbed into the last answer:
     # a sentence containing 'Call (972) 472-7917.' that is not the answer's
@@ -1056,7 +1184,7 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None):
     if slug not in AREA_SLUGS:
         q = 'Plano, TX' if slug not in ('frisco','allen','mckinney','richardson','murphy') else {'frisco':'Frisco, TX','allen':'Allen, TX','mckinney':'McKinney, TX','richardson':'Richardson, TX','murphy':'Murphy, TX'}[slug]
         map_html = f'<section className="block"><div className="wrap"><h2>Find Us in {esc(q)}</h2><iframe className="map-frame" loading="lazy" title="Map of {esc(q)}" src="https://www.google.com/maps?q={q.replace(" ", "%20")}&output=embed"></iframe></div></section>'
-    hero_img = f'<img className="hero-img" src="/images/{hero["file"]}" alt="{alt_text(hero["alt"])}" width="1200" height="800" fetchpriority="high" />' if hero else ''
+    hero_img = img_tag(hero['file'], alt_text(hero['alt']), 'hero', eager=True, cls='hero-img') if hero else ''
     og_images = f'["/images/{hero["file"]}"]' if hero else '[]'
     hero_cls = 'hero hero-home' if slug == '' else 'hero'  # homepage hero only: the scroll-scrub target; inner pages + hubs keep plain 'hero'
     meta_title_j = json.dumps(tab["meta_title"] or tab["h1"])
@@ -1111,7 +1239,7 @@ def cards_html(title, slugs, hero_by_slug, by_slug, thin=False, exclude=None, bo
                 print(f'WARNING: card duplicate unresolved for {s} in "{title}" (hero {img_file})')
         if img_file:
             chosen.add(img_file)
-        img = f'<img src="/images/{img_file}" alt="{alt_text(img_alt)}" width="1200" height="800" loading="lazy" decoding="async" />' if img_file else ''
+        img = img_tag(img_file, alt_text(img_alt), 'card') if img_file else ''
         cards += f'<article className="card reveal">{img}<div className="card-body"><h3><a href="{href_for(s)}">{esc(t["title"])}</a></h3></div></article>'
     cls = 'cards thin' if thin else 'cards'
     return f'<section className="block"><div className="wrap"><h2>{esc(title)}</h2><div className="{cls}">{cards}</div></div></section>'
