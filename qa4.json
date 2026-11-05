@@ -24,9 +24,7 @@
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
-   "dup_files": [
-    "/images/flooded-floor-7924140.webp"
-   ],
+   "dup_files": [],
    "missing_files": [],
    "forb": []
   },
@@ -1228,8 +1226,8 @@
   {
    "slug": "water-extraction",
    "hero_bytes": 16800,
-   "splits_bytes": 75626,
-   "content_total": 92426
+   "splits_bytes": 73442,
+   "content_total": 90242
   },
   {
    "slug": "structural-drying",
@@ -1239,27 +1237,27 @@
   },
   {
    "slug": "burst-pipe-cleanup",
-   "hero_bytes": 55330,
+   "hero_bytes": 23752,
    "splits_bytes": 87984,
-   "content_total": 143314
+   "content_total": 111736
   },
   {
    "slug": "sewage-cleanup",
-   "hero_bytes": 31000,
-   "splits_bytes": 146284,
-   "content_total": 177284
+   "hero_bytes": 23042,
+   "splits_bytes": 132508,
+   "content_total": 155550
   },
   {
    "slug": "slab-leak",
-   "hero_bytes": 29680,
-   "splits_bytes": 81092,
-   "content_total": 110772
+   "hero_bytes": 59610,
+   "splits_bytes": 70504,
+   "content_total": 130114
   },
   {
    "slug": "water-heater-leak",
-   "hero_bytes": 11120,
-   "splits_bytes": 93636,
-   "content_total": 104756
+   "hero_bytes": 27148,
+   "splits_bytes": 94298,
+   "content_total": 121446
   },
   {
    "slug": "ceiling-leak",
@@ -1287,9 +1285,9 @@
   },
   {
    "slug": "ac-overflow",
-   "hero_bytes": 28662,
+   "hero_bytes": 11960,
    "splits_bytes": 71634,
-   "content_total": 100296
+   "content_total": 83594
   },
   {
    "slug": "cabinet-drying",
@@ -1437,9 +1435,9 @@
   },
   {
    "slug": "copper-pinhole-leaks",
-   "hero_bytes": 7166,
-   "splits_bytes": 98440,
-   "content_total": 105606
+   "hero_bytes": 15538,
+   "splits_bytes": 79908,
+   "content_total": 95446
   },
   {
    "slug": "sagging-ceiling",

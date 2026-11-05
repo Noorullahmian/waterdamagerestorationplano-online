@@ -108,15 +108,15 @@ HERO_FILE = {
     'emergency-water-damage': 'burst-pipe-15206136.webp',
     'water-extraction': 'water-extraction-6195949.webp',
     'structural-drying': 'moisture-meter-8293640.webp',
-    'burst-pipe-cleanup': 'burst-pipe-4406597.webp',
-    'sewage-cleanup': 'sewage-drain-15242228.webp',
-    'slab-leak': 'slab-leak-21366138.webp',
-    'water-heater-leak': 'water-heater-34593293.webp',
+    'burst-pipe-cleanup': 'burst-pipe-8488035.webp',  # HERO FIX 2026-11-05: indoor wall pipes/valves under repair (viewed); was muddy outdoor pipe (rejected, now banned)
+    'sewage-cleanup': 'shower-drain-5768318.webp',  # HERO FIX 2026-11-05: indoor shower-floor drain in white tile (viewed); was outdoor drainpipes 15242228
+    'slab-leak': 'wet-tile-9376351.webp',  # HERO FIX 2026-11-05: water pooled on indoor tile floor, B&W (viewed); was concrete saw 21366138
+    'water-heater-leak': 'water-heater-19980200.webp',  # HERO FIX 2026-11-05: tank water heater in home laundry/utility room (viewed); was rooftop solar 34593293
     'ceiling-leak': 'ceiling-stain-3708564.webp',
     'flood-cleanup': 'flooded-suburban-home-28447764.webp',
     'commercial-water-damage': 'drying-equipment-16243255.webp',
     'hardwood-floor-drying': 'hardwood-floor-3935327.webp',
-    'ac-overflow': 'drying-fan-28726413.webp',
+    'ac-overflow': 'ceiling-crew-8293648.webp',  # HERO FIX 2026-11-05: technician indoors pointing up at a ceiling (viewed, existing pool); was outdoor condensers 28726413
     'murphy': 'greenbelt-home-12445995.webp',  # old Murphy hero, preserved
     'cabinet-drying': 'cabinet-kitchen-7535073.webp',
     'laundry-overflow': 'laundry-room-19846385.webp',
@@ -142,7 +142,7 @@ HERO_FILE = {
     'fans-wont-dry-walls': 'mold-wall-4597285.webp',
     'storm-water-category-3': 'flooded-suburban-home-28447764.webp',
     'mold-after-water-damage': 'indoor-mold-18063447.webp',
-    'copper-pinhole-leaks': 'burst-pipe-36571568.webp',
+    'copper-pinhole-leaks': 'copper-pipes-6123308.webp',  # HERO FIX 2026-11-05: exposed copper pipes + brass valves above a bathtub indoors (viewed); was corroded outdoor pipe 36571568
     'sagging-ceiling': 'sagging-ceiling-30499666.webp',
     'water-damage-insurance-texas': 'insurance-claim-7731397.webp',
     'about': 'plumber-work-6419128.webp',
@@ -189,7 +189,7 @@ BODY_FILE = {
     'fans-wont-dry-walls': ['moisture-meter-7937963.webp', 'thermal-imaging-7859781.webp', 'mold-wall-29701042.webp'],
     'storm-water-category-3': ['flooded-floor-7924140.webp', 'creek-overflow-32159924.webp', 'suburban-home-186077.webp'],
     'mold-after-water-damage': ['mold-wall-18351809.webp', 'cabinet-kitchen-8146322.webp', 'drying-equipment-16243255.webp'],
-    'copper-pinhole-leaks': ['burst-pipe-4406597.webp', 'suburban-home-3990589.webp', 'plumber-work-6419128.webp'],
+    'copper-pinhole-leaks': ['copper-pipes-3721272.webp', 'suburban-home-3990589.webp', 'plumber-work-6419128.webp'],
     'sagging-ceiling': ['ceiling-stain-8624464.webp', 'suburban-home-30707539.webp', 'ceiling-crew-8293648.webp'],
     'water-damage-insurance-texas': ['moisture-meter-8293640.webp', 'plumber-work-6419128.webp', 'commercial-office-13068366.webp'],
     'about': ['plumber-work-35290675.webp', 'suburban-home-3990589.webp', 'mold-wall-9127236.webp'],
@@ -221,7 +221,7 @@ BANNED = {
     'drying-equipment-7464199.webp', 'drying-equipment-7464198.webp',
     'drying-equipment-34585118.webp', 'crawl-space-17181949.webp',
     'water-heater-11211127.webp', 'water-heater-17854867.webp',
-    'drying-fan-37080286.webp',
+    'drying-fan-37080286.webp', 'burst-pipe-4406597.webp',  # PURGE 2026-11-05: rejected muddy outdoor pipe, was burst hero + copper split + water-extraction split
 }
 
 def esc(s):
@@ -804,7 +804,13 @@ def img_tag(file, alt, kind, eager=False):
         ss = f' srcset="{", ".join(parts)}" sizes="{sizes}"'
     extra = ' fetchpriority="high"' if eager else ' loading="lazy" decoding="async"'
     w, h = img_dims(file)
-    return f'<img src="/images/{file}" alt="{esc(clean_alt(alt))}" width="{w}" height="{h}"{ss}{extra} />'
+    # HERO FIX 2026-11-05: hero img MUST carry class="hero-img" so the
+    # .hero-img rule (height:auto; aspect-ratio:16/9) applies. Without it only
+    # img{max-width:100%} applied and width/height attrs forced 800px-tall
+    # heroes (557x800 @1440, 350x800 @390). Split/card imgs keep no class
+    # (their own .split-fig img / .card img rules apply).
+    cls = ' className="hero-img"' if kind == 'hero' else ''
+    return f'<img{cls} src="/images/{file}" alt="{esc(clean_alt(alt))}" width="{w}" height="{h}"{ss}{extra} />'
 
 def ensure_variants(files):
     """Generate missing -400/-800 WebP variants (PIL, EXIF stripped)."""
@@ -954,6 +960,8 @@ def pick_images(page, manifest, pools):
         ('fans-wont-dry-walls', 4): 'mold-wall-18351809.webp',
         ('fans-wont-dry-walls', 5): 'moisture-meter-8293746.webp',
         ('copper-pinhole-leaks', 6): 'drying-equipment-16243255.webp',
+        ('copper-pinhole-leaks', 0): 'copper-pipes-3721272.webp',  # TOUCH-UP 2026-11-05: indoor copper-pipe close-up (viewed) replaces muddy outdoor pipe (rejected, now banned) in first split
+        ('water-extraction', 6): 'plumber-work-6419128.webp',  # PURGE 2026-11-05: technician hands on indoor pipes/valves (viewed) replaces rejected muddy outdoor pipe in 'Water Extraction Across Plano' split
         ('about', 5): 'drying-equipment-16243255.webp',
         ('crawl-space-drying', 4): 'pier-beam-home-26261510.webp',
         ('water-heater-leak', 5): 'plumber-work-35290675.webp',
@@ -997,8 +1005,8 @@ a:hover{color:#084a70}.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
 .hero{background:radial-gradient(ellipse 90% 120% at 85% 0%,rgba(45,212,191,.20),transparent 55%),linear-gradient(135deg,#041c2b 0%,#0a3550 48%,#0d7a6e 100%);color:#fff;padding:28px 0 32px;overflow:hidden}
 .hero h1{font-size:clamp(24px,2.9vw,32px);line-height:1.15;margin:0 0 14px;color:#fff;text-wrap:balance}
 .hero p{font-size:19px;color:#e6f4f1}.hero a{color:#d9f4ff}
-.hero-img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block;margin-top:18px}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:28px;align-items:center}.hero-grid>*{min-width:0}
+.hero-img{width:100%;max-width:520px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block;margin-top:18px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:28px;align-items:center}.hero-grid>*{min-width:0}
 @media(max-width:820px){.hero-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(12.5px,4vw,24px)}h2{font-size:28px}body{font-size:18px}}
 .trust-band{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}.trust-band .check{background:#e7f5f2;border:1px solid #bfe3dd;color:#084f49;font-weight:700;padding:8px 12px;border-radius:999px;font-size:15px}
 section.block{padding:30px 0}section.block.alt{background:var(--cream)}
@@ -1026,7 +1034,7 @@ p{margin:0 0 14px}ul{margin:0 0 16px;padding-left:22px}ol{margin:0 0 16px;paddin
 .faq-item{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px;background:#fff}
 .faq-item h3{margin:0 0 8px}.faq-item p{margin:0}
 section.block.dark{background:#0a3550;color:#fff;padding:40px 0}.block.dark .cta-row{margin:20px 0 22px}.block.dark .btn-call{padding:14px 26px}.block.dark .trust-band{align-items:center;margin:20px 0 16px}.block.dark p:last-child{margin-bottom:0}section.block.dark h2{color:#fff}section.block.dark a{color:#a9dbff}section.block.dark p{color:#eaf3f8}
-.site-footer{background:#0f2537;color:#dbe7ef;margin-top:0;padding:36px 0 0}.site-footer h3{color:#fff}.site-footer a{color:#a9dbff}.site-footer li a,.site-footer p a{display:inline-block;padding:11px 0}
+.site-footer{background:#0f2537;color:#dbe7ef;margin-top:0;padding:36px 0 0}.site-footer h3{color:#fff}.site-footer a{color:#a9dbff}.site-footer li a,.site-footer p a{display:inline-block;padding:11px 0}.site-footer p a.btn-call{padding:12px 20px} /* FOOTER-BTN FIX 2026-11-05: footer link rule (11px 0) was zeroing the call button's side padding so the label touched both edges; restore designed 12px 20px */
 .footer-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
 @media(max-width:820px){.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.footer-grid{grid-template-columns:1fr}}
@@ -1067,9 +1075,15 @@ def section_inner(sec):
         inner += block_html(b)
     return inner
 
-def cards_html(title, slugs, by_slug, hero_by_slug, exclude, body_by_slug, neutral=None):
+def cards_html(title, slugs, by_slug, hero_by_slug, exclude, body_by_slug, neutral=None, chosen=None):
     cards = ''
-    chosen = set()
+    # HERO FIX 2026-11-05: 'chosen' is a shared set when a page renders two
+    # card sections (home: services + areas). Previously each call had its
+    # own set, so a swapped image could repeat across the two sections —
+    # home showed flooded-floor-7924140.webp on both the appliance-leak
+    # service card and the Richardson area card.
+    if chosen is None:
+        chosen = set()
     for s in slugs:
         t = by_slug.get(s)
         if not t:
@@ -1121,6 +1135,7 @@ def write_page(page, hero, picks, by_slug, hero_by_slug, body_by_slug, neutral=N
     hero_img = img_tag(hero['file'], hero['alt'], 'hero', eager=True) if hero else ''
     hero_cls = 'hero hero-home' if slug == '' else 'hero'
     out_sections = []
+    home_cards = set()  # HERO FIX 2026-11-05: shared across home's two card sections so a swapped image can't repeat (see cards_html).
     if intro_rest:
         inner = ''.join(block_html(b) for b in intro_rest)
         out_sections.append(f'<section className="block"><div className="wrap">{inner}</div></section>')
@@ -1149,9 +1164,9 @@ def write_page(page, hero, picks, by_slug, hero_by_slug, body_by_slug, neutral=N
         band += 1
         # Home grids after their anchor sections.
         if slug == '' and sec.get('heading') == 'Water Damage Restoration Services in Plano, TX':
-            out_sections.append(cards_html('Our Services in Plano, TX', SERVICE_SLUGS, by_slug, hero_by_slug, page_files, body_by_slug, neutral))
+            out_sections.append(cards_html('Our Services in Plano, TX', SERVICE_SLUGS, by_slug, hero_by_slug, page_files, body_by_slug, neutral, home_cards))
         if slug == '' and sec.get('heading') and sec['heading'].startswith('Serving Every Plano ZIP Code'):
-            out_sections.append(cards_html('Areas We Serve Around Plano', AREA_SLUGS, by_slug, hero_by_slug, page_files, body_by_slug, neutral))
+            out_sections.append(cards_html('Areas We Serve Around Plano', AREA_SLUGS, by_slug, hero_by_slug, page_files, body_by_slug, neutral, home_cards))
     # Related cards (non-home): doc link targets on this page, in doc order.
     # 'run' included for the preserved Murphy page (old doc used hyperlink runs,
     # not paren refs); no new-doc non-home page has run links, so this changes
@@ -1229,17 +1244,29 @@ export default function Page() {{
     os.makedirs(os.path.dirname(path), exist_ok=True)
     open(path, 'w').write(content)
 
+# HERO FIX 2026-11-05: hub pages were text-only 181px heroes. Each hub now
+# gets a fitting hero image from the EXISTING pool (viewed-verified; file is
+# NOT any card hero on that hub, and is excluded from its cards so the page
+# never shows the same file twice).
+HUB_HERO = {
+    'services': ('plumber-work-6419128.webp', "Close-up of a plumber's hands installing steel pipes indoors, showcasing skilled manual work."),
+    'areas': ('suburban-home-186077.webp', 'Suburban home exterior in a residential neighborhood'),
+    'guides': ('thermal-imaging-7859781.webp', "A thermal imaging screen in the foreground showing a person's heat image in orange, yellow and blue, held in front of a man indoors"),
+}
+
 def write_hub(slug, title, slugs, by_slug, hero_by_slug, body_by_slug, neutral=None):
-    cards = cards_html(title, slugs, by_slug, hero_by_slug, set(), body_by_slug, neutral)
+    hero_file, hero_alt = HUB_HERO[slug]
+    cards = cards_html(title, slugs, by_slug, hero_by_slug, {hero_file}, body_by_slug, neutral)
+    hero_img = img_tag(hero_file, hero_alt, 'hero', eager=True)
     map_html = ('<section className="block map-sec"><div className="wrap"><h2>Find Us in Plano, TX</h2>'
                 '<iframe className="map-frame" loading="lazy" title="Map of Plano, TX" '
                 'src="https://www.google.com/maps?q=Plano,%20TX&output=embed"></iframe></div></section>')
     _hub_schema = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
         {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': DOMAIN + '/'},
         {'@type': 'ListItem', 'position': 2, 'name': title, 'item': DOMAIN + f'/{slug}/'}]}
-    content = f'''export const metadata = {{ title: {json.dumps(title + " | Water Damage Restoration Plano, TX")}, description: {json.dumps(title + " — Water Damage Restoration Plano, TX. Call (972) 472-7917.")}, alternates: {{ canonical: "{DOMAIN}/{slug}/" }}, openGraph: {{ title: {json.dumps(title + " | Water Damage Restoration Plano, TX")}, description: {json.dumps(title + " — Water Damage Restoration Plano, TX. Call (972) 472-7917.")}, url: "{DOMAIN}/{slug}/", images: ["{DOMAIN}/images/suburban-home-186077-800.webp"] }} }};
+    content = f'''export const metadata = {{ title: {json.dumps(title + " | Water Damage Restoration Plano, TX")}, description: {json.dumps(title + " — Water Damage Restoration Plano, TX. Call (972) 472-7917.")}, alternates: {{ canonical: "{DOMAIN}/{slug}/" }}, openGraph: {{ title: {json.dumps(title + " | Water Damage Restoration Plano, TX")}, description: {json.dumps(title + " — Water Damage Restoration Plano, TX. Call (972) 472-7917.")}, url: "{DOMAIN}/{slug}/", images: ["{DOMAIN}/images/{hero_file[:-5]}-800.webp"] }} }};
 export default function Page() {{
-  return (<><div className="hero"><div className="wrap"><h1>{esc(title)}</h1><p><a className="btn-call" href="{TEL}">Call Now: <span className="nowrap">{PHONE}</span></a></p></div></div>
+  return (<><div className="hero"><div className="wrap hero-grid"><div><h1>{esc(title)}</h1><p><a className="btn-call" href="{TEL}">Call Now: <span className="nowrap">{PHONE}</span></a></p></div>{hero_img}</div></div>
   {cards}
   {map_html}
   {jsonld(_hub_schema)}
@@ -1279,13 +1306,15 @@ def main():
         hero_by_slug[p['slug']] = hero
         body_by_slug[p['slug']] = [e for (_i, e) in picks]
         page_imgs[p['slug']] = (hero, picks)
-    # Variants for every used file (hero + splits + card heroes).
+    # Variants for every used file (hero + splits + card heroes + hub heroes).
     used_files = set()
     for slug, (hero, picks) in page_imgs.items():
         if hero:
             used_files.add(hero['file'])
         for (_i, e) in picks:
             used_files.add(e['file'])
+    for _hf, _ha in HUB_HERO.values():
+        used_files.add(_hf)
     made = ensure_variants(sorted(used_files))
     print(f'variants generated: {len(made)}')
     neutral = [(m['file'], m['alt']) for m in manifest if m['topic'] in ('suburban-home', 'texas-home')]

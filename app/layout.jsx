@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       </ul></div>
       <div><h3>Emergency Help</h3><p>Water spreading right now? Call first, then shut off the water and power to wet rooms. Crews stage along US-75, the Dallas North Tollway, the George Bush Turnpike and SH-121.</p><p><a className="btn-call" href="tel:+19724727917">Call 24/7: <span className="nowrap">(972) 472-7917</span></a></p></div>
     </div>
-    <div className="footer-bottom"><div className="wrap">Water Damage Restoration Plano · Plano, TX &amp; Collin County · (972) 472-7917 · Open 24/7<br />Services are provided through our network of local water mitigation technicians and restoration partners serving Plano and Collin County.</div></div>
+    <div className="footer-bottom"><div className="wrap">Water Damage Restoration Plano · Plano, TX &amp; Collin County · (972) 472-7917 · Open 24/7</div></div>
     </footer>
     <a className="mobile-call-bar" href="tel:+19724727917">Call Now: (972) 472-7917</a>
     <Reveal />
