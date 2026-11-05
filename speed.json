@@ -1,0 +1,346 @@
+[
+ {
+  "slug": "home",
+  "fcp_ms": 992,
+  "dom_ms": 1135,
+  "load_ms": 1208,
+  "cls": 0,
+  "initial_transfer_kb": 560
+ },
+ {
+  "slug": "emergency-water-damage",
+  "fcp_ms": 828,
+  "dom_ms": 737,
+  "load_ms": 1032,
+  "cls": 0,
+  "initial_transfer_kb": 655
+ },
+ {
+  "slug": "water-extraction",
+  "fcp_ms": 796,
+  "dom_ms": 649,
+  "load_ms": 974,
+  "cls": 0,
+  "initial_transfer_kb": 562
+ },
+ {
+  "slug": "structural-drying",
+  "fcp_ms": 900,
+  "dom_ms": 900,
+  "load_ms": 1162,
+  "cls": 0,
+  "initial_transfer_kb": 565
+ },
+ {
+  "slug": "burst-pipe-cleanup",
+  "fcp_ms": 692,
+  "dom_ms": 705,
+  "load_ms": 889,
+  "cls": 0,
+  "initial_transfer_kb": 622
+ },
+ {
+  "slug": "sewage-cleanup",
+  "fcp_ms": 720,
+  "dom_ms": 559,
+  "load_ms": 956,
+  "cls": 0,
+  "initial_transfer_kb": 659
+ },
+ {
+  "slug": "slab-leak",
+  "fcp_ms": 784,
+  "dom_ms": 807,
+  "load_ms": 1059,
+  "cls": 0,
+  "initial_transfer_kb": 498
+ },
+ {
+  "slug": "water-heater-leak",
+  "fcp_ms": 716,
+  "dom_ms": 624,
+  "load_ms": 862,
+  "cls": 0,
+  "initial_transfer_kb": 571
+ },
+ {
+  "slug": "ceiling-leak",
+  "fcp_ms": 804,
+  "dom_ms": 679,
+  "load_ms": 1028,
+  "cls": 0,
+  "initial_transfer_kb": 529
+ },
+ {
+  "slug": "flood-cleanup",
+  "fcp_ms": 528,
+  "dom_ms": 816,
+  "load_ms": 1041,
+  "cls": 0,
+  "initial_transfer_kb": 680
+ },
+ {
+  "slug": "commercial-water-damage",
+  "fcp_ms": 768,
+  "dom_ms": 1003,
+  "load_ms": 1004,
+  "cls": 0,
+  "initial_transfer_kb": 567
+ },
+ {
+  "slug": "hardwood-floor-drying",
+  "fcp_ms": 620,
+  "dom_ms": 617,
+  "load_ms": 921,
+  "cls": 0,
+  "initial_transfer_kb": 541
+ },
+ {
+  "slug": "ac-overflow",
+  "fcp_ms": 764,
+  "dom_ms": 577,
+  "load_ms": 977,
+  "cls": 0,
+  "initial_transfer_kb": 561
+ },
+ {
+  "slug": "cabinet-drying",
+  "fcp_ms": 792,
+  "dom_ms": 796,
+  "load_ms": 1104,
+  "cls": 0,
+  "initial_transfer_kb": 516
+ },
+ {
+  "slug": "laundry-overflow",
+  "fcp_ms": 704,
+  "dom_ms": 593,
+  "load_ms": 893,
+  "cls": 0,
+  "initial_transfer_kb": 536
+ },
+ {
+  "slug": "crawl-space-drying",
+  "fcp_ms": 832,
+  "dom_ms": 1093,
+  "load_ms": 1094,
+  "cls": 0,
+  "initial_transfer_kb": 584
+ },
+ {
+  "slug": "appliance-leak",
+  "fcp_ms": 716,
+  "dom_ms": 638,
+  "load_ms": 930,
+  "cls": 0,
+  "initial_transfer_kb": 507
+ },
+ {
+  "slug": "fire-sprinkler-cleanup",
+  "fcp_ms": 740,
+  "dom_ms": 464,
+  "load_ms": 959,
+  "cls": 0,
+  "initial_transfer_kb": 508
+ },
+ {
+  "slug": "moisture-mapping",
+  "fcp_ms": 692,
+  "dom_ms": 591,
+  "load_ms": 912,
+  "cls": 0,
+  "initial_transfer_kb": 546
+ },
+ {
+  "slug": "attic-insulation-drying",
+  "fcp_ms": 812,
+  "dom_ms": 1046,
+  "load_ms": 1047,
+  "cls": 0,
+  "initial_transfer_kb": 576
+ },
+ {
+  "slug": "wall-drying",
+  "fcp_ms": 784,
+  "dom_ms": 1002,
+  "load_ms": 1005,
+  "cls": 0,
+  "initial_transfer_kb": 657
+ },
+ {
+  "slug": "west-plano",
+  "fcp_ms": 952,
+  "dom_ms": 796,
+  "load_ms": 960,
+  "cls": 0,
+  "initial_transfer_kb": 720
+ },
+ {
+  "slug": "legacy-west",
+  "fcp_ms": 472,
+  "dom_ms": 890,
+  "load_ms": 903,
+  "cls": 0,
+  "initial_transfer_kb": 735
+ },
+ {
+  "slug": "north-plano",
+  "fcp_ms": 756,
+  "dom_ms": 726,
+  "load_ms": 1130,
+  "cls": 0,
+  "initial_transfer_kb": 711
+ },
+ {
+  "slug": "central-plano",
+  "fcp_ms": 772,
+  "dom_ms": 388,
+  "load_ms": 956,
+  "cls": 0,
+  "initial_transfer_kb": 686
+ },
+ {
+  "slug": "east-plano",
+  "fcp_ms": 816,
+  "dom_ms": 665,
+  "load_ms": 985,
+  "cls": 0,
+  "initial_transfer_kb": 731
+ },
+ {
+  "slug": "frisco",
+  "fcp_ms": 772,
+  "dom_ms": 705,
+  "load_ms": 898,
+  "cls": 0,
+  "initial_transfer_kb": 671
+ },
+ {
+  "slug": "allen",
+  "fcp_ms": 728,
+  "dom_ms": 933,
+  "load_ms": 934,
+  "cls": 0,
+  "initial_transfer_kb": 722
+ },
+ {
+  "slug": "mckinney",
+  "fcp_ms": 708,
+  "dom_ms": 871,
+  "load_ms": 871,
+  "cls": 0,
+  "initial_transfer_kb": 658
+ },
+ {
+  "slug": "richardson",
+  "fcp_ms": 700,
+  "dom_ms": 500,
+  "load_ms": 885,
+  "cls": 0,
+  "initial_transfer_kb": 732
+ },
+ {
+  "slug": "murphy",
+  "fcp_ms": 708,
+  "dom_ms": 725,
+  "load_ms": 1016,
+  "cls": 0,
+  "initial_transfer_kb": 731
+ },
+ {
+  "slug": "shut-off-valve",
+  "fcp_ms": 696,
+  "dom_ms": 598,
+  "load_ms": 842,
+  "cls": 0,
+  "initial_transfer_kb": 508
+ },
+ {
+  "slug": "warm-spot-on-floor",
+  "fcp_ms": 576,
+  "dom_ms": 509,
+  "load_ms": 778,
+  "cls": 0,
+  "initial_transfer_kb": 628
+ },
+ {
+  "slug": "ceiling-dripping",
+  "fcp_ms": 712,
+  "dom_ms": 542,
+  "load_ms": 932,
+  "cls": 0,
+  "initial_transfer_kb": 576
+ },
+ {
+  "slug": "water-damage-cost",
+  "fcp_ms": 684,
+  "dom_ms": 684,
+  "load_ms": 911,
+  "cls": 0,
+  "initial_transfer_kb": 689
+ },
+ {
+  "slug": "fans-wont-dry-walls",
+  "fcp_ms": 616,
+  "dom_ms": 541,
+  "load_ms": 806,
+  "cls": 0,
+  "initial_transfer_kb": 577
+ },
+ {
+  "slug": "storm-water-category-3",
+  "fcp_ms": 688,
+  "dom_ms": 706,
+  "load_ms": 881,
+  "cls": 0,
+  "initial_transfer_kb": 723
+ },
+ {
+  "slug": "mold-after-water-damage",
+  "fcp_ms": 684,
+  "dom_ms": 678,
+  "load_ms": 893,
+  "cls": 0,
+  "initial_transfer_kb": 766
+ },
+ {
+  "slug": "copper-pinhole-leaks",
+  "fcp_ms": 612,
+  "dom_ms": 518,
+  "load_ms": 966,
+  "cls": 0,
+  "initial_transfer_kb": 541
+ },
+ {
+  "slug": "sagging-ceiling",
+  "fcp_ms": 624,
+  "dom_ms": 510,
+  "load_ms": 904,
+  "cls": 0,
+  "initial_transfer_kb": 602
+ },
+ {
+  "slug": "water-damage-insurance-texas",
+  "fcp_ms": 676,
+  "dom_ms": 585,
+  "load_ms": 831,
+  "cls": 0,
+  "initial_transfer_kb": 525
+ },
+ {
+  "slug": "about",
+  "fcp_ms": 672,
+  "dom_ms": 682,
+  "load_ms": 901,
+  "cls": 0,
+  "initial_transfer_kb": 574
+ },
+ {
+  "slug": "contact",
+  "fcp_ms": 788,
+  "dom_ms": 653,
+  "load_ms": 956,
+  "cls": 0,
+  "initial_transfer_kb": 711
+ }
+]

@@ -1,0 +1,249 @@
+{
+  "round": 4,
+  "pages_hunted": 46,
+  "total_lines": 102,
+  "new_lines": 97,
+  "reopened_lines": 5,
+  "clean_pages": [
+    "fans-wont-dry-walls",
+    "sagging-ceiling",
+    "water-damage-insurance-texas"
+  ],
+  "pages_with_lines": 43,
+  "breakdown": {
+    "image_topic_duplicate_caption": 90,
+    "list_fragmentation_heading_promotion_layout": 12
+  },
+  "pages": {
+    "about": {
+      "batch": "E",
+      "lines": 1,
+      "clean": false
+    },
+    "ac-overflow": {
+      "batch": "B",
+      "lines": 3,
+      "clean": false
+    },
+    "allen": {
+      "batch": "D",
+      "lines": 3,
+      "clean": false
+    },
+    "appliance-leak": {
+      "batch": "B",
+      "lines": 3,
+      "clean": false
+    },
+    "areas": {
+      "batch": "E",
+      "lines": 1,
+      "clean": false
+    },
+    "attic-insulation-drying": {
+      "batch": "C",
+      "lines": 4,
+      "clean": false
+    },
+    "burst-pipe-cleanup": {
+      "batch": "A",
+      "lines": 2,
+      "clean": false
+    },
+    "cabinet-drying": {
+      "batch": "B",
+      "lines": 3,
+      "clean": false
+    },
+    "ceiling-dripping": {
+      "batch": "D",
+      "lines": 3,
+      "clean": false
+    },
+    "ceiling-leak": {
+      "batch": "A",
+      "lines": 5,
+      "clean": false
+    },
+    "central-plano": {
+      "batch": "C",
+      "lines": 3,
+      "clean": false
+    },
+    "commercial-water-damage": {
+      "batch": "B",
+      "lines": 3,
+      "clean": false
+    },
+    "contact": {
+      "batch": "E",
+      "lines": 1,
+      "clean": false
+    },
+    "copper-pinhole-leaks": {
+      "batch": "D",
+      "lines": 3,
+      "clean": false
+    },
+    "crawl-space-drying": {
+      "batch": "B",
+      "lines": 3,
+      "clean": false
+    },
+    "east-plano": {
+      "batch": "C",
+      "lines": 2,
+      "clean": false
+    },
+    "emergency-water-damage": {
+      "batch": "A",
+      "lines": 3,
+      "clean": false
+    },
+    "fans-wont-dry-walls": {
+      "batch": "D",
+      "lines": 0,
+      "clean": true
+    },
+    "fire-sprinkler-cleanup": {
+      "batch": "B",
+      "lines": 2,
+      "clean": false
+    },
+    "flood-cleanup": {
+      "batch": "B",
+      "lines": 2,
+      "clean": false
+    },
+    "frisco": {
+      "batch": "C",
+      "lines": 2,
+      "clean": false
+    },
+    "guides": {
+      "batch": "E",
+      "lines": 1,
+      "clean": false
+    },
+    "hardwood-floor-drying": {
+      "batch": "B",
+      "lines": 1,
+      "clean": false
+    },
+    "home": {
+      "batch": "A",
+      "lines": 4,
+      "clean": false
+    },
+    "laundry-overflow": {
+      "batch": "B",
+      "lines": 2,
+      "clean": false
+    },
+    "legacy-west": {
+      "batch": "C",
+      "lines": 2,
+      "clean": false
+    },
+    "mckinney": {
+      "batch": "D",
+      "lines": 3,
+      "clean": false
+    },
+    "moisture-mapping": {
+      "batch": "C",
+      "lines": 1,
+      "clean": false
+    },
+    "mold-after-water-damage": {
+      "batch": "E",
+      "lines": 2,
+      "clean": false
+    },
+    "murphy": {
+      "batch": "D",
+      "lines": 2,
+      "clean": false
+    },
+    "north-plano": {
+      "batch": "C",
+      "lines": 1,
+      "clean": false
+    },
+    "richardson": {
+      "batch": "D",
+      "lines": 3,
+      "clean": false
+    },
+    "sagging-ceiling": {
+      "batch": "E",
+      "lines": 0,
+      "clean": true
+    },
+    "services": {
+      "batch": "E",
+      "lines": 1,
+      "clean": false
+    },
+    "sewage-cleanup": {
+      "batch": "A",
+      "lines": 3,
+      "clean": false
+    },
+    "shut-off-valve": {
+      "batch": "E",
+      "lines": 2,
+      "clean": false
+    },
+    "slab-leak": {
+      "batch": "A",
+      "lines": 3,
+      "clean": false
+    },
+    "storm-water-category-3": {
+      "batch": "E",
+      "lines": 2,
+      "clean": false
+    },
+    "structural-drying": {
+      "batch": "A",
+      "lines": 1,
+      "clean": false
+    },
+    "wall-drying": {
+      "batch": "C",
+      "lines": 4,
+      "clean": false
+    },
+    "warm-spot-on-floor": {
+      "batch": "D",
+      "lines": 3,
+      "clean": false
+    },
+    "water-damage-cost": {
+      "batch": "D",
+      "lines": 1,
+      "clean": false
+    },
+    "water-damage-insurance-texas": {
+      "batch": "E",
+      "lines": 0,
+      "clean": true
+    },
+    "water-extraction": {
+      "batch": "A",
+      "lines": 3,
+      "clean": false
+    },
+    "water-heater-leak": {
+      "batch": "A",
+      "lines": 3,
+      "clean": false
+    },
+    "west-plano": {
+      "batch": "C",
+      "lines": 2,
+      "clean": false
+    }
+  }
+}

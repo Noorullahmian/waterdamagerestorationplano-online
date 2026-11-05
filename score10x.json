@@ -1,0 +1,280 @@
+[
+ {
+  "slug": "home",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "emergency-water-damage",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "water-extraction",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "structural-drying",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "burst-pipe-cleanup",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "sewage-cleanup",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "slab-leak",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "water-heater-leak",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "ceiling-leak",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "flood-cleanup",
+  "score": "19/20",
+  "pass": false,
+  "fail": [
+   "hero_unique"
+  ]
+ },
+ {
+  "slug": "commercial-water-damage",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "hardwood-floor-drying",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "ac-overflow",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "cabinet-drying",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "laundry-overflow",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "crawl-space-drying",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "appliance-leak",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "fire-sprinkler-cleanup",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "moisture-mapping",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "attic-insulation-drying",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "wall-drying",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "west-plano",
+  "score": "19/20",
+  "pass": false,
+  "fail": [
+   "hero_unique"
+  ]
+ },
+ {
+  "slug": "legacy-west",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "north-plano",
+  "score": "19/20",
+  "pass": false,
+  "fail": [
+   "hero_unique"
+  ]
+ },
+ {
+  "slug": "central-plano",
+  "score": "19/20",
+  "pass": false,
+  "fail": [
+   "hero_unique"
+  ]
+ },
+ {
+  "slug": "east-plano",
+  "score": "19/20",
+  "pass": false,
+  "fail": [
+   "hero_unique"
+  ]
+ },
+ {
+  "slug": "frisco",
+  "score": "19/20",
+  "pass": false,
+  "fail": [
+   "hero_unique"
+  ]
+ },
+ {
+  "slug": "allen",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "mckinney",
+  "score": "19/20",
+  "pass": false,
+  "fail": [
+   "hero_unique"
+  ]
+ },
+ {
+  "slug": "richardson",
+  "score": "19/20",
+  "pass": false,
+  "fail": [
+   "hero_unique"
+  ]
+ },
+ {
+  "slug": "murphy",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "shut-off-valve",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "warm-spot-on-floor",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "ceiling-dripping",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "water-damage-cost",
+  "score": "19/20",
+  "pass": false,
+  "fail": [
+   "hero_unique"
+  ]
+ },
+ {
+  "slug": "fans-wont-dry-walls",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "storm-water-category-3",
+  "score": "19/20",
+  "pass": false,
+  "fail": [
+   "hero_unique"
+  ]
+ },
+ {
+  "slug": "mold-after-water-damage",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "copper-pinhole-leaks",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "sagging-ceiling",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "water-damage-insurance-texas",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "about",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ },
+ {
+  "slug": "contact",
+  "score": "20/20",
+  "pass": true,
+  "fail": []
+ }
+]

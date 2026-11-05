@@ -1057,6 +1057,15 @@ def main():
             block = {'type': 'table', 'rows': tb['rows']}
             placed, level = insert_table_block(p['sections'], _tb, block, cur)
             fix_log.append(f"{slug} | heading={tb['heading']!r} prev={_pk}:{str(_pt)[:60]!r} -> {placed} ({level})")
+    # USER-ORDERED HOME DELETIONS — permanent exceptions. Future
+    # re-audits must NOT report these as missing; the user ordered
+    # their removal from home's rendered output (doc itself untouched).
+    # 'free' technical terms are HELD per the user's explicit decision.
+    fix_log.append("EXCEPTION (user order, home only): sentence removed: 'Your insurance adjuster will ask for exactly this. Done? Call (972) 472-7917. The extraction truck can be rolling while you read the rest of this page.'")
+    fix_log.append("EXCEPTION (user order, home only): phrase removed: 'No star ratings here.' (bold lead-in; rest of paragraph kept)")
+    fix_log.append("EXCEPTION (user order, home only): word removed: 'cheapest' in 'The cheapest water damage is the one you call about in the first hour.' -> 'The water damage is the one you call about in the first hour.'")
+    fix_log.append("EXCEPTION (user order, home only): figures removed: burst-pipe-36571568.webp + drying-equipment-16243255.webp (oversized home split figures; surrounding text/headings/links kept)")
+    fix_log.append("HOLD (user decision): 'free' technical terms kept exactly: 'frost-free' (burst-pipe-cleanup), 'free water' (emergency-water-damage, water-extraction x2)")
     with open(os.path.join(BASE, 'doc_fix_log.txt'), 'w') as fh:
         fh.write('\n'.join(fix_log) + '\n')
     print(f'DOC-FIX: {len(fix_log)} tables placed; log -> doc_fix_log.txt')
@@ -1304,15 +1313,15 @@ a:hover{color:#084a70}.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
 .header-call:hover,.btn-call:hover{background:var(--cta-hover)}
 .contact-form button.btn-call:hover{background:var(--cta-hover)}
 .hero{background:radial-gradient(ellipse 90% 120% at 85% 0%,rgba(45,212,191,.20),transparent 55%),linear-gradient(135deg,#041c2b 0%,#0a3550 48%,#0d7a6e 100%);color:#fff;padding:28px 0 32px;overflow:hidden}
-.hero h1{font-size:44px;line-height:1.15;margin:0 0 14px;color:#fff;text-wrap:balance}
+.hero h1{font-size:clamp(24px,2.9vw,32px);line-height:1.15;margin:0 0 14px;color:#fff;text-wrap:balance}
 .hero p{font-size:19px;color:#e6f4f1}.hero a{color:#d9f4ff}
 .hero-img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block;margin-top:18px}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
-@media(max-width:820px){.hero-grid{grid-template-columns:1fr}.hero h1{font-size:32px}body{font-size:18px}}
+@media(max-width:820px){.hero-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(12.5px,4vw,24px)}h2{font-size:28px}body{font-size:18px}}
 .trust-band{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}.trust-band .check{background:#e7f5f2;border:1px solid #bfe3dd;color:#084f49;font-weight:700;padding:8px 12px;border-radius:999px;font-size:15px}
 section.block{padding:30px 0}section.block:nth-child(even){background:var(--cream)}
 .section-kicker{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#475569;margin:0 0 8px}
-h2{font-size:32px;line-height:1.25;color:#0a3550;margin:0 0 14px;border-left:6px solid #e4572e;padding-left:14px;text-wrap:balance}
+h2{font-size:32px;line-height:1.25;color:#0b5563;margin:0 0 14px;border-left:6px solid #0d7a6e;padding-left:14px;text-wrap:balance}h2 .nobr{white-space:nowrap}
 h3{font-size:23px;color:#92400e;margin:26px 0 10px}
 p{margin:0 0 14px}ul{margin:0 0 16px;padding-left:22px}li{margin-bottom:8px;line-height:1.7}
 .listhead{margin:20px 0 6px}.cta-row{margin:18px 0}
@@ -1325,7 +1334,7 @@ p{margin:0 0 14px}ul{margin:0 0 16px;padding-left:22px}li{margin-bottom:8px;line
 .topup-figure{display:block;margin:28px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}.topup-figure img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}.topup-figure figcaption{padding:18px;font-size:16px;color:#33475b;display:block}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:10px 0 30px}
 @media(max-width:820px){.cards{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.cards{grid-template-columns:1fr}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}h2{font-size:24px}}
 .cards.thin{grid-template-columns:repeat(auto-fit,minmax(280px,360px));justify-content:center}
 .card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;transition:transform .3s ease,box-shadow .3s ease;transform:perspective(900px) rotateX(0deg)}
 @media(hover:hover){.card:hover{transform:perspective(900px) rotateX(3deg) translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.12)}}
@@ -1333,7 +1342,7 @@ p{margin:0 0 14px}ul{margin:0 0 16px;padding-left:22px}li{margin-bottom:8px;line
 .card-body{padding:14px}.card-body h3{margin:0 0 6px;font-size:19px}.card-body h3 a{color:#0a3550;text-decoration:none;display:inline-block;padding:11px 0}
 .faq-item{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px;background:#fff}
 .faq-item h3{margin:0 0 8px}.faq-item p{margin:0}
-section.block.dark{background:#0a3550;color:#fff;padding:30px 0}section.block.dark h2{color:#fff}section.block.dark a{color:#a9dbff}section.block.dark p{color:#eaf3f8}
+section.block.dark{background:#0a3550;color:#fff;padding:40px 0}.block.dark .cta-row{margin:20px 0 22px}.block.dark .btn-call{padding:14px 26px}.block.dark .trust-band{align-items:center;margin:20px 0 16px}.block.dark p:last-child{margin-bottom:0}section.block.dark h2{color:#fff}section.block.dark a{color:#a9dbff}section.block.dark p{color:#eaf3f8}
 .site-footer{background:#0f2537;color:#dbe7ef;margin-top:0;padding:36px 0 0}.site-footer h3{color:#fff}.site-footer a{color:#a9dbff}.site-footer li a,.site-footer p a{display:inline-block;padding:11px 0}
 .footer-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
 @media(max-width:820px){.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -1432,6 +1441,22 @@ TOPUP = {
     'east-plano': ('suburban-home-7587470.webp', 'Brick house with garden and driveway'),
     'legacy-west': ('suburban-home-32711440.webp', 'Brick house with large windows'),
 }
+
+REMOVE_HOME_IMGS = {'burst-pipe-36571568.webp', 'drying-equipment-16243255.webp'}
+
+
+def _nobr_h2_in_content(content):
+    """Task 9: keep ZIP-list parentheticals together inside H2s so area
+    headings never break mid-list (e.g. after '75075,'). Only pure
+    digit/comma/space groups match, so the pattern can never span a tag
+    or split a link; H2 words are untouched."""
+    def _wrap(m):
+        inner = re.sub(r'\(\d{5}(?:, \d{5})*\)',
+                       lambda mm: f'<span class="nobr">{mm.group(0)}</span>',
+                       m.group(1))
+        return f'<h2>{inner}</h2>'
+    return re.sub(r'<h2>(.*?)</h2>', _wrap, content, flags=re.S)
+
 
 def write_page(p, hero_by_slug, by_slug, body_by_slug=None, linker=None):
     tab = p['tab']; slug = tab['slug']
@@ -1601,11 +1626,16 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None, linker=None):
             # section over the 800-char sticky threshold.
             _inner_no_tables = re.sub(r'<table.*?</table>', '', inner, flags=re.S)
             _text_len = len(re.sub(r'<[^>]+>', '', _inner_no_tables).strip())
-            if _text_len >= 800 and out_sections and out_sections[-1].startswith('<section'):
-                out_sections[-1] = f'<section className="block reveal split-sticky-sec"><div className="wrap"><div className="sticky-text">{inner}</div><figure className="split-sticky-fig">{img_tag(im["file"], alt_text(im["alt"]), "sticky")}<figcaption>{_cap_html}</figcaption></figure></div></section>'
+            # USER-ORDERED (home only): drop two oversized split figures
+            # (burst-pipe-36571568, drying-equipment-16243255); the text,
+            # headings and links around them stay untouched.
+            if slug == '' and im['file'] in REMOVE_HOME_IMGS:
+                pass
+            elif _text_len >= 800 and out_sections and out_sections[-1].startswith('<section'):
+                out_sections[-1] = f'<section className="block reveal split-sticky-sec"><div className="wrap"><div className="sticky-text">{inner}</div><figure className="split-sticky-fig">{img_tag(im["file"], alt_text(im["alt"]), "sticky")}</figure></div></section>'
                 out_sections.append('<div className="wrap" aria-hidden="true" hidden></div>')
             else:
-                out_sections.append(f'<div className="wrap"><figure className="split{rev}">{img_tag(im["file"], alt_text(im["alt"]), "split")}<figcaption>{_cap_html}</figcaption></figure></div>')
+                out_sections.append(f'<div className="wrap"><figure className="split{rev}">{img_tag(im["file"], alt_text(im["alt"]), "split")}</figure></div>')
         # homepage cards — exclude the page's own hero + splits so no card
         # repeats a photo already on the home page (Round 2 systemic).
         _page_files = ({hero['file']} if hero else set()) | {i['file'] for i in body_imgs}
@@ -1630,7 +1660,8 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None, linker=None):
         im = body_imgs[split_idx]
         cap = SPLIT_CAPTION.get((slug, split_idx), alt_text(im['alt']))
         split_idx += 1
-        out_sections.append(f'<div className="wrap"><figure className="split">{img_tag(im["file"], alt_text(im["alt"]), "split")}<figcaption>{esc(cap) if (slug, split_idx - 1) in SPLIT_CAPTION else cap}</figcaption></figure></div>')
+        if not (slug == '' and im['file'] in REMOVE_HOME_IMGS):
+            out_sections.append(f'<div className="wrap"><figure className="split">{img_tag(im["file"], alt_text(im["alt"]), "split")}</figure></div>')
     # top-up figure: pages below 5 content images (hero + splits) get one
     # genuinely relevant figure, viewed-pixel verified, never a wrong-topic
     # filler. 8 pages have no fitting unused file and stay honestly at 4
@@ -1639,7 +1670,7 @@ def write_page(p, hero_by_slug, by_slug, body_by_slug=None, linker=None):
     _top = TOPUP.get(slug)
     if _top:
         _tf, _tcap = _top
-        out_sections.append(f'<div className="wrap"><figure className="topup-figure">{img_tag(_tf, _tcap, "split")}<figcaption>{esc(_tcap)}</figcaption></figure></div>')
+        out_sections.append(f'<div className="wrap"><figure className="topup-figure">{img_tag(_tf, _tcap, "split")}</figure></div>')
     # related cards before FAQ (non-home)
     if slug != '':
         rel = []
@@ -1759,6 +1790,21 @@ export default function Page() {{
   </>);
 }}
 '''
+    content = _nobr_h2_in_content(content)
+    if slug == '':
+        # USER-ORDERED HOME DELETIONS (permanent exceptions — see
+        # doc_fix_log.txt; the doc itself is untouched). Each must
+        # match exactly once, or the build fails loudly.
+        _home_strips = [
+            (r'Your insurance adjuster will ask for exactly this\. Done\? Call <a href="tel:\+19724727917">\(972\) 472-7917</a>\. The extraction truck can be rolling while you read the rest of this page\.', '', 'insurance sentence'),
+            (r'<strong>No star ratings here\.</strong> ?', '', 'no-star-ratings phrase'),
+            ('The cheapest water damage', 'The water damage', 'cheapest word'),
+        ]
+        for _pat, _rep, _name in _home_strips:
+            content, _n = re.subn(_pat, _rep, content)
+            print(f'HOME-STRIP {_name}: replaced {_n} (expected 1)')
+            if _n != 1:
+                raise RuntimeError(f'HOME-STRIP {_name}: expected 1 replacement, got {_n}')
     path = page_path(slug)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     open(path, 'w').write(content)
@@ -1809,6 +1855,7 @@ export default function Page() {{
   </>);
 }}
 '''
+    content = _nobr_h2_in_content(content)
     path = os.path.join(APP, slug, 'page.jsx')
     os.makedirs(os.path.dirname(path), exist_ok=True)
     open(path, 'w').write(content)

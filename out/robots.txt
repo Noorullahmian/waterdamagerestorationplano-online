@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://waterdamagerestorationplano.online/sitemap.xml

@@ -98,3 +98,8 @@ water-damage-insurance-texas | heading='how texas policies typically treat commo
 about | heading='the equipment behind the work' prev=heading:'the equipment behind the work' -> section 10 start (parent-start-fallback)
 contact | heading='how to reach us' prev=heading:'how to reach us' -> section 2 start (parent-start-fallback)
 contact | heading='areas we cover' prev=heading:'areas we cover' -> section 8 start (heading-section-start)
+EXCEPTION (user order, home only): sentence removed: 'Your insurance adjuster will ask for exactly this. Done? Call (972) 472-7917. The extraction truck can be rolling while you read the rest of this page.'
+EXCEPTION (user order, home only): phrase removed: 'No star ratings here.' (bold lead-in; rest of paragraph kept)
+EXCEPTION (user order, home only): word removed: 'cheapest' in 'The cheapest water damage is the one you call about in the first hour.' -> 'The water damage is the one you call about in the first hour.'
+EXCEPTION (user order, home only): figures removed: burst-pipe-36571568.webp + drying-equipment-16243255.webp (oversized home split figures; surrounding text/headings/links kept)
+HOLD (user decision): 'free' technical terms kept exactly: 'frost-free' (burst-pipe-cleanup), 'free water' (emergency-water-damage, water-extraction x2)

@@ -1,0 +1,907 @@
+[
+ {
+  "slug": "",
+  "title": "Homepage Copy \u2013 Water Damage Restoration Plano TX",
+  "h1": "24/7 Water Damage Restoration in Plano, TX: Fast Water Extraction & Structural Drying",
+  "sections": 31,
+  "faqs": 8,
+  "hero": "suburban-home-186077.webp",
+  "body_imgs": [
+   "suburban-home-31602311.webp",
+   "burst-pipe-36571568.webp",
+   "drying-equipment-16243255.webp"
+  ],
+  "body_targets": [
+   "shut-off-valve",
+   "sagging-ceiling",
+   "emergency-water-damage",
+   "water-extraction",
+   "structural-drying",
+   "burst-pipe-cleanup",
+   "slab-leak",
+   "water-heater-leak",
+   "ac-overflow",
+   "ceiling-leak",
+   "flood-cleanup",
+   "sewage-cleanup",
+   "hardwood-floor-drying",
+   "commercial-water-damage",
+   "east-plano",
+   "central-plano",
+   "north-plano",
+   "west-plano",
+   "legacy-west",
+   "fans-wont-dry-walls",
+   "wall-drying"
+  ]
+ },
+ {
+  "slug": "emergency-water-damage",
+  "title": "Emergency Water Damage Cleanup",
+  "h1": "24/7 Emergency Water Damage Cleanup in Plano, TX",
+  "sections": 15,
+  "faqs": 6,
+  "hero": "burst-pipe-15206136.webp",
+  "body_imgs": [
+   "texas-home-8278494.webp",
+   "plumber-work-6419128.webp",
+   "ceiling-stain-8624464.webp"
+  ],
+  "body_targets": [
+   "shut-off-valve",
+   "water-extraction",
+   "structural-drying",
+   "water-heater-leak",
+   "burst-pipe-cleanup",
+   "ac-overflow",
+   "sewage-cleanup",
+   "flood-cleanup",
+   "east-plano",
+   "central-plano",
+   "north-plano",
+   "west-plano",
+   "legacy-west",
+   ""
+  ]
+ },
+ {
+  "slug": "water-extraction",
+  "title": "Standing Water Extraction",
+  "h1": "Standing Water Extraction & Emergency Water Removal in Plano, TX",
+  "sections": 9,
+  "faqs": 6,
+  "hero": "water-extraction-6195949.webp",
+  "body_imgs": [
+   "flooded-floor-7924140.webp",
+   "sewage-drain-3964564.webp",
+   "moisture-meter-8961703.webp"
+  ],
+  "body_targets": [
+   "hardwood-floor-drying",
+   "structural-drying",
+   "allen",
+   "frisco",
+   "richardson",
+   ""
+  ]
+ },
+ {
+  "slug": "structural-drying",
+  "title": "Structural Drying",
+  "h1": "Structural Drying & Commercial Dehumidification in Plano, TX",
+  "sections": 9,
+  "faqs": 6,
+  "hero": "moisture-meter-8293640.webp",
+  "body_imgs": [
+   "drying-equipment-16243255.webp",
+   "drying-fan-28726413.webp",
+   "moisture-meter-8961703.webp"
+  ],
+  "body_targets": [
+   "hardwood-floor-drying",
+   "wall-drying",
+   "legacy-west",
+   "north-plano",
+   "slab-leak",
+   ""
+  ]
+ },
+ {
+  "slug": "burst-pipe-cleanup",
+  "title": "Burst & Frozen Pipe Cleanup",
+  "h1": "Burst & Frozen Pipe Water Damage Cleanup in Plano, TX",
+  "sections": 10,
+  "faqs": 6,
+  "hero": "burst-pipe-4406597.webp",
+  "body_imgs": [
+   "ceiling-stain-8624464.webp",
+   "plumber-work-6419128.webp",
+   "plumber-work-35290675.webp"
+  ],
+  "body_targets": [
+   "shut-off-valve",
+   "slab-leak",
+   "ceiling-leak",
+   "water-extraction",
+   "wall-drying",
+   "structural-drying",
+   "mckinney",
+   "emergency-water-damage",
+   ""
+  ]
+ },
+ {
+  "slug": "sewage-cleanup",
+  "title": "Sewage Backup Cleanup",
+  "h1": "Sewage Backup Cleanup & Category 3 Sanitizing in Plano, TX",
+  "sections": 9,
+  "faqs": 6,
+  "hero": "sewage-drain-15242228.webp",
+  "body_imgs": [
+   "sewage-drain-29608837.webp",
+   "sewage-drain-13961561.webp",
+   "sewage-drain-3964564.webp"
+  ],
+  "body_targets": [
+   "east-plano",
+   "central-plano",
+   "flood-cleanup",
+   "structural-drying",
+   ""
+  ]
+ },
+ {
+  "slug": "slab-leak",
+  "title": "Slab Leak Water Damage",
+  "h1": "Slab Leak Water Damage Cleanup & Under-Floor Drying in Plano, TX",
+  "sections": 10,
+  "faqs": 6,
+  "hero": "slab-leak-21366138.webp",
+  "body_imgs": [
+   "burst-pipe-11658940.webp",
+   "hardwood-floor-3935327.webp",
+   "mold-wall-9127236.webp"
+  ],
+  "body_targets": [
+   "shut-off-valve",
+   "hardwood-floor-drying",
+   "wall-drying",
+   "structural-drying",
+   ""
+  ]
+ },
+ {
+  "slug": "water-heater-leak",
+  "title": "Water Heater Leak Cleanup",
+  "h1": "Attic & Garage Water Heater Leak Cleanup in Plano, TX",
+  "sections": 11,
+  "faqs": 6,
+  "hero": "water-heater-34593293.webp",
+  "body_imgs": [
+   "plumber-work-6419128.webp",
+   "attic-insulation-9043415.webp",
+   "ceiling-stain-3708564.webp"
+  ],
+  "body_targets": [
+   "ceiling-leak",
+   "water-extraction",
+   "structural-drying",
+   ""
+  ]
+ },
+ {
+  "slug": "ceiling-leak",
+  "title": "Ceiling & Roof Leak Water Damage",
+  "h1": "Roof Leak & Ceiling Water Damage Cleanup in Plano, TX",
+  "sections": 10,
+  "faqs": 6,
+  "hero": "ceiling-stain-3708564.webp",
+  "body_imgs": [
+   "ceiling-stain-14032089.webp",
+   "attic-insulation-6124239.webp",
+   "attic-insulation-4482829.webp"
+  ],
+  "body_targets": [
+   "ac-overflow",
+   "water-heater-leak",
+   "structural-drying",
+   "wall-drying",
+   "central-plano",
+   "legacy-west",
+   "north-plano",
+   "west-plano",
+   ""
+  ]
+ },
+ {
+  "slug": "flood-cleanup",
+  "title": "Flood & Storm Water Cleanup",
+  "h1": "Flood & Storm Water Damage Cleanup in Plano, TX",
+  "sections": 10,
+  "faqs": 6,
+  "hero": "flooded-suburban-home-28447764.webp",
+  "body_imgs": [
+   "burst-pipe-18274115.webp",
+   "storm-flood-11537987.webp",
+   "sewage-drain-3964564.webp"
+  ],
+  "body_targets": [
+   "water-extraction",
+   "structural-drying",
+   ""
+  ]
+ },
+ {
+  "slug": "commercial-water-damage",
+  "title": "Commercial Water Damage Restoration",
+  "h1": "Commercial Water Damage Restoration & Large-Loss Drying in Plano, TX",
+  "sections": 11,
+  "faqs": 6,
+  "hero": "drying-equipment-16243255.webp",
+  "body_imgs": [
+   "commercial-office-36631701.webp",
+   "steel-studs-35496414.webp",
+   "ceiling-stain-3708564.webp"
+  ],
+  "body_targets": [
+   "water-extraction",
+   "structural-drying",
+   "legacy-west",
+   "west-plano",
+   "east-plano",
+   ""
+  ]
+ },
+ {
+  "slug": "hardwood-floor-drying",
+  "title": "Hardwood Floor Water Drying",
+  "h1": "Hardwood Floor Water Damage Drying in Plano, TX: Save Your Floors in Place",
+  "sections": 10,
+  "faqs": 6,
+  "hero": "hardwood-floor-3935327.webp",
+  "body_imgs": [
+   "mold-wall-9127236.webp",
+   "drying-equipment-16243255.webp",
+   "flooded-floor-7924140.webp"
+  ],
+  "body_targets": [
+   "structural-drying",
+   "west-plano",
+   "cabinet-drying",
+   "slab-leak",
+   "laundry-overflow",
+   ""
+  ]
+ },
+ {
+  "slug": "ac-overflow",
+  "title": "AC Condensate Overflow Cleanup",
+  "h1": "AC Condensate & Attic Drain Pan Overflow Cleanup in Plano, TX",
+  "sections": 10,
+  "faqs": 6,
+  "hero": "drying-fan-28726413.webp",
+  "body_imgs": [
+   "ceiling-stain-14032089.webp",
+   "attic-insulation-271743.webp",
+   "sewage-drain-3964564.webp"
+  ],
+  "body_targets": [
+   "ceiling-leak",
+   "wall-drying",
+   ""
+  ]
+ },
+ {
+  "slug": "cabinet-drying",
+  "title": "Kitchen Cabinet Water Drying",
+  "h1": "Kitchen Cabinet, Island & Toe-Kick Water Drying in Plano, TX",
+  "sections": 12,
+  "faqs": 6,
+  "hero": "cabinet-kitchen-7535073.webp",
+  "body_imgs": [
+   "kitchen-leak-34295401.webp",
+   "kitchen-leak-10961064.webp",
+   "cabinet-kitchen-2398375.webp"
+  ],
+  "body_targets": [
+   "shut-off-valve",
+   "wall-drying",
+   "hardwood-floor-drying",
+   ""
+  ]
+ },
+ {
+  "slug": "laundry-overflow",
+  "title": "Upstairs Laundry Overflow Cleanup",
+  "h1": "Second-Floor Laundry & Washing Machine Overflow Cleanup in Plano, TX",
+  "sections": 9,
+  "faqs": 6,
+  "hero": "laundry-room-19846385.webp",
+  "body_imgs": [
+   "laundry-room-7282378.webp",
+   "sewage-drain-3964564.webp",
+   "ceiling-stain-3708564.webp"
+  ],
+  "body_targets": [
+   "shut-off-valve",
+   "water-extraction",
+   "structural-drying",
+   "wall-drying",
+   "hardwood-floor-drying",
+   ""
+  ]
+ },
+ {
+  "slug": "crawl-space-drying",
+  "title": "Crawl Space & Pier-and-Beam Drying",
+  "h1": "Pier-and-Beam & Crawl Space Water Removal and Drying in Plano, TX",
+  "sections": 10,
+  "faqs": 6,
+  "hero": "crawl-space-4092026.webp",
+  "body_imgs": [
+   "plumber-work-6419128.webp",
+   "crawl-space-40440109.webp",
+   "sewage-drain-13961561.webp"
+  ],
+  "body_targets": [
+   "shut-off-valve",
+   "east-plano",
+   "murphy",
+   "burst-pipe-cleanup",
+   "sewage-cleanup",
+   "flood-cleanup",
+   "hardwood-floor-drying",
+   ""
+  ]
+ },
+ {
+  "slug": "appliance-leak",
+  "title": "Appliance & Ice Maker Leak Cleanup",
+  "h1": "Refrigerator, Ice Maker & Dishwasher Leak Cleanup in Plano, TX",
+  "sections": 9,
+  "faqs": 6,
+  "hero": "appliance-fridge-3958962.webp",
+  "body_imgs": [
+   "appliance-fridge-4469164.webp",
+   "kitchen-leak-10961064.webp",
+   "kitchen-leak-34295401.webp"
+  ],
+  "body_targets": [
+   ""
+  ]
+ },
+ {
+  "slug": "fire-sprinkler-cleanup",
+  "title": "Fire Sprinkler Water Cleanup",
+  "h1": "Fire Sprinkler Water Damage Cleanup for Plano Offices, Apartments & Homes",
+  "sections": 7,
+  "faqs": 6,
+  "hero": "flooded-floor-7924140.webp",
+  "body_imgs": [
+   "drying-equipment-16243255.webp",
+   "fire-sprinkler-36631700.webp",
+   "ceiling-stain-3708564.webp"
+  ],
+  "body_targets": [
+   "water-extraction",
+   "structural-drying",
+   "wall-drying",
+   "commercial-water-damage",
+   "legacy-west",
+   ""
+  ]
+ },
+ {
+  "slug": "moisture-mapping",
+  "title": "Thermal Imaging & Moisture Mapping",
+  "h1": "Infrared Thermal Imaging & Hidden Moisture Mapping in Plano, TX",
+  "sections": 7,
+  "faqs": 6,
+  "hero": "thermal-imaging-7859781.webp",
+  "body_imgs": [
+   "moisture-meter-8293640.webp",
+   "ceiling-stain-8624464.webp",
+   "ceiling-stain-14032089.webp"
+  ],
+  "body_targets": [
+   "slab-leak",
+   ""
+  ]
+ },
+ {
+  "slug": "attic-insulation-drying",
+  "title": "Wet Attic Insulation Removal",
+  "h1": "Wet Attic Insulation Removal & Attic Drying in Plano, TX",
+  "sections": 11,
+  "faqs": 6,
+  "hero": "attic-insulation-6124239.webp",
+  "body_imgs": [
+   "attic-insulation-271743.webp",
+   "crawl-space-4092030.webp",
+   "attic-insulation-4482829.webp"
+  ],
+  "body_targets": [
+   "water-heater-leak",
+   "ceiling-leak",
+   "ac-overflow",
+   "burst-pipe-cleanup",
+   ""
+  ]
+ },
+ {
+  "slug": "wall-drying",
+  "title": "Wall Cavity Drying & Flood Cuts",
+  "h1": "Wall Cavity Drying, Baseboard Removal & Flood Cuts in Plano, TX",
+  "sections": 12,
+  "faqs": 6,
+  "hero": "flood-cut-wall-8488031.webp",
+  "body_imgs": [
+   "thermal-imaging-7859781.webp",
+   "moisture-meter-8961703.webp",
+   "hardwood-floor-3935327.webp"
+  ],
+  "body_targets": [
+   "structural-drying",
+   "slab-leak",
+   "burst-pipe-cleanup",
+   "laundry-overflow",
+   "appliance-leak",
+   ""
+  ]
+ },
+ {
+  "slug": "west-plano",
+  "title": "West Plano (75093) Area Page",
+  "h1": "24/7 Water Damage Restoration in West Plano & Willow Bend, TX (75093)",
+  "sections": 17,
+  "faqs": 9,
+  "hero": "suburban-home-3990589.webp",
+  "body_imgs": [
+   "suburban-home-31602311.webp",
+   "luxury-interior-36906952.webp",
+   "greenbelt-home-12445995.webp"
+  ],
+  "body_targets": [
+   "ac-overflow",
+   "water-heater-leak",
+   "flood-cleanup",
+   "hardwood-floor-drying",
+   "appliance-leak",
+   "slab-leak",
+   "commercial-water-damage",
+   "laundry-overflow",
+   ""
+  ]
+ },
+ {
+  "slug": "legacy-west",
+  "title": "Legacy West (75024) Area Page",
+  "h1": "24/7 Water Damage Restoration in Legacy West, Deerfield & Kings Ridge, Plano (75024)",
+  "sections": 16,
+  "faqs": 9,
+  "hero": "texas-home-8278493.webp",
+  "body_imgs": [
+   "suburban-home-3990589.webp",
+   "texas-home-23930020.webp",
+   "texas-home-8278494.webp"
+  ],
+  "body_targets": [
+   "laundry-overflow",
+   "water-heater-leak",
+   "slab-leak",
+   "flood-cleanup",
+   "ac-overflow",
+   "hardwood-floor-drying",
+   "cabinet-drying",
+   "wall-drying",
+   ""
+  ]
+ },
+ {
+  "slug": "north-plano",
+  "title": "North Plano (75025) Area Page",
+  "h1": "24/7 Water Damage Restoration in North Plano, Whiffletree & Russell Creek (75025)",
+  "sections": 16,
+  "faqs": 9,
+  "hero": "suburban-home-26595553.webp",
+  "body_imgs": [
+   "suburban-home-15303808.webp",
+   "copper-pipes-3721272.webp",
+   "greenbelt-home-12445995.webp"
+  ],
+  "body_targets": [
+   "slab-leak",
+   "water-heater-leak",
+   "flood-cleanup",
+   "ac-overflow",
+   "wall-drying",
+   "appliance-leak",
+   ""
+  ]
+ },
+ {
+  "slug": "central-plano",
+  "title": "Central Plano (75023 & 75075) Area Page",
+  "h1": "24/7 Water Damage Restoration in Central Plano, Hunters Glen & Park Forest (75023 & 75075)",
+  "sections": 17,
+  "faqs": 9,
+  "hero": "texas-home-8278494.webp",
+  "body_imgs": [
+   "suburban-home-31602311.webp",
+   "copper-pipes-3721272.webp",
+   "suburban-home-186077.webp"
+  ],
+  "body_targets": [
+   "sewage-cleanup",
+   "slab-leak",
+   "flood-cleanup",
+   "burst-pipe-cleanup",
+   "ceiling-leak",
+   ""
+  ]
+ },
+ {
+  "slug": "east-plano",
+  "title": "East Plano (75074) Area Page",
+  "h1": "24/7 Water Damage Restoration in East Plano, Downtown & Los Rios (75074)",
+  "sections": 17,
+  "faqs": 9,
+  "hero": "brick-ranch-8031875.webp",
+  "body_imgs": [
+   "suburban-home-186077.webp",
+   "pier-beam-home-26261510.webp",
+   "sewage-drain-29608837.webp"
+  ],
+  "body_targets": [
+   "flood-cleanup",
+   "sewage-cleanup",
+   ""
+  ]
+ },
+ {
+  "slug": "frisco",
+  "title": "Frisco, TX City Page",
+  "h1": "24/7 Water Damage Restoration in Frisco, TX",
+  "sections": 16,
+  "faqs": 9,
+  "hero": "texas-home-8278494.webp",
+  "body_imgs": [
+   "suburban-home-186077.webp",
+   "texas-home-23930020.webp",
+   "flooded-floor-7924140.webp"
+  ],
+  "body_targets": [
+   "slab-leak",
+   "water-heater-leak",
+   "ac-overflow",
+   "flood-cleanup",
+   "hardwood-floor-drying",
+   "cabinet-drying",
+   "structural-drying",
+   "appliance-leak",
+   "laundry-overflow"
+  ]
+ },
+ {
+  "slug": "allen",
+  "title": "Allen, TX City Page",
+  "h1": "24/7 Water Damage Restoration in Allen, TX",
+  "sections": 16,
+  "faqs": 9,
+  "hero": "suburban-home-18280830.webp",
+  "body_imgs": [
+   "suburban-home-26595553.webp",
+   "suburban-home-3990589.webp",
+   "attic-insulation-271743.webp"
+  ],
+  "body_targets": [
+   "slab-leak",
+   "flood-cleanup",
+   "ac-overflow",
+   "hardwood-floor-drying",
+   "cabinet-drying",
+   "appliance-leak"
+  ]
+ },
+ {
+  "slug": "mckinney",
+  "title": "McKinney, TX City Page",
+  "h1": "24/7 Water Damage Restoration in McKinney, TX",
+  "sections": 17,
+  "faqs": 9,
+  "hero": "brick-ranch-8031875.webp",
+  "body_imgs": [
+   "suburban-home-7587470.webp",
+   "texas-home-33404353.webp",
+   "suburban-home-186077.webp"
+  ],
+  "body_targets": [
+   "slab-leak",
+   "flood-cleanup",
+   "hardwood-floor-drying",
+   "laundry-overflow",
+   "structural-drying"
+  ]
+ },
+ {
+  "slug": "richardson",
+  "title": "Richardson, TX City Page",
+  "h1": "24/7 Water Damage Restoration in Richardson, TX",
+  "sections": 16,
+  "faqs": 9,
+  "hero": "suburban-home-3990589.webp",
+  "body_imgs": [
+   "suburban-home-186077.webp",
+   "suburban-home-30707539.webp",
+   "copper-pipes-3721272.webp"
+  ],
+  "body_targets": [
+   "sewage-cleanup",
+   "slab-leak",
+   "burst-pipe-cleanup",
+   "flood-cleanup"
+  ]
+ },
+ {
+  "slug": "murphy",
+  "title": "Murphy, Parker & Wylie City Page",
+  "h1": "24/7 Water Damage Restoration in Murphy, Parker & Wylie, TX",
+  "sections": 17,
+  "faqs": 9,
+  "hero": "suburban-home-15303808.webp",
+  "body_imgs": [
+   "suburban-home-32711440.webp",
+   "texas-home-23928963.webp",
+   "flooded-floor-7924140.webp"
+  ],
+  "body_targets": [
+   "slab-leak",
+   "ac-overflow",
+   "water-heater-leak",
+   "flood-cleanup",
+   "hardwood-floor-drying",
+   "structural-drying",
+   "laundry-overflow"
+  ]
+ },
+ {
+  "slug": "shut-off-valve",
+  "title": "Guide: Main Water Shut-Off Valve",
+  "h1": "Where Is the Main Water Shut-Off Valve in a Plano, TX House?",
+  "sections": 9,
+  "faqs": 6,
+  "hero": "water-shutoff-4494656.webp",
+  "body_imgs": [
+   "burst-pipe-15206136.webp",
+   "kitchen-leak-10961064.webp",
+   "thermal-imaging-7859781.webp"
+  ],
+  "body_targets": [
+   "emergency-water-damage",
+   "water-heater-leak",
+   "warm-spot-on-floor",
+   "appliance-leak",
+   "water-extraction",
+   ""
+  ]
+ },
+ {
+  "slug": "warm-spot-on-floor",
+  "title": "Guide: Warm Spot on Floor",
+  "h1": "Why Is There a Warm Spot on My Floor in Plano, TX? (Slab Leak Test & Drying Guide)",
+  "sections": 9,
+  "faqs": 6,
+  "hero": "warm-floor-thermal-5853823.webp",
+  "body_imgs": [
+   "burst-pipe-15206136.webp",
+   "burst-pipe-36571568.webp",
+   "suburban-home-3990589.webp"
+  ],
+  "body_targets": [
+   "slab-leak",
+   "hardwood-floor-drying",
+   "mold-after-water-damage",
+   ""
+  ]
+ },
+ {
+  "slug": "ceiling-dripping",
+  "title": "Guide: Ceiling Dripping",
+  "h1": "Water Dripping From the Ceiling in Plano? Find the Source in 3 Minutes",
+  "sections": 6,
+  "faqs": 6,
+  "hero": "ceiling-stain-lived-in-8624466.webp",
+  "body_imgs": [
+   "ceiling-stain-14032089.webp",
+   "ceiling-stain-3708564.webp",
+   "attic-insulation-4482829.webp"
+  ],
+  "body_targets": [
+   "ceiling-leak"
+  ]
+ },
+ {
+  "slug": "water-damage-cost",
+  "title": "Guide: Water Damage Cost",
+  "h1": "How Much Does Water Damage Restoration Cost in Plano, TX?",
+  "sections": 6,
+  "faqs": 6,
+  "hero": "suburban-home-26595553.webp",
+  "body_imgs": [
+   "suburban-home-31602311.webp",
+   "insurance-claim-7731397.webp",
+   "plumber-work-6419128.webp"
+  ],
+  "body_targets": [
+   "",
+   "structural-drying",
+   "mold-after-water-damage",
+   "water-damage-insurance-texas",
+   "shut-off-valve"
+  ]
+ },
+ {
+  "slug": "fans-wont-dry-walls",
+  "title": "Guide: Fans Won't Dry Walls",
+  "h1": "Can Household Fans and a Shop-Vac Dry Wet Carpet and Drywall in Plano?",
+  "sections": 9,
+  "faqs": 6,
+  "hero": "mold-wall-4597285.webp",
+  "body_imgs": [
+   "moisture-meter-7937963.webp",
+   "thermal-imaging-7859781.webp",
+   "mold-wall-29701042.webp"
+  ],
+  "body_targets": [
+   "structural-drying",
+   "wall-drying",
+   "mold-after-water-damage",
+   "water-extraction",
+   ""
+  ]
+ },
+ {
+  "slug": "storm-water-category-3",
+  "title": "Guide: Storm Water Is Category 3",
+  "h1": "Storm Water in Your Plano Home: Why Outside Water Is Category 3 Black Water",
+  "sections": 9,
+  "faqs": 6,
+  "hero": "flooded-suburban-home-28447764.webp",
+  "body_imgs": [
+   "flooded-floor-7924140.webp",
+   "creek-overflow-32159924.webp",
+   "suburban-home-186077.webp"
+  ],
+  "body_targets": [
+   "flood-cleanup",
+   "sewage-cleanup",
+   "structural-drying",
+   "water-damage-insurance-texas",
+   ""
+  ]
+ },
+ {
+  "slug": "mold-after-water-damage",
+  "title": "Guide: The Mold Clock",
+  "h1": "The 24 to 48 Hour Mold Clock: How Fast Mold Grows After Water Damage in Plano",
+  "sections": 10,
+  "faqs": 6,
+  "hero": "indoor-mold-18063447.webp",
+  "body_imgs": [
+   "mold-wall-18351809.webp",
+   "cabinet-kitchen-8146322.webp",
+   "drying-equipment-16243255.webp"
+  ],
+  "body_targets": [
+   "structural-drying",
+   "shut-off-valve",
+   "water-extraction",
+   ""
+  ]
+ },
+ {
+  "slug": "copper-pinhole-leaks",
+  "title": "Guide: Copper Pinhole Leaks",
+  "h1": "Why Plano Homes Get Copper Pinhole Leaks and Slab Leaks",
+  "sections": 7,
+  "faqs": 6,
+  "hero": "burst-pipe-36571568.webp",
+  "body_imgs": [
+   "burst-pipe-4406597.webp",
+   "suburban-home-3990589.webp",
+   "plumber-work-6419128.webp"
+  ],
+  "body_targets": [
+   "slab-leak",
+   "burst-pipe-cleanup",
+   ""
+  ]
+ },
+ {
+  "slug": "sagging-ceiling",
+  "title": "Guide: Sagging Ceiling",
+  "h1": "Ceiling Bubbling or Sagging From Water? 6 Safety Steps Before It Collapses",
+  "sections": 6,
+  "faqs": 6,
+  "hero": "sagging-ceiling-30499666.webp",
+  "body_imgs": [
+   "ceiling-stain-8624464.webp",
+   "suburban-home-30707539.webp",
+   "ceiling-crew-8293648.webp"
+  ],
+  "body_targets": [
+   "ceiling-leak",
+   "shut-off-valve",
+   ""
+  ]
+ },
+ {
+  "slug": "water-damage-insurance-texas",
+  "title": "Guide: Sudden vs. Gradual Water Damage",
+  "h1": "Sudden vs. Gradual Water Damage in Texas: How to Protect Your Plano Insurance Claim",
+  "sections": 7,
+  "faqs": 6,
+  "hero": "insurance-claim-7731397.webp",
+  "body_imgs": [
+   "moisture-meter-8293640.webp",
+   "plumber-work-6419128.webp",
+   "commercial-office-13068366.webp"
+  ],
+  "body_targets": [
+   "mold-after-water-damage",
+   ""
+  ]
+ },
+ {
+  "slug": "about",
+  "title": "About Us",
+  "h1": "About Water Damage Restoration Plano: Local Crews, Measured Drying, Straight Answers",
+  "sections": 15,
+  "faqs": 6,
+  "hero": "plumber-work-6419128.webp",
+  "body_imgs": [
+   "plumber-work-35290675.webp",
+   "suburban-home-3990589.webp",
+   "mold-wall-9127236.webp"
+  ],
+  "body_targets": [
+   "structural-drying",
+   "water-extraction",
+   "frisco",
+   "allen",
+   "mckinney",
+   "richardson",
+   "murphy",
+   "emergency-water-damage",
+   "slab-leak",
+   "burst-pipe-cleanup",
+   "ac-overflow",
+   "flood-cleanup",
+   "wall-drying",
+   ""
+  ]
+ },
+ {
+  "slug": "contact",
+  "title": "Contact Us",
+  "h1": "Contact Water Damage Restoration Plano: 24/7 Help at (972) 472-7917",
+  "sections": 10,
+  "faqs": 6,
+  "hero": "burst-pipe-2339722.webp",
+  "body_imgs": [
+   "plumber-work-35290675.webp",
+   "suburban-home-26595553.webp",
+   "plumber-work-6419128.webp"
+  ],
+  "body_targets": [
+   "shut-off-valve",
+   "sagging-ceiling",
+   "emergency-water-damage",
+   "water-extraction",
+   "structural-drying",
+   "ac-overflow",
+   "about",
+   ""
+  ]
+ }
+]
