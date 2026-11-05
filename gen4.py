@@ -225,6 +225,7 @@ BANNED = {
     'drying-equipment-34585118.webp', 'crawl-space-17181949.webp',
     'water-heater-11211127.webp', 'water-heater-17854867.webp',
     'drying-fan-37080286.webp', 'burst-pipe-4406597.webp',  # PURGE 2026-11-05: rejected muddy outdoor pipe, was burst hero + copper split + water-extraction split
+    'sagging-ceiling-30499666.webp',  # BAN 2026-11-05: destroyed/ruined-ceiling gallery shot (collapsed panels, insulation exposed), was sagging-ceiling hero + guides/contact card; replaced by sagging-ceiling-water-stain-plano-8624465.webp
     # COMBINED ROUND 2026-11-05: retire files whose every usage is covered by a new override
     'burst-pipe-18274115.webp', 'drying-fan-37634966.webp', 'commercial-office-13068366.webp',
     'texas-home-33404353.webp', 'sewage-drain-29608837.webp', 'sewage-drain-3964564.webp',

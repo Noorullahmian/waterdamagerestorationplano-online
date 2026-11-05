@@ -1249,13 +1249,36 @@
    "h1_count": 1,
    "h1_match": true,
    "miss": [
-    "answer"
+    "actually",
+    "answer",
+    "come",
+    "coming",
+    "connects",
+    "deserve",
+    "door",
+    "equipped",
+    "from",
+    "goal",
+    "goes",
+    "independent",
+    "information",
+    "my",
+    "process",
+    "referral",
+    "request",
+    "right",
+    "serving",
+    "simple",
+    "upfront",
+    "we're",
+    "who's",
+    "working"
    ],
    "meta_ok": true,
-   "faq_vis": 6,
+   "faq_vis": 5,
    "faq_doc": 6,
    "faq_match": true,
-   "faq_doc_match": true,
+   "faq_doc_match": false,
    "links_doc": 31,
    "links_ren": 31,
    "links_missing": [],
@@ -1279,7 +1302,13 @@
    "h1_count": 1,
    "h1_match": true,
    "miss": [
-    "answer"
+    "answer",
+    "central-plano",
+    "east-plano",
+    "legacy-west",
+    "north-plano",
+    "page",
+    "west-plano"
    ],
    "meta_ok": true,
    "faq_vis": 7,
@@ -1288,14 +1317,136 @@
    "faq_doc_match": true,
    "links_doc": 32,
    "links_ren": 32,
-   "links_missing": [],
-   "links_extra": [],
+   "links_missing": [
+    [
+     "/west-plano/",
+     [
+      "west-plano"
+     ]
+    ],
+    [
+     "/legacy-west/",
+     [
+      "legacy-west"
+     ]
+    ],
+    [
+     "/north-plano/",
+     [
+      "north-plano"
+     ]
+    ],
+    [
+     "/central-plano/",
+     [
+      "central-plano"
+     ]
+    ],
+    [
+     "/east-plano/",
+     [
+      "east-plano"
+     ]
+    ],
+    [
+     "/frisco/",
+     [
+      "frisco"
+     ]
+    ],
+    [
+     "/allen/",
+     [
+      "allen"
+     ]
+    ],
+    [
+     "/mckinney/",
+     [
+      "mckinney"
+     ]
+    ],
+    [
+     "/richardson/",
+     [
+      "richardson"
+     ]
+    ],
+    [
+     "/murphy/",
+     [
+      "murphy"
+     ]
+    ]
+   ],
+   "links_extra": [
+    [
+     "west plano and willow bend",
+     [
+      "west-plano"
+     ]
+    ],
+    [
+     "legacy west, deerfield, kings ridge",
+     [
+      "legacy-west"
+     ]
+    ],
+    [
+     "north plano and whiffletree",
+     [
+      "north-plano"
+     ]
+    ],
+    [
+     "central plano and hunters glen",
+     [
+      "central-plano"
+     ]
+    ],
+    [
+     "east plano, downtown, los rios",
+     [
+      "east-plano"
+     ]
+    ],
+    [
+     "frisco",
+     [
+      "frisco"
+     ]
+    ],
+    [
+     "allen",
+     [
+      "allen"
+     ]
+    ],
+    [
+     "mckinney",
+     [
+      "mckinney"
+     ]
+    ],
+    [
+     "richardson",
+     [
+      "richardson"
+     ]
+    ],
+    [
+     "murphy, parker, wylie",
+     [
+      "murphy"
+     ]
+    ]
+   ],
    "links_wrong": [],
    "self": [],
    "broken": [],
    "tables_doc": 2,
    "tables_ren": 2,
-   "tables_ok": true,
+   "tables_ok": false,
    "imgs": 13,
    "splits": 6,
    "hero_imgs": 1,
