@@ -85,3 +85,33 @@ section.block.dark{background:#0a3550;color:#fff;padding:40px 0}.block.dark .cta
 .related-current{font-size:15px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#0b5563;margin:2px 0 14px}
 .hero-home{padding:40px 0 40px}
 .hero-home .hero-img{box-shadow:0 18px 44px rgba(0,0,0,.28)}
+/* MOBILE HEADER 2026-11-05: hamburger + small call button. Animations OFF:
+   the panel opens instantly (no slide/fly, no transition on it). Desktop
+   header is unchanged. The small call button is icon + "Call" down to
+   521px; at <=520px it is icon-only so brand + both buttons fit 390px. */
+.mobile-nav{display:none}
+@media(max-width:820px){
+  .main-nav{display:none}
+  .mobile-nav{display:flex;align-items:center;gap:8px;margin-left:auto}
+  .header-call-small{display:inline-flex;align-items:center;gap:6px;background:var(--cta);color:#fff!important;font-weight:800;font-size:15px;line-height:1;padding:10px 12px;border-radius:10px;min-height:40px;text-decoration:none;white-space:nowrap}
+  .header-call-small:hover{background:var(--cta-hover)}
+  .header-call-small .call-ico{flex:none}
+  .hamburger{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:44px;height:40px;background:#fff;border:1px solid var(--line);border-radius:10px;cursor:pointer;padding:0;flex:none}
+  .hamburger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:1px}
+  .hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .hamburger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .mobile-menu-panel{position:absolute;top:100%;left:0;right:0;z-index:55;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 14px 28px rgba(10,53,80,.12);padding:6px 20px 18px}
+  .mobile-menu-panel a{display:block;padding:13px 0;font-weight:600;font-size:17px;color:var(--ink);border-bottom:1px solid #eef2f5}
+  .mobile-menu-panel a:last-child{border-bottom:0}
+  .mobile-menu-panel .mobile-menu-call{display:block;text-align:center;margin-top:14px;padding:12px 20px;background:var(--cta);color:#fff!important;font-weight:800;border-radius:12px;border:0}
+}
+@media(max-width:520px){
+  .header-call-small span{display:none}
+  .header-call-small{padding:10px 11px}
+  /* One-row header at 390px: brand 286px @17px + buttons 90px wraps to a
+     second row (measured 116px header). 15px brand + tighter padding
+     fits brand + call + hamburger on ONE row (~351px of 366px). */
+  .header-inner{padding:8px 12px}
+  .brand{font-size:15px}
+}

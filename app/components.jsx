@@ -1,71 +1,48 @@
 "use client";
-import { useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "lenis";
-// Tier 1 animation, actually running (Final added scope, 2026-11-04).
-// Correction to the brief: a GSAP reveal WAS already wired (0.5s, 18px,
-// hover-only card 3D, no Lenis) — that is why motion looked absent. This
-// upgrade keeps the same progressive-enhancement rule (no CSS hiding:
-// content is visible without JS; GSAP only animates FROM a translated /
-// faded state when JS runs) and adds: Lenis smooth scroll, stronger
-// scroll reveals (transform + opacity only, never layout properties,
-// so no CLS), a scroll-into-view 3D tilt for cards that works on touch
-// (hover 3D stays for pointer devices via CSS), and a homepage-only
-// hero scrub (image scale/parallax + text fade/slide driven by scroll).
-// No WebGL / R3F: held by the speed kill-switch, not added silently.
-// Reduced motion: no Lenis, no reveals, no scrub — native scroll, static hero.
-// Phone CTA / sticky call bar are never targeted by any animation.
+import { useState } from "react";
+
+// ANIMATIONS OFF (user order 2026-11-05): the Lenis smooth scroll +
+// GSAP ScrollTrigger reveals + hero scrub made the whole page lag and
+// fly away during scrolling. ALL motion is removed: no Lenis, no GSAP,
+// no ScrollTrigger, no ticker, no hero scrub. Content renders in its
+// final state with native scroll. The `reveal` classes gen4.py adds to
+// cards / trust-bands are inert (no CSS rule, no JS) and are left as-is.
+// Hover-only card transitions in globals.css are kept (hover, not scroll).
+
 export default function Reveal() {
-  useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) {
-      window.__plano3Anim = { lenis: false, reduced: true, reveals: 0, heroScrub: false };
-      document.documentElement.dataset.anim = "reduced-motion";
-      return;
-    }
-    gsap.registerPlugin(ScrollTrigger);
-    const lenis = new Lenis({ duration: 1.15, smoothWheel: true });
-    lenis.on("scroll", ScrollTrigger.update);
-    const raf = (time) => { lenis.raf(time * 1000); };
-    gsap.ticker.add(raf);
-    gsap.ticker.lagSmoothing(0);
-    const els = gsap.utils.toArray(".reveal");
-    els.forEach((el) => {
-      const isCard = el.classList && el.classList.contains("card");
-      const from = isCard
-        ? { opacity: 0, y: 28, rotationX: 5, transformPerspective: 900 }
-        : { opacity: 0, y: 28 };
-      gsap.from(el, { ...from, duration: 0.9, ease: "power3.out", clearProps: "transform,opacity",
-        scrollTrigger: { trigger: el, start: "top 88%", once: true } });
-    });
-    // Homepage hero scrub only (.hero-home exists on the home page alone).
-    // Poster = the existing hero image; no video file is invented or needed.
-    const hero = document.querySelector(".hero-home");
-    let heroScrub = false;
-    if (hero) {
-      const img = hero.querySelector(".hero-img");
-      const text = hero.querySelector(".hero-grid > div");
-      if (img) {
-        gsap.fromTo(img, { scale: 1, yPercent: 0 },
-          { scale: 1.12, yPercent: -8, ease: "none",
-            scrollTrigger: { trigger: hero, start: "top top", end: "bottom top", scrub: true } });
-        heroScrub = true;
-      }
-      if (text) {
-        gsap.fromTo(text, { y: 0, opacity: 1 },
-          { y: -50, opacity: 0.15, ease: "none",
-            scrollTrigger: { trigger: hero, start: "top top", end: "bottom top", scrub: true } });
-        heroScrub = true;
-      }
-    }
-    window.__plano3Anim = { lenis: true, reduced: false, reveals: els.length, heroScrub: heroScrub };
-    document.documentElement.dataset.anim = "on";
-    return () => {
-      ScrollTrigger.getAll().forEach((t) => t.kill());
-      gsap.ticker.remove(raf);
-      lenis.destroy();
-    };
-  }, []);
   return null;
+}
+
+// Mobile header controls (<=820px): hamburger + small call button.
+// Desktop header is unchanged (inline nav + Call 24/7 button in layout.jsx).
+// The menu opens INSTANTLY (no slide/fly — animations are off).
+export function MobileNav() {
+  const [open, setOpen] = useState(false);
+  const links = [
+    ["Home", "/"],
+    ["Services", "/services/"],
+    ["Areas", "/areas/"],
+    ["Guides", "/guides/"],
+    ["About", "/about/"],
+    ["Contact", "/contact/"],
+  ];
+  return (
+    <div className="mobile-nav">
+      <a className="header-call-small" href="tel:+19724727917" aria-label="Call (972) 472-7917">
+        <svg className="call-ico" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" /></svg>
+        <span>Call</span>
+      </a>
+      <button type="button" className="hamburger" aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)}>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      {open && (
+        <nav className="mobile-menu-panel" id="mobile-menu" aria-label="Mobile">
+          {links.map(([label, href]) => (
+            <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>
+          ))}
+          <a className="btn-call mobile-menu-call" href="tel:+19724727917" onClick={() => setOpen(false)}>Call 24/7: <span className="nowrap">(972) 472-7917</span></a>
+        </nav>
+      )}
+    </div>
+  );
 }

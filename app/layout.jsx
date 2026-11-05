@@ -1,5 +1,5 @@
 import "./globals.css";
-import Reveal from "./components";
+import Reveal, { MobileNav } from "./components";
 export const metadata = { metadataBase: new URL("https://waterdamagerestorationplano.online"), title: { default: "Water Damage Restoration Plano, TX | 24/7 Water Removal" }, description: "Water damage in Plano, TX? 24/7 water extraction, thermal moisture mapping & structural drying across every Plano ZIP. Call (972) 472-7917 now.", icons: { icon: "/favicon.svg", apple: "/favicon.png" } };
 export default function RootLayout({ children }) {
   return (<html lang="en"><body>
@@ -9,6 +9,7 @@ export default function RootLayout({ children }) {
         <a href="/">Home</a><a href="/services/">Services</a><a href="/areas/">Areas</a><a href="/guides/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a>
       </nav>
       <a className="header-call" href="tel:+19724727917">Call 24/7: <span className="nowrap">(972) 472-7917</span></a>
+      <MobileNav />
     </div></header>
     <main>{children}</main>
     <footer className="site-footer"><div className="wrap footer-grid">
