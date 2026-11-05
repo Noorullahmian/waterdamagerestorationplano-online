@@ -1349,9 +1349,10 @@ def write_page(page, hero, picks, by_slug, hero_by_slug, body_by_slug, neutral=N
     schemas = []
     if faq_schema:
         schemas.append(faq_schema)
-    schemas.append({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
-        {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': DOMAIN + '/'},
-        {'@type': 'ListItem', 'position': 2, 'name': page['meta_title'], 'item': DOMAIN + href_for(slug)}]})
+    _crumbs = [{'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': DOMAIN + '/'}]
+    if slug != '':
+        _crumbs.append({'@type': 'ListItem', 'position': 2, 'name': page['meta_title'], 'item': DOMAIN + href_for(slug)})
+    schemas.append({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': _crumbs})
     if slug in SERVICE_SLUGS:
         schemas.append({'@context': 'https://schema.org', '@type': 'Service', 'name': page['meta_title'],
                         'description': page['meta_desc'],
@@ -1373,7 +1374,7 @@ def write_page(page, hero, picks, by_slug, hero_by_slug, body_by_slug, neutral=N
     og_images = f'["/images/{hero["file"]}"]' if hero else '[]'
     meta_title_j = json.dumps(page['meta_title'] or page['h1'])
     meta_desc_j = json.dumps(page['meta_desc'])
-    content = f'''export const metadata = {{ title: {meta_title_j}, description: {meta_desc_j}, alternates: {{ canonical: "{DOMAIN}{href_for(slug)}" }}, openGraph: {{ title: {meta_title_j}, description: {meta_desc_j}, url: "{DOMAIN}{href_for(slug)}", images: {og_images} }} }};
+    content = f'''export const metadata = {{ title: {meta_title_j}, description: {meta_desc_j}, alternates: {{ canonical: "{DOMAIN}{href_for(slug)}" }}, openGraph: {{ type: \"website\", title: {meta_title_j}, description: {meta_desc_j}, url: "{DOMAIN}{href_for(slug)}", images: {og_images} }} }};
 export default function Page() {{
   return (<>
     {schema_tags}
@@ -1422,7 +1423,7 @@ def write_hub(slug, title, slugs, by_slug, hero_by_slug, body_by_slug, neutral=N
     _hub_schema = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
         {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': DOMAIN + '/'},
         {'@type': 'ListItem', 'position': 2, 'name': title, 'item': DOMAIN + f'/{slug}/'}]}
-    content = f'''export const metadata = {{ title: {json.dumps(title + " | Water Damage Restoration Plano, TX")}, description: {json.dumps(title + " — Water Damage Restoration Plano, TX. Call (972) 472-7917.")}, alternates: {{ canonical: "{DOMAIN}/{slug}/" }}, openGraph: {{ title: {json.dumps(title + " | Water Damage Restoration Plano, TX")}, description: {json.dumps(title + " — Water Damage Restoration Plano, TX. Call (972) 472-7917.")}, url: "{DOMAIN}/{slug}/", images: ["{DOMAIN}/images/{hero_file[:-5]}-800.webp"] }} }};
+    content = f'''export const metadata = {{ title: {json.dumps(title + " | Water Damage Restoration Plano, TX")}, description: {json.dumps(title + " — Water Damage Restoration Plano, TX. Call (972) 472-7917.")}, alternates: {{ canonical: "{DOMAIN}/{slug}/" }}, openGraph: {{ type: \"website\", title: {json.dumps(title + " | Water Damage Restoration Plano, TX")}, description: {json.dumps(title + " — Water Damage Restoration Plano, TX. Call (972) 472-7917.")}, url: "{DOMAIN}/{slug}/", images: ["{DOMAIN}/images/{hero_file[:-5]}-800.webp"] }} }};
 export default function Page() {{
   return (<><div className="hero"><div className="wrap hero-grid"><div><div className="hero-accent" aria-hidden="true"></div><h1>{h1_html(title)}</h1><p><a className="btn-call" href="{TEL}">Call Now: <span className="nowrap">{PHONE}</span></a></p></div>{hero_img}</div></div>
   {cards}

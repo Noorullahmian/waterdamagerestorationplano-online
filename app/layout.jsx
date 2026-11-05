@@ -1,6 +1,6 @@
 import "./globals.css";
 import Reveal, { MobileNav } from "./components";
-export const metadata = { metadataBase: new URL("https://waterdamagerestorationplano.online"), title: { default: "Water Damage Restoration Plano, TX | 24/7 Water Removal" }, description: "Water damage in Plano, TX? 24/7 water extraction, thermal moisture mapping & structural drying across every Plano ZIP. Call (972) 472-7917 now.", icons: { icon: "/favicon.svg", apple: "/favicon.png" } };
+export const metadata = { metadataBase: new URL("https://waterdamagerestorationplano.online"), title: { default: "Water Damage Restoration Plano, TX | 24/7 Water Removal" }, description: "Water damage in Plano, TX? 24/7 water extraction, thermal moisture mapping & structural drying across every Plano ZIP. Call (972) 472-7917 now.", icons: { icon: "/favicon.svg", apple: "/favicon.png" }, openGraph: { type: "website" } };
 export default function RootLayout({ children }) {
   return (<html lang="en"><body>
     <header className="site-header"><div className="wrap header-inner">
