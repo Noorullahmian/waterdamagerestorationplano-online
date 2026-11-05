@@ -62,8 +62,8 @@
    ],
    [
     3,
-    "burst-pipe-18274115.webp",
-    "burst-pipe"
+    "moisture-inspection-8292797.webp",
+    "moisture-inspection"
    ],
    [
     4,
@@ -105,13 +105,13 @@
    ],
    [
     3,
-    "drying-fan-37634966.webp",
-    "drying-fan"
+    "wet-vacuum-carpet-38325.webp",
+    "wet-vacuum-carpet"
    ],
    [
     4,
-    "burst-pipe-18274115.webp",
-    "burst-pipe"
+    "wet-dry-vacuum-3616735.webp",
+    "wet-dry-vacuum"
    ],
    [
     6,
@@ -224,32 +224,32 @@
   "splits": [
    [
     0,
-    "sewage-drain-29608837.webp",
-    "sewage-drain"
+    "protective-gear-bathroom-4098579.webp",
+    "protective-gear-bathroom"
    ],
    [
     1,
-    "sewage-drain-13961561.webp",
-    "sewage-drain"
-   ],
-   [
-    3,
-    "sewage-drain-3964564.webp",
-    "sewage-drain"
-   ],
-   [
-    4,
-    "sewage-drain-15242228.webp",
-    "sewage-drain"
-   ],
-   [
-    6,
     "sewage-drain-17375718.webp",
     "sewage-drain"
    ],
    [
+    3,
+    "protective-suit-disinfecting-4099463.webp",
+    "protective-suit-disinfecting"
+   ],
+   [
+    4,
+    "respirator-containment-6474117.webp",
+    "respirator-containment"
+   ],
+   [
+    6,
+    "mold-wall-29701042.webp",
+    "mold-wall"
+   ],
+   [
     7,
-    "mold-wall-9127236.webp",
+    "mold-wall-4597285.webp",
     "mold-wall"
    ]
   ],
@@ -292,8 +292,8 @@
    ],
    [
     9,
-    "burst-pipe-18274115.webp",
-    "burst-pipe"
+    "moisture-meter-floor-32497162.webp",
+    "moisture-meter-floor"
    ]
   ],
   "doc_links": 11,
@@ -401,8 +401,8 @@
    ],
    [
     2,
-    "burst-pipe-18274115.webp",
-    "burst-pipe"
+    "flooded-street-homes-28447806.webp",
+    "flooded-street-homes"
    ],
    [
     3,
@@ -487,13 +487,13 @@
    ],
    [
     1,
-    "suburban-home-26595553.webp",
-    "suburban-home"
+    "towel-blotting-wood-floor-4440573.webp",
+    "towel-blotting-wood-floor"
    ],
    [
     3,
-    "suburban-home-7587470.webp",
-    "suburban-home"
+    "uneven-wood-floorboards-39377275.webp",
+    "uneven-wood-floorboards"
    ],
    [
     4,
@@ -502,13 +502,13 @@
    ],
    [
     6,
-    "suburban-home-3990589.webp",
-    "suburban-home"
+    "moisture-meter-8293746.webp",
+    "moisture-meter"
    ],
    [
     7,
-    "suburban-home-30707539.webp",
-    "suburban-home"
+    "hardwood-floor-living-room-35430055.webp",
+    "hardwood-floor-living-room"
    ]
   ],
   "doc_links": 10,
@@ -616,8 +616,8 @@
    ],
    [
     2,
-    "laundry-room-4993073.webp",
-    "laundry-room"
+    "laundry-room-washer-dryer-3935334.webp",
+    "laundry-room-washer-dryer"
    ],
    [
     3,
@@ -702,8 +702,8 @@
    ],
    [
     1,
-    "laundry-room-7282378.webp",
-    "laundry-room"
+    "stainless-steel-refrigerator-kitchen-4221389.webp",
+    "stainless-steel-refrigerator-kitchen"
    ],
    [
     3,
@@ -760,8 +760,8 @@
    ],
    [
     5,
-    "suburban-home-26595553.webp",
-    "suburban-home"
+    "apartment-building-balconies-18153132.webp",
+    "apartment-building-balconies"
    ],
    [
     6,
@@ -798,7 +798,7 @@
    ],
    [
     4,
-    "moisture-meter-8293746.webp",
+    "moisture-meter-7937963.webp",
     "moisture-meter"
    ],
    [
@@ -846,8 +846,8 @@
    ],
    [
     6,
-    "water-heater-12502433.webp",
-    "water-heater"
+    "suburban-house-exterior-8583638.webp",
+    "suburban-house-exterior"
    ],
    [
     7,
@@ -884,8 +884,8 @@
    ],
    [
     4,
-    "mold-wall-29701042.webp",
-    "mold-wall"
+    "exposed-wall-studs-4642438.webp",
+    "exposed-wall-studs"
    ],
    [
     6,
@@ -1218,22 +1218,22 @@
    ],
    [
     2,
-    "texas-home-33404353.webp",
-    "texas-home"
-   ],
-   [
-    4,
-    "suburban-home-186077.webp",
+    "suburban-home-4832530.webp",
     "suburban-home"
    ],
    [
-    5,
+    4,
     "suburban-home-26595553.webp",
     "suburban-home"
    ],
    [
-    7,
+    5,
     "suburban-home-31602311.webp",
+    "suburban-home"
+   ],
+   [
+    7,
+    "suburban-home-3990589.webp",
     "suburban-home"
    ],
    [
@@ -1496,8 +1496,8 @@
    ],
    [
     6,
-    "drying-fan-37634966.webp",
-    "drying-fan"
+    "mopping-tile-floor-6196566.webp",
+    "mopping-tile-floor"
    ]
   ],
   "doc_links": 6,
@@ -1577,8 +1577,8 @@
    ],
    [
     4,
-    "mold-wall-29701042.webp",
-    "mold-wall"
+    "moisture-meter-8961703.webp",
+    "moisture-meter"
    ],
    [
     5,
@@ -1686,8 +1686,8 @@
   "splits": [
    [
     0,
-    "commercial-office-13068366.webp",
-    "commercial-office"
+    "home-insurance-policy-7731333.webp",
+    "home-insurance-policy"
    ],
    [
     1,
@@ -1696,22 +1696,22 @@
    ],
    [
     2,
-    "suburban-home-26595553.webp",
-    "suburban-home"
+    "copper-pipes-3721272.webp",
+    "copper-pipes"
    ],
    [
     4,
-    "suburban-home-7587470.webp",
-    "suburban-home"
-   ],
-   [
-    5,
     "suburban-home-31602311.webp",
     "suburban-home"
    ],
    [
-    6,
+    5,
     "suburban-home-3990589.webp",
+    "suburban-home"
+   ],
+   [
+    6,
+    "suburban-home-30707539.webp",
     "suburban-home"
    ]
   ],
@@ -1739,8 +1739,8 @@
    ],
    [
     3,
-    "suburban-home-26595553.webp",
-    "suburban-home"
+    "moisture-meter-8482824.webp",
+    "moisture-meter"
    ],
    [
     5,

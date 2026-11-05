@@ -1,0 +1,3636 @@
+{
+ "": {
+  "slug": "",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 430
+   },
+   "img": {
+    "x": 822,
+    "y": 163,
+    "w": 498,
+    "h": 280,
+    "src": "suburban-home-186077.webp",
+    "currentSrc": "suburban-home-186077-800.webp",
+    "alt": "Suburban home exterior in a residential neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 370
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 778
+   },
+   "img": {
+    "x": 20,
+    "y": 678,
+    "w": 350,
+    "h": 197,
+    "src": "suburban-home-186077.webp",
+    "currentSrc": "suburban-home-186077-400.webp",
+    "alt": "Suburban home exterior in a residential neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 475
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "emergency-water-damage": {
+  "slug": "emergency-water-damage",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "burst-pipe-15206136.webp",
+    "currentSrc": "burst-pipe-15206136-800.webp",
+    "alt": "Close-up of a leaking plastic pipe outdoors with water dripping, showing wear and tear",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "burst-pipe-15206136.webp",
+    "currentSrc": "burst-pipe-15206136-400.webp",
+    "alt": "Close-up of a leaking plastic pipe outdoors with water dripping, showing wear and tear",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "water-extraction": {
+  "slug": "water-extraction",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 426
+   },
+   "img": {
+    "x": 822,
+    "y": 161,
+    "w": 498,
+    "h": 280,
+    "src": "water-extraction-6195949.webp",
+    "currentSrc": "water-extraction-6195949-800.webp",
+    "alt": "A worker in a protective coverall and orange gloves running a yellow wet vacuum over a tiled living-room floor",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 366
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 792
+   },
+   "img": {
+    "x": 20,
+    "y": 693,
+    "w": 350,
+    "h": 197,
+    "src": "water-extraction-6195949.webp",
+    "currentSrc": "water-extraction-6195949-400.webp",
+    "alt": "A worker in a protective coverall and orange gloves running a yellow wet vacuum over a tiled living-room floor",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 489
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "structural-drying": {
+  "slug": "structural-drying",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "moisture-meter-8293640.webp",
+    "currentSrc": "moisture-meter-8293640-800.webp",
+    "alt": "A home inspector in high visibility vest examines an electrical outlet in a modern room",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "moisture-meter-8293640.webp",
+    "currentSrc": "moisture-meter-8293640-400.webp",
+    "alt": "A home inspector in high visibility vest examines an electrical outlet in a modern room",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "burst-pipe-cleanup": {
+  "slug": "burst-pipe-cleanup",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 361
+   },
+   "img": {
+    "x": 822,
+    "y": 129,
+    "w": 498,
+    "h": 280,
+    "src": "burst-pipe-8488035.webp",
+    "currentSrc": "burst-pipe-8488035-800.webp",
+    "alt": "Exposed water pipes and shut-off valves in an opened interior wall during repair",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 301
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 695
+   },
+   "img": {
+    "x": 20,
+    "y": 596,
+    "w": 350,
+    "h": 197,
+    "src": "burst-pipe-8488035.webp",
+    "currentSrc": "burst-pipe-8488035-400.webp",
+    "alt": "Exposed water pipes and shut-off valves in an opened interior wall during repair",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 393
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "sewage-cleanup": {
+  "slug": "sewage-cleanup",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "shower-drain-5768318.webp",
+    "currentSrc": "shower-drain-5768318-800.webp",
+    "alt": "Square shower drain set in a white tiled shower floor indoors",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 760
+   },
+   "img": {
+    "x": 20,
+    "y": 661,
+    "w": 350,
+    "h": 197,
+    "src": "shower-drain-5768318.webp",
+    "currentSrc": "shower-drain-5768318-400.webp",
+    "alt": "Square shower drain set in a white tiled shower floor indoors",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 457
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "slab-leak": {
+  "slug": "slab-leak",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 426
+   },
+   "img": {
+    "x": 822,
+    "y": 161,
+    "w": 498,
+    "h": 280,
+    "src": "wet-tile-9376351.webp",
+    "currentSrc": "wet-tile-9376351-800.webp",
+    "alt": "Water pooled on an indoor tiled floor",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 366
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 792
+   },
+   "img": {
+    "x": 20,
+    "y": 693,
+    "w": 350,
+    "h": 197,
+    "src": "wet-tile-9376351.webp",
+    "currentSrc": "wet-tile-9376351-400.webp",
+    "alt": "Water pooled on an indoor tiled floor",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 489
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "water-heater-leak": {
+  "slug": "water-heater-leak",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "water-heater-19980200.webp",
+    "currentSrc": "water-heater-19980200-800.webp",
+    "alt": "A white tank water heater with pipes in a home laundry and utility room",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 760
+   },
+   "img": {
+    "x": 20,
+    "y": 661,
+    "w": 350,
+    "h": 197,
+    "src": "water-heater-19980200.webp",
+    "currentSrc": "water-heater-19980200-400.webp",
+    "alt": "A white tank water heater with pipes in a home laundry and utility room",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 457
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "ceiling-leak": {
+  "slug": "ceiling-leak",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "ceiling-stain-3708564.webp",
+    "currentSrc": "ceiling-stain-3708564-800.webp",
+    "alt": "Stained concrete ceiling corner with a crack",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "ceiling-stain-3708564.webp",
+    "currentSrc": "ceiling-stain-3708564-400.webp",
+    "alt": "Stained concrete ceiling corner with a crack",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "flood-cleanup": {
+  "slug": "flood-cleanup",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "flooded-suburban-home-28447764.webp",
+    "currentSrc": "flooded-suburban-home-28447764-800.webp",
+    "alt": "A suburban house with floodwater standing across its front yard and driveway, framed by green trees",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "flooded-suburban-home-28447764.webp",
+    "currentSrc": "flooded-suburban-home-28447764-400.webp",
+    "alt": "A suburban house with floodwater standing across its front yard and driveway, framed by green trees",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "commercial-water-damage": {
+  "slug": "commercial-water-damage",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 426
+   },
+   "img": {
+    "x": 822,
+    "y": 161,
+    "w": 498,
+    "h": 280,
+    "src": "drying-equipment-16243255.webp",
+    "currentSrc": "drying-equipment-16243255-800.webp",
+    "alt": "Industrial air mover fan",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 366
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 792
+   },
+   "img": {
+    "x": 20,
+    "y": 693,
+    "w": 350,
+    "h": 197,
+    "src": "drying-equipment-16243255.webp",
+    "currentSrc": "drying-equipment-16243255-400.webp",
+    "alt": "Industrial air mover fan",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 489
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "hardwood-floor-drying": {
+  "slug": "hardwood-floor-drying",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "hardwood-floor-3935327.webp",
+    "currentSrc": "hardwood-floor-3935327-800.webp",
+    "alt": "Bright empty room with wooden floors and large windows",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "hardwood-floor-3935327.webp",
+    "currentSrc": "hardwood-floor-3935327-400.webp",
+    "alt": "Bright empty room with wooden floors and large windows",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "ac-overflow": {
+  "slug": "ac-overflow",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "ceiling-crew-8293648.webp",
+    "currentSrc": "ceiling-crew-8293648-800.webp",
+    "alt": "A worker in a yellow hard hat and high-visibility vest points up at a ceiling while holding a clipboard indoors",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "ceiling-crew-8293648.webp",
+    "currentSrc": "ceiling-crew-8293648-400.webp",
+    "alt": "A worker in a yellow hard hat and high-visibility vest points up at a ceiling while holding a clipboard indoors",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "cabinet-drying": {
+  "slug": "cabinet-drying",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 426
+   },
+   "img": {
+    "x": 822,
+    "y": 161,
+    "w": 498,
+    "h": 280,
+    "src": "cabinet-kitchen-7535073.webp",
+    "currentSrc": "cabinet-kitchen-7535073-800.webp",
+    "alt": "Interior of modern furnished kitchen with elegant white cabinets and contemporary appliances in spacious apartment",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 366
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 792
+   },
+   "img": {
+    "x": 20,
+    "y": 693,
+    "w": 350,
+    "h": 197,
+    "src": "cabinet-kitchen-7535073.webp",
+    "currentSrc": "cabinet-kitchen-7535073-400.webp",
+    "alt": "Interior of modern furnished kitchen with elegant white cabinets and contemporary appliances in spacious apartment",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 489
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "laundry-overflow": {
+  "slug": "laundry-overflow",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "laundry-room-19846385.webp",
+    "currentSrc": "laundry-room-19846385-800.webp",
+    "alt": "White washing machine in a home laundry nook",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 760
+   },
+   "img": {
+    "x": 20,
+    "y": 661,
+    "w": 350,
+    "h": 197,
+    "src": "laundry-room-19846385.webp",
+    "currentSrc": "laundry-room-19846385-400.webp",
+    "alt": "White washing machine in a home laundry nook",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 457
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "crawl-space-drying": {
+  "slug": "crawl-space-drying",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "crawl-space-4092026.webp",
+    "currentSrc": "crawl-space-4092026-800.webp",
+    "alt": "Empty basement with exposed wooden beams, concrete walls and stairs",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 792
+   },
+   "img": {
+    "x": 20,
+    "y": 693,
+    "w": 350,
+    "h": 197,
+    "src": "crawl-space-4092026.webp",
+    "currentSrc": "crawl-space-4092026-400.webp",
+    "alt": "Empty basement with exposed wooden beams, concrete walls and stairs",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 489
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "appliance-leak": {
+  "slug": "appliance-leak",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "appliance-fridge-3958962.webp",
+    "currentSrc": "appliance-fridge-3958962-800.webp",
+    "alt": "Spacious modern kitchen featuring stainless steel appliances and a dining area",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "appliance-fridge-3958962.webp",
+    "currentSrc": "appliance-fridge-3958962-400.webp",
+    "alt": "Spacious modern kitchen featuring stainless steel appliances and a dining area",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "fire-sprinkler-cleanup": {
+  "slug": "fire-sprinkler-cleanup",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "flooded-floor-7924140.webp",
+    "currentSrc": "flooded-floor-7924140-800.webp",
+    "alt": "Flooded area with stairs reflecting on water surface",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "flooded-floor-7924140.webp",
+    "currentSrc": "flooded-floor-7924140-400.webp",
+    "alt": "Flooded area with stairs reflecting on water surface",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "moisture-mapping": {
+  "slug": "moisture-mapping",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "thermal-imaging-7859781.webp",
+    "currentSrc": "thermal-imaging-7859781-800.webp",
+    "alt": "A thermal imaging screen in the foreground showing a person's heat image in orange, yellow and blue, held in front of a man indoors",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "thermal-imaging-7859781.webp",
+    "currentSrc": "thermal-imaging-7859781-400.webp",
+    "alt": "A thermal imaging screen in the foreground showing a person's heat image in orange, yellow and blue, held in front of a man indoors",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "attic-insulation-drying": {
+  "slug": "attic-insulation-drying",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 361
+   },
+   "img": {
+    "x": 822,
+    "y": 129,
+    "w": 498,
+    "h": 280,
+    "src": "attic-insulation-6124239.webp",
+    "currentSrc": "attic-insulation-6124239-800.webp",
+    "alt": "Crop unrecognizable worker in gloves sitting on haunches and insulating with pink stone wool",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 301
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 695
+   },
+   "img": {
+    "x": 20,
+    "y": 596,
+    "w": 350,
+    "h": 197,
+    "src": "attic-insulation-6124239.webp",
+    "currentSrc": "attic-insulation-6124239-400.webp",
+    "alt": "Crop unrecognizable worker in gloves sitting on haunches and insulating with pink stone wool",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 393
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "wall-drying": {
+  "slug": "wall-drying",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "flood-cut-wall-8488031.webp",
+    "currentSrc": "flood-cut-wall-8488031-800.webp",
+    "alt": "An interior wall with drywall cut open to expose wood studs and framing during reconstruction",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 760
+   },
+   "img": {
+    "x": 20,
+    "y": 661,
+    "w": 350,
+    "h": 197,
+    "src": "flood-cut-wall-8488031.webp",
+    "currentSrc": "flood-cut-wall-8488031-400.webp",
+    "alt": "An interior wall with drywall cut open to expose wood studs and framing during reconstruction",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 457
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "west-plano": {
+  "slug": "west-plano",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "suburban-home-3990589.webp",
+    "currentSrc": "suburban-home-3990589-800.webp",
+    "alt": "Brick suburban home with garage and basketball hoop in a peaceful neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 760
+   },
+   "img": {
+    "x": 20,
+    "y": 661,
+    "w": 350,
+    "h": 197,
+    "src": "suburban-home-3990589.webp",
+    "currentSrc": "suburban-home-3990589-400.webp",
+    "alt": "Brick suburban home with garage and basketball hoop in a peaceful neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 457
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "legacy-west": {
+  "slug": "legacy-west",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 430
+   },
+   "img": {
+    "x": 822,
+    "y": 163,
+    "w": 498,
+    "h": 280,
+    "src": "texas-home-8278493.webp",
+    "currentSrc": "texas-home-8278493-800.webp",
+    "alt": "A modern white house with large glass windows and a sleek design, under a clear blue sky",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 370
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 760
+   },
+   "img": {
+    "x": 20,
+    "y": 661,
+    "w": 350,
+    "h": 197,
+    "src": "texas-home-8278493.webp",
+    "currentSrc": "texas-home-8278493-400.webp",
+    "alt": "A modern white house with large glass windows and a sleek design, under a clear blue sky",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 457
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "north-plano": {
+  "slug": "north-plano",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "suburban-home-26595553.webp",
+    "currentSrc": "suburban-home-26595553-800.webp",
+    "alt": "Charming brick house with gable roof surrounded by lush greenery under a clear blue sky",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 760
+   },
+   "img": {
+    "x": 20,
+    "y": 661,
+    "w": 350,
+    "h": 197,
+    "src": "suburban-home-26595553.webp",
+    "currentSrc": "suburban-home-26595553-400.webp",
+    "alt": "Charming brick house with gable roof surrounded by lush greenery under a clear blue sky",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 457
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "central-plano": {
+  "slug": "central-plano",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 430
+   },
+   "img": {
+    "x": 822,
+    "y": 163,
+    "w": 498,
+    "h": 280,
+    "src": "texas-home-8278494.webp",
+    "currentSrc": "texas-home-8278494-800.webp",
+    "alt": "Colorful residential homes in a Texas neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 370
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 778
+   },
+   "img": {
+    "x": 20,
+    "y": 678,
+    "w": 350,
+    "h": 197,
+    "src": "texas-home-8278494.webp",
+    "currentSrc": "texas-home-8278494-400.webp",
+    "alt": "Colorful residential homes in a Texas neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 475
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "east-plano": {
+  "slug": "east-plano",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "brick-ranch-8031875.webp",
+    "currentSrc": "brick-ranch-8031875-800.webp",
+    "alt": "Single-storey white-painted brick ranch house with a shingle roof and front lawn",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 760
+   },
+   "img": {
+    "x": 20,
+    "y": 661,
+    "w": 350,
+    "h": 197,
+    "src": "brick-ranch-8031875.webp",
+    "currentSrc": "brick-ranch-8031875-400.webp",
+    "alt": "Single-storey white-painted brick ranch house with a shingle roof and front lawn",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 457
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "frisco": {
+  "slug": "frisco",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "texas-home-8278494.webp",
+    "currentSrc": "texas-home-8278494-800.webp",
+    "alt": "Colorful residential homes in a Texas neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 710
+   },
+   "img": {
+    "x": 20,
+    "y": 610,
+    "w": 350,
+    "h": 197,
+    "src": "texas-home-8278494.webp",
+    "currentSrc": "texas-home-8278494-400.webp",
+    "alt": "Colorful residential homes in a Texas neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 407
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "allen": {
+  "slug": "allen",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "suburban-home-18280830.webp",
+    "currentSrc": "suburban-home-18280830-800.webp",
+    "alt": "Suburban home exterior in a residential neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 710
+   },
+   "img": {
+    "x": 20,
+    "y": 610,
+    "w": 350,
+    "h": 197,
+    "src": "suburban-home-18280830.webp",
+    "currentSrc": "suburban-home-18280830-400.webp",
+    "alt": "Suburban home exterior in a residential neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 407
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "mckinney": {
+  "slug": "mckinney",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 361
+   },
+   "img": {
+    "x": 822,
+    "y": 129,
+    "w": 498,
+    "h": 280,
+    "src": "brick-ranch-8031875.webp",
+    "currentSrc": "brick-ranch-8031875-800.webp",
+    "alt": "Single-storey white-painted brick ranch house with a shingle roof and front lawn",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 301
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 695
+   },
+   "img": {
+    "x": 20,
+    "y": 596,
+    "w": 350,
+    "h": 197,
+    "src": "brick-ranch-8031875.webp",
+    "currentSrc": "brick-ranch-8031875-400.webp",
+    "alt": "Single-storey white-painted brick ranch house with a shingle roof and front lawn",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 393
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "richardson": {
+  "slug": "richardson",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "suburban-home-3990589.webp",
+    "currentSrc": "suburban-home-3990589-800.webp",
+    "alt": "Brick suburban home with garage and basketball hoop in a peaceful neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "suburban-home-3990589.webp",
+    "currentSrc": "suburban-home-3990589-400.webp",
+    "alt": "Brick suburban home with garage and basketball hoop in a peaceful neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "murphy": {
+  "slug": "murphy",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "greenbelt-home-12445995.webp",
+    "currentSrc": "greenbelt-home-12445995-800.webp",
+    "alt": "Rear of a suburban house with a deck and lawn backed by mature trees and open land",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "greenbelt-home-12445995.webp",
+    "currentSrc": "greenbelt-home-12445995-400.webp",
+    "alt": "Rear of a suburban house with a deck and lawn backed by mature trees and open land",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "shut-off-valve": {
+  "slug": "shut-off-valve",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 361
+   },
+   "img": {
+    "x": 822,
+    "y": 129,
+    "w": 498,
+    "h": 280,
+    "src": "water-shutoff-4494656.webp",
+    "currentSrc": "water-shutoff-4494656-800.webp",
+    "alt": "Outdoor water meters and shut-off valves on supply pipes",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 301
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "water-shutoff-4494656.webp",
+    "currentSrc": "water-shutoff-4494656-400.webp",
+    "alt": "Outdoor water meters and shut-off valves on supply pipes",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "warm-spot-on-floor": {
+  "slug": "warm-spot-on-floor",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "warm-floor-thermal-5853823.webp",
+    "currentSrc": "warm-floor-thermal-5853823-800.webp",
+    "alt": "Bare feet standing on sunlit hexagonal tile flooring beside a floor vent",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "warm-floor-thermal-5853823.webp",
+    "currentSrc": "warm-floor-thermal-5853823-400.webp",
+    "alt": "Bare feet standing on sunlit hexagonal tile flooring beside a floor vent",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "ceiling-dripping": {
+  "slug": "ceiling-dripping",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "ceiling-stain-lived-in-8624466.webp",
+    "currentSrc": "ceiling-stain-lived-in-8624466-800.webp",
+    "alt": "A furnished living room with a faint brown water stain on the white ceiling and a water-stain streak on the wallpapered wall",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "ceiling-stain-lived-in-8624466.webp",
+    "currentSrc": "ceiling-stain-lived-in-8624466-400.webp",
+    "alt": "A furnished living room with a faint brown water stain on the white ceiling and a water-stain streak on the wallpapered wall",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "water-damage-cost": {
+  "slug": "water-damage-cost",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 361
+   },
+   "img": {
+    "x": 822,
+    "y": 129,
+    "w": 498,
+    "h": 280,
+    "src": "suburban-home-26595553.webp",
+    "currentSrc": "suburban-home-26595553-800.webp",
+    "alt": "Charming brick house with gable roof surrounded by lush greenery under a clear blue sky",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 301
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 695
+   },
+   "img": {
+    "x": 20,
+    "y": 596,
+    "w": 350,
+    "h": 197,
+    "src": "suburban-home-26595553.webp",
+    "currentSrc": "suburban-home-26595553-400.webp",
+    "alt": "Charming brick house with gable roof surrounded by lush greenery under a clear blue sky",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 393
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "fans-wont-dry-walls": {
+  "slug": "fans-wont-dry-walls",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "mold-wall-4597285.webp",
+    "currentSrc": "mold-wall-4597285-800.webp",
+    "alt": "old cement wall with blots and mold on dirty surface with piece of torn paper",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "mold-wall-4597285.webp",
+    "currentSrc": "mold-wall-4597285-400.webp",
+    "alt": "old cement wall with blots and mold on dirty surface with piece of torn paper",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "storm-water-category-3": {
+  "slug": "storm-water-category-3",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "flooded-suburban-home-28447764.webp",
+    "currentSrc": "flooded-suburban-home-28447764-800.webp",
+    "alt": "A suburban house with floodwater standing across its front yard and driveway, framed by green trees",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "flooded-suburban-home-28447764.webp",
+    "currentSrc": "flooded-suburban-home-28447764-400.webp",
+    "alt": "A suburban house with floodwater standing across its front yard and driveway, framed by green trees",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "mold-after-water-damage": {
+  "slug": "mold-after-water-damage",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "indoor-mold-18063447.webp",
+    "currentSrc": "indoor-mold-18063447-800.webp",
+    "alt": "Close-up of a white wall speckled with grey-black mold spots",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "indoor-mold-18063447.webp",
+    "currentSrc": "indoor-mold-18063447-400.webp",
+    "alt": "Close-up of a white wall speckled with grey-black mold spots",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "copper-pinhole-leaks": {
+  "slug": "copper-pinhole-leaks",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 361
+   },
+   "img": {
+    "x": 822,
+    "y": 129,
+    "w": 498,
+    "h": 280,
+    "src": "copper-pipes-6123308.webp",
+    "currentSrc": "copper-pipes-6123308-800.webp",
+    "alt": "Exposed copper pipes with brass valves above a bathtub in a rustic bathroom",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 301
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 695
+   },
+   "img": {
+    "x": 20,
+    "y": 596,
+    "w": 350,
+    "h": 197,
+    "src": "copper-pipes-6123308.webp",
+    "currentSrc": "copper-pipes-6123308-400.webp",
+    "alt": "Exposed copper pipes with brass valves above a bathtub in a rustic bathroom",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 393
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "sagging-ceiling": {
+  "slug": "sagging-ceiling",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 393
+   },
+   "img": {
+    "x": 822,
+    "y": 145,
+    "w": 498,
+    "h": 280,
+    "src": "sagging-ceiling-30499666.webp",
+    "currentSrc": "sagging-ceiling-30499666-800.webp",
+    "alt": "Ceiling panels bowed sharply downward and split open in an empty room, with insulation exposed",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 333
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 728
+   },
+   "img": {
+    "x": 20,
+    "y": 628,
+    "w": 350,
+    "h": 197,
+    "src": "sagging-ceiling-30499666.webp",
+    "currentSrc": "sagging-ceiling-30499666-400.webp",
+    "alt": "Ceiling panels bowed sharply downward and split open in an empty room, with insulation exposed",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 425
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "water-damage-insurance-texas": {
+  "slug": "water-damage-insurance-texas",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 462
+   },
+   "img": {
+    "x": 822,
+    "y": 179,
+    "w": 498,
+    "h": 280,
+    "src": "insurance-claim-7731397.webp",
+    "currentSrc": "insurance-claim-7731397-800.webp",
+    "alt": "Two people reviewing a home insurance policy form on a clipboard at a table",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 402
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 760
+   },
+   "img": {
+    "x": 20,
+    "y": 661,
+    "w": 350,
+    "h": 197,
+    "src": "insurance-claim-7731397.webp",
+    "currentSrc": "insurance-claim-7731397-400.webp",
+    "alt": "Two people reviewing a home insurance policy form on a clipboard at a table",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 457
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "about": {
+  "slug": "about",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 430
+   },
+   "img": {
+    "x": 822,
+    "y": 163,
+    "w": 498,
+    "h": 280,
+    "src": "plumber-work-6419128.webp",
+    "currentSrc": "plumber-work-6419128-800.webp",
+    "alt": "Close-up of a plumber's hands installing steel pipes indoors",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 370
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 746
+   },
+   "img": {
+    "x": 20,
+    "y": 646,
+    "w": 350,
+    "h": 197,
+    "src": "plumber-work-6419128.webp",
+    "currentSrc": "plumber-work-6419128-400.webp",
+    "alt": "Close-up of a plumber's hands installing steel pipes indoors",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 443
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "contact": {
+  "slug": "contact",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 361
+   },
+   "img": {
+    "x": 822,
+    "y": 129,
+    "w": 498,
+    "h": 280,
+    "src": "burst-pipe-2339722.webp",
+    "currentSrc": "burst-pipe-2339722-800.webp",
+    "alt": "Macro shot of a brass faucet with water droplets against a blurred yellow background",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 109,
+    "w": 674,
+    "h": 301
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 663
+   },
+   "img": {
+    "x": 20,
+    "y": 564,
+    "w": 350,
+    "h": 197,
+    "src": "burst-pipe-2339722.webp",
+    "currentSrc": "burst-pipe-2339722-400.webp",
+    "alt": "Macro shot of a brass faucet with water droplets against a blurred yellow background",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 360
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "services": {
+  "slug": "services",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 358
+   },
+   "img": {
+    "x": 822,
+    "y": 127,
+    "w": 498,
+    "h": 280,
+    "src": "plumber-work-6419128.webp",
+    "currentSrc": "plumber-work-6419128-800.webp",
+    "alt": "Close-up of a plumber's hands installing steel pipes indoors",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 198,
+    "w": 674,
+    "h": 121
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 405
+   },
+   "img": {
+    "x": 20,
+    "y": 306,
+    "w": 350,
+    "h": 197,
+    "src": "plumber-work-6419128.webp",
+    "currentSrc": "plumber-work-6419128-400.webp",
+    "alt": "Close-up of a plumber's hands installing steel pipes indoors",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 102
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "areas": {
+  "slug": "areas",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 358
+   },
+   "img": {
+    "x": 822,
+    "y": 127,
+    "w": 498,
+    "h": 280,
+    "src": "suburban-home-186077.webp",
+    "currentSrc": "suburban-home-186077-800.webp",
+    "alt": "Suburban home exterior in a residential neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 179,
+    "w": 674,
+    "h": 158
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 423
+   },
+   "img": {
+    "x": 20,
+    "y": 324,
+    "w": 350,
+    "h": 197,
+    "src": "suburban-home-186077.webp",
+    "currentSrc": "suburban-home-186077-400.webp",
+    "alt": "Suburban home exterior in a residential neighborhood",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     234
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 120
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ },
+ "guides": {
+  "slug": "guides",
+  "1440": {
+   "hero_section": {
+    "x": 0,
+    "y": 81,
+    "w": 1440,
+    "h": 358
+   },
+   "img": {
+    "x": 822,
+    "y": 127,
+    "w": 498,
+    "h": 280,
+    "src": "thermal-imaging-7859781.webp",
+    "currentSrc": "thermal-imaging-7859781-800.webp",
+    "alt": "A thermal imaging screen in the foreground showing a person's heat image in orange, yellow and blue, held in front of a man indoors",
+    "cls": "hero-img",
+    "natural": [
+     600,
+     399
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "280.172px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "498.094px"
+   },
+   "text_col": {
+    "x": 120,
+    "y": 198,
+    "w": 674,
+    "h": 121
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  },
+  "390": {
+   "hero_section": {
+    "x": 0,
+    "y": 129,
+    "w": 390,
+    "h": 405
+   },
+   "img": {
+    "x": 20,
+    "y": 306,
+    "w": 350,
+    "h": 197,
+    "src": "thermal-imaging-7859781.webp",
+    "currentSrc": "thermal-imaging-7859781.webp",
+    "alt": "A thermal imaging screen in the foreground showing a person's heat image in orange, yellow and blue, held in front of a man indoors",
+    "cls": "hero-img",
+    "natural": [
+     351,
+     233
+    ],
+    "complete": true
+   },
+   "computed": {
+    "height": "196.875px",
+    "aspectRatio": "16 / 9",
+    "objectFit": "cover",
+    "maxWidth": "520px",
+    "width": "350px"
+   },
+   "text_col": {
+    "x": 20,
+    "y": 157,
+    "w": 350,
+    "h": 102
+   },
+   "hero_img_count": 1,
+   "footer_bottom": "Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+  }
+ }
+}

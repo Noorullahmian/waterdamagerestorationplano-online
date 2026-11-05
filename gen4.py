@@ -56,6 +56,9 @@ SERVICE_SLUGS = ['emergency-water-damage', 'water-extraction', 'structural-dryin
                  'moisture-mapping', 'attic-insulation-drying', 'wall-drying']
 AREA_SLUGS = ['west-plano', 'legacy-west', 'north-plano', 'central-plano', 'east-plano',
               'frisco', 'allen', 'mckinney', 'richardson', 'murphy']  # murphy = preserved old page (user order 2026-11-05)
+AREA_NAMES = {'west-plano': 'West Plano', 'legacy-west': 'Legacy West', 'north-plano': 'North Plano',
+              'central-plano': 'Central Plano', 'east-plano': 'East Plano', 'frisco': 'Frisco',
+              'allen': 'Allen', 'mckinney': 'McKinney', 'richardson': 'Richardson', 'murphy': 'Murphy'}
 GUIDE_SLUGS = ['shut-off-valve', 'warm-spot-on-floor', 'ceiling-dripping', 'water-damage-cost',
                'fans-wont-dry-walls', 'storm-water-category-3', 'mold-after-water-damage',
                'copper-pinhole-leaks', 'sagging-ceiling', 'water-damage-insurance-texas']
@@ -222,6 +225,10 @@ BANNED = {
     'drying-equipment-34585118.webp', 'crawl-space-17181949.webp',
     'water-heater-11211127.webp', 'water-heater-17854867.webp',
     'drying-fan-37080286.webp', 'burst-pipe-4406597.webp',  # PURGE 2026-11-05: rejected muddy outdoor pipe, was burst hero + copper split + water-extraction split
+    # COMBINED ROUND 2026-11-05: retire files whose every usage is covered by a new override
+    'burst-pipe-18274115.webp', 'drying-fan-37634966.webp', 'commercial-office-13068366.webp',
+    'texas-home-33404353.webp', 'sewage-drain-29608837.webp', 'sewage-drain-3964564.webp',
+    'sewage-drain-15242228.webp',
 }
 
 def esc(s):
@@ -649,7 +656,7 @@ def table_html(rows):
             else:
                 tds.append(f'<td>{inner}</td>')
         trs.append(f'<tr>{"".join(tds)}</tr>')
-    return f'<table className="doc-table"><tbody>{"".join(trs)}</tbody></table>'
+    return f'<div className="table-wrap"><table className="doc-table"><tbody>{"".join(trs)}</tbody></table></div>'
 
 def block_html(b):
     t = b['type']
@@ -967,7 +974,31 @@ def pick_images(page, manifest, pools):
         ('water-heater-leak', 5): 'plumber-work-35290675.webp',
         ('water-heater-leak', 6): 'suburban-home-7587470.webp',
         ('fire-sprinkler-cleanup', 1): 'fire-sprinkler-6101250.webp',
-        ('fans-wont-dry-walls', 6): 'drying-fan-37634966.webp',  # T2-1: AC units -> fan photo for a fans page
+        ('fans-wont-dry-walls', 6): 'mopping-tile-floor-6196566.webp',  # COMBINED ROUND 2026-11-05: mopping a tile floor (viewed) replaces banned industrial-wall photo in 'Fans Won't Dry Walls' closing split
+        # COMBINED ROUND 2026-11-05: 23 viewed-pixel overrides (19 new Pexels + 4 pool; 1 more repoint above)
+        ('about', 3): 'moisture-meter-8482824.webp',
+        ('appliance-leak', 1): 'stainless-steel-refrigerator-kitchen-4221389.webp',
+        ('attic-insulation-drying', 6): 'suburban-house-exterior-8583638.webp',
+        ('emergency-water-damage', 3): 'moisture-inspection-8292797.webp',
+        ('fire-sprinkler-cleanup', 5): 'apartment-building-balconies-18153132.webp',
+        ('flood-cleanup', 2): 'flooded-street-homes-28447806.webp',
+        ('hardwood-floor-drying', 1): 'towel-blotting-wood-floor-4440573.webp',
+        ('hardwood-floor-drying', 3): 'uneven-wood-floorboards-39377275.webp',
+        ('hardwood-floor-drying', 6): 'moisture-meter-8293746.webp',
+        ('hardwood-floor-drying', 7): 'hardwood-floor-living-room-35430055.webp',
+        ('laundry-overflow', 2): 'laundry-room-washer-dryer-3935334.webp',
+        ('mckinney', 2): 'suburban-home-4832530.webp',
+        ('moisture-mapping', 4): 'moisture-meter-7937963.webp',
+        ('mold-after-water-damage', 4): 'moisture-meter-8961703.webp',
+        ('sewage-cleanup', 0): 'protective-gear-bathroom-4098579.webp',
+        ('sewage-cleanup', 3): 'protective-suit-disinfecting-4099463.webp',
+        ('sewage-cleanup', 4): 'respirator-containment-6474117.webp',
+        ('slab-leak', 9): 'moisture-meter-floor-32497162.webp',
+        ('wall-drying', 4): 'exposed-wall-studs-4642438.webp',
+        ('water-damage-insurance-texas', 0): 'home-insurance-policy-7731333.webp',
+        ('water-damage-insurance-texas', 2): 'copper-pipes-3721272.webp',
+        ('water-extraction', 3): 'wet-vacuum-carpet-38325.webp',
+        ('water-extraction', 4): 'wet-dry-vacuum-3616735.webp',
     }
     # Apply overrides against the FINAL set (a file freed by one override
     # must be usable by another): start from hero + non-overridden picks.
@@ -1013,7 +1044,7 @@ section.block{padding:30px 0}section.block.alt{background:var(--cream)}
 .section-kicker{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#475569;margin:0 0 8px}
 h2{font-size:32px;line-height:1.25;color:#0b5563;margin:0 0 14px;border-left:6px solid #0d7a6e;padding-left:14px;text-wrap:balance}h2 .nobr{white-space:nowrap}
 h3{font-size:23px;color:#92400e;margin:26px 0 10px}
-p{margin:0 0 14px}ul{margin:0 0 16px;padding-left:22px}ol{margin:0 0 16px;padding-left:22px}li::marker{color:#0d7a6e;font-weight:700}.doc-table tbody tr:nth-child(even) td{background:#f1f5f9}li{margin-bottom:8px;line-height:1.7}
+p{margin:0 0 14px}ul{margin:0 0 16px;padding-left:22px}ol{margin:0 0 16px;padding-left:22px}li::marker{color:#0d7a6e;font-weight:700}.doc-table tbody tr:nth-child(even) td{background:#eef6f4}li{margin-bottom:8px;line-height:1.7}
 .cta-row{margin:18px 0}
 /* Split-container pattern: ONE container, text one side + image other side.
    Desktop >=821px: 2 columns, figure sticky while long text scrolls.
@@ -1023,14 +1054,15 @@ p{margin:0 0 14px}ul{margin:0 0 16px;padding-left:22px}ol{margin:0 0 16px;paddin
 .split-fig{margin:0}.split-fig img{width:100%;height:auto;display:block;border-radius:14px}img{max-width:100%}
 @media(min-width:821px){.split-fig{position:sticky;top:96px}}
 @media(max-width:820px){.split-grid{grid-template-columns:minmax(0,1fr)}.split-sec.rev .split-text{grid-column:auto}.split-sec.rev .split-fig{grid-column:auto;grid-row:auto}}
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:10px 0 30px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:10px 0 30px}
 @media(max-width:820px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.cards{grid-template-columns:minmax(0,1fr)}h2{font-size:24px}}
 .cards.thin{grid-template-columns:repeat(auto-fit,minmax(280px,360px));justify-content:center}
-.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;transition:transform .3s ease,box-shadow .3s ease;transform:perspective(900px) rotateX(0deg)}
-@media(hover:hover){.card:hover{transform:perspective(900px) rotateX(3deg) translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.12)}}
-.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
-.card-body{padding:14px}.card-body h3{margin:0 0 6px;font-size:19px}.card-body h3 a{color:#0a3550;text-decoration:none;display:inline-block;padding:11px 0}
+/* TAB 44 2026-11-05: cards beautiful — soft shadow, clean lift + image zoom on hover (tilt removed). */
+.card{border:1px solid #dfe7ec;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 2px 10px rgba(10,53,80,.07);transition:transform .3s ease,box-shadow .3s ease}
+@media(hover:hover){.card:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(10,53,80,.16)}.card:hover img{transform:scale(1.04)}}
+.card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;transition:transform .45s ease}
+.card-body{padding:18px 18px 16px}.card-body h3{margin:0 0 6px;font-size:20px;line-height:1.3}.card-body h3 a{color:#0a3550;text-decoration:none;display:inline-block;padding:11px 0}
 .faq-item{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px;background:#fff}
 .faq-item h3{margin:0 0 8px}.faq-item p{margin:0}
 section.block.dark{background:#0a3550;color:#fff;padding:40px 0}.block.dark .cta-row{margin:20px 0 22px}.block.dark .btn-call{padding:14px 26px}.block.dark .trust-band{align-items:center;margin:20px 0 16px}.block.dark p:last-child{margin-bottom:0}section.block.dark h2{color:#fff}section.block.dark a{color:#a9dbff}section.block.dark p{color:#eaf3f8}
@@ -1048,14 +1080,51 @@ section.block.dark{background:#0a3550;color:#fff;padding:40px 0}.block.dark .cta
 .radio-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.radio-row label{display:flex;gap:6px;align-items:center;font-weight:600;padding:10px 0}.radio-row input{width:22px;height:22px;accent-color:#0d7a6e;flex:none}
 .form-note{font-size:16px;color:#33475b}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.card{transition:none;transform:none}}
-.doc-table{width:100%;border-collapse:collapse;margin:18px 0;font-size:17px;line-height:1.5}
-.doc-table th,.doc-table td{border:1px solid #cbd5e1;padding:10px 12px;vertical-align:top;text-align:left}
-.doc-table th{background:#0a3550;color:#fff;font-weight:700}
-.split-text .doc-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+/* TAB 44 2026-11-05: tables restyled — crafted look, not AI-flat: teal gradient header, soft borders, teal-tinted striping, rounded wrapper. */
+.table-wrap{overflow-x:auto;border-radius:14px;border:1px solid #d7e3e0;margin:18px 0;box-shadow:0 2px 10px rgba(10,53,80,.06)}
+.doc-table{width:100%;border-collapse:collapse;margin:0;font-size:17px;line-height:1.5}
+.doc-table th,.doc-table td{border:1px solid #dce7e3;padding:12px 14px;vertical-align:top;text-align:left}
+.doc-table th{background:linear-gradient(135deg,#0a3550,#0d7a6e);color:#fff;font-weight:700;letter-spacing:.01em}
+.doc-table tbody tr:nth-child(even) td{background:#eef6f4}
 .doc-table td p{margin:0 0 8px}.doc-table td p:last-child{margin-bottom:0}
 .doc-table a{color:#064d73}
-@media(max-width:820px){.doc-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
+/* TAB 44 2026-11-05: H1 stylish on DESKTOP too — accent bar + gold location now apply at every width (were mobile-only). Desktop font-size unchanged. */
+.hero-accent{display:block;width:56px;height:4px;border-radius:2px;background:linear-gradient(90deg,#2dd4bf,#d4a017);margin-bottom:12px}
+.hero h1 .h1-loc{color:#f5c86b}
+@media(max-width:480px){.hero h1{font-size:22px;line-height:1.28;letter-spacing:-.01em;font-weight:800}}
+/* TAB 44 2026-11-05: Quick Answer card, at-a-glance box, related-current line, homepage polish. */
+.qa-card{background:linear-gradient(180deg,#eef7f5 0%,#e3f2ef 100%);border:1px solid #bfe3dd;border-left:6px solid #0d7a6e;border-radius:16px;padding:24px 26px;margin:6px 0 8px;box-shadow:0 4px 16px rgba(10,53,80,.08)}
+.qa-card h2{border-left:0;padding-left:0;margin:0 0 10px;color:#084f49}
+.qa-card p:last-child{margin-bottom:0}
+@media(max-width:820px){.qa-card{padding:20px}}
+.glance-box{background:linear-gradient(135deg,#0a3550 0%,#0d7a6e 100%);color:#fff;border-radius:16px;padding:22px 26px;margin:8px 0 18px;box-shadow:0 6px 20px rgba(10,53,80,.18)}
+.glance-box p{margin:0 0 10px;color:#fff}
+.glance-box p strong{color:#f5c86b;font-size:19px;letter-spacing:.02em;text-transform:uppercase}
+.glance-box ul{margin:0}
+.glance-box li{color:#eaf3f8}
+.glance-box li::marker{color:#f5c86b}
+.glance-box a{color:#a9dbff}
+.related-current{font-size:15px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#0b5563;margin:2px 0 14px}
+.hero-home{padding:40px 0 40px}
+.hero-home .hero-img{box-shadow:0 18px 44px rgba(0,0,0,.28)}
 '''
+
+# TAB 44 2026-11-05 (user-ordered exceptions, counted for the gates log):
+#  - Items 1+5 (CORRECTED ~18:43 PKT — the word is "Quick Answer"): the entire
+#    "(Quick Answer)" label (words + brackets) is removed from H2s at render
+#    time in write_page().
+#  - Item 3: the single "Done? Call..." line is removed from the home page only.
+#  - CLEANUP 2026-11-05 ~19:31 PKT (user: "Han, dono hata do"): the bare
+#    ": Quick Answer" suffix (no parens) is removed from the 9 area H2s
+#    (colon included, no trailing colon left), and the short "Done? Call
+#    (972) 472-7917." line is removed from emergency + the same 9 area pages.
+TAB44 = {'qa_labels': 0, 'done_removed': 0, 'glance_boxes': 0, 'qa_cards': 0,
+         'bare_qa': 0, 'short_done': 0}
+
+DONE_LINE = 'Done? Call (972) 472-7917. Help can be on the way while you read the rest of this page.'
+SHORT_DONE_LINE = 'Done? Call (972) 472-7917.'
+SHORT_DONE_SLUGS = {'emergency-water-damage', 'west-plano', 'legacy-west', 'north-plano',
+                    'central-plano', 'east-plano', 'frisco', 'allen', 'mckinney', 'richardson'}
 
 def jsonld(obj):
     return '<script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(' + json.dumps(obj, ensure_ascii=False) + ')}} />'
@@ -1067,15 +1136,41 @@ def nobr_h2(html_text):
         return f'<h2>{inner}</h2>'
     return re.sub(r'<h2>(.*?)</h2>', _wrap, html_text, flags=re.S)
 
+def blocks_html(blocks):
+    """Render blocks, grouping an 'at a glance' para + following list(s) into
+    one styled box (TAB 44 item 9)."""
+    out = ''
+    i = 0
+    while i < len(blocks):
+        b = blocks[i]
+        if b['type'] == 'para' and re.search(r'at a glance:\s*$', segs_plain(b['segs']).strip(), re.I):
+            parts = [block_html(b)]
+            j = i + 1
+            while j < len(blocks) and blocks[j]['type'] == 'list':
+                parts.append(block_html(blocks[j]))
+                j += 1
+            out += f'<div className="glance-box">{"".join(parts)}</div>'
+            TAB44['glance_boxes'] += 1
+            i = j
+        else:
+            out += block_html(b)
+            i += 1
+    return out
+
 def section_inner(sec):
     inner = ''
     if sec.get('heading'):
         inner += f'<h2>{esc(sec["heading"])}</h2>'
-    for b in sec['blocks']:
-        inner += block_html(b)
+    inner += blocks_html(sec['blocks'])
+    if sec.get('heading') and 'Quick Answer' in sec['heading']:
+        # TAB 44 item 2: the Quick Answer section becomes a beautiful card.
+        # (The "(Quick Answer)" label itself is stripped at render time in
+        # write_page; detection here uses the raw heading, parens or bare.)
+        TAB44['qa_cards'] += 1
+        return f'<div className="qa-card">{inner}</div>'
     return inner
 
-def cards_html(title, slugs, by_slug, hero_by_slug, exclude, body_by_slug, neutral=None, chosen=None):
+def cards_html(title, slugs, by_slug, hero_by_slug, exclude, body_by_slug, neutral=None, chosen=None, pre_html=None):
     cards = ''
     # HERO FIX 2026-11-05: 'chosen' is a shared set when a page renders two
     # card sections (home: services + areas). Previously each call had its
@@ -1113,13 +1208,48 @@ def cards_html(title, slugs, by_slug, hero_by_slug, exclude, body_by_slug, neutr
         cards += (f'<article className="card reveal">{img}<div className="card-body">'
                   f'<h3><a href="{href_for(s)}">{esc(t["meta_title"])}</a></h3></div></article>')
     cls = 'cards thin' if len(slugs) < 3 else 'cards'
-    return f'<section className="block cards-sec"><div className="wrap"><h2>{esc(title)}</h2><div className="{cls}">{cards}</div></div></section>'
+    return f'<section className="block cards-sec"><div className="wrap"><h2>{esc(title)}</h2>{pre_html or ""}<div className="{cls}">{cards}</div></div></section>'
+
+def h1_html(h1):
+    # MOBILE H1 STYLE 2026-11-05: wrap the trailing location phrase (e.g.
+    # " in Plano, TX") in a span so it renders gold on mobile only. Words
+    # unchanged — textContent is identical, qa4 H1-exact unaffected.
+    core, trail = h1, ''
+    if core.endswith('?'):
+        core, trail = core[:-1], '?'
+    m = re.search(r' (in .+, TX)$', core)
+    if not m:
+        m = re.search(r' ([A-Z][A-Za-z]+, TX)$', core)
+    if not m:
+        return esc(h1)
+    loc = m.group(0)
+    return esc(core[:-len(loc)]) + f'<span className="h1-loc">{esc(loc)}</span>' + esc(trail)
 
 def write_page(page, hero, picks, by_slug, hero_by_slug, body_by_slug, neutral=None):
     slug = page['slug']
     sections = page['sections']
     pick_by_sec = dict(picks)
     page_files = ({hero['file']} if hero else set()) | {e['file'] for (_i, e) in picks}
+    if slug == '' or slug in SHORT_DONE_SLUGS:
+        # TAB 44 item 3: remove the single "Done? Call..." line from the home page only.
+        # CLEANUP 2026-11-05: also drop the short "Done? Call (972) 472-7917." line
+        # from emergency + the 9 area pages (user: "Han, dono hata do").
+        def _drop_done(blocks):
+            kept = []
+            for b in blocks:
+                if b.get('type') == 'para':
+                    _txt = segs_plain(b.get('segs', [])).strip()
+                    if _txt == DONE_LINE:
+                        TAB44['done_removed'] += 1
+                        continue
+                    if slug in SHORT_DONE_SLUGS and _txt == SHORT_DONE_LINE:
+                        TAB44['short_done'] += 1
+                        continue
+                kept.append(b)
+            return kept
+        page['intro'] = _drop_done(page['intro'])
+        for _sec in sections:
+            _sec['blocks'] = _drop_done(_sec['blocks'])
     # Hero: first intro para + intro CTA label as the hero button.
     hero_para = ''
     intro_rest = []
@@ -1137,7 +1267,7 @@ def write_page(page, hero, picks, by_slug, hero_by_slug, body_by_slug, neutral=N
     out_sections = []
     home_cards = set()  # HERO FIX 2026-11-05: shared across home's two card sections so a swapped image can't repeat (see cards_html).
     if intro_rest:
-        inner = ''.join(block_html(b) for b in intro_rest)
+        inner = blocks_html(intro_rest)
         out_sections.append(f'<section className="block"><div className="wrap">{inner}</div></section>')
     band = 0
     for si, sec in enumerate(sections):
@@ -1167,19 +1297,37 @@ def write_page(page, hero, picks, by_slug, hero_by_slug, body_by_slug, neutral=N
             out_sections.append(cards_html('Our Services in Plano, TX', SERVICE_SLUGS, by_slug, hero_by_slug, page_files, body_by_slug, neutral, home_cards))
         if slug == '' and sec.get('heading') and sec['heading'].startswith('Serving Every Plano ZIP Code'):
             out_sections.append(cards_html('Areas We Serve Around Plano', AREA_SLUGS, by_slug, hero_by_slug, page_files, body_by_slug, neutral, home_cards))
-    # Related cards (non-home): doc link targets on this page, in doc order.
-    # 'run' included for the preserved Murphy page (old doc used hyperlink runs,
-    # not paren refs); no new-doc non-home page has run links, so this changes
-    # Murphy only.
+    # Related cards (non-home): TAB 44 2026-11-05 — per page type, doc order,
+    # doc-existing links only, never invented; home target never a card.
     if slug != '':
         rel = []
         for lk in page['links']:
-            if lk['kind'] in ('paren', 'run') and lk['target'] not in rel and lk['target'] != slug:
+            if lk['kind'] in ('paren', 'run', 'table-bare') and lk['target'] and lk['target'] not in rel and lk['target'] != slug:
                 rel.append(lk['target'])
-            if len(rel) >= 6:
-                break
-        if rel:
-            out_sections.append(cards_html('Related Services & Guides', rel, by_slug, hero_by_slug, page_files, body_by_slug, neutral))
+        if slug in SERVICE_SLUGS:
+            # Item 7: only the 2 most relevant services = first 2 service links in doc order.
+            keep = [t for t in rel if t in SERVICE_SLUGS][:2]
+            if keep:
+                out_sections.append(cards_html('Related Services', keep, by_slug, hero_by_slug, page_files, body_by_slug, neutral))
+        elif slug in AREA_SLUGS:
+            # Item 11: related AREAS (not services), 3-4 = all doc-linked areas
+            # (each area page has 3-4 in the doc; nothing invented, nothing dropped).
+            keep = [t for t in rel if t in AREA_SLUGS][:4]
+            if keep:
+                # Item 12: current area name as plain text, never a self-link.
+                cur = AREA_NAMES.get(slug, slug.replace('-', ' ').title())
+                out_sections.append(cards_html('Related Areas', keep, by_slug, hero_by_slug, page_files, body_by_slug, neutral,
+                                               pre_html=f'<p className="related-current">{esc(cur)}</p>'))
+        elif slug in GUIDE_SLUGS:
+            # Item 13 (FLAGGED reading): guides show 3 most-relevant cards = first 3 in doc order.
+            keep = rel[:3]
+            if keep:
+                out_sections.append(cards_html('Related Services & Guides', keep, by_slug, hero_by_slug, page_files, body_by_slug, neutral))
+        else:
+            # about / contact: unchanged (first 6 in doc order, mixed).
+            keep = rel[:6]
+            if keep:
+                out_sections.append(cards_html('Related Services & Guides', keep, by_slug, hero_by_slug, page_files, body_by_slug, neutral))
     # FAQ
     faq_html = ''
     faq_schema = None
@@ -1229,7 +1377,8 @@ export default function Page() {{
   return (<>
     {schema_tags}
     <div className="{hero_cls}"><div className="wrap hero-grid"><div>
-      <h1>{esc(page["h1"])}</h1>
+      <div className="hero-accent" aria-hidden="true"></div>
+      <h1>{h1_html(page["h1"])}</h1>
       {hero_para}
       {hero_cta_html}
     </div>{hero_img}</div></div>
@@ -1239,6 +1388,14 @@ export default function Page() {{
   </>);
 }}
 '''
+    # TAB 44 items 1+5 (CORRECTED — the word is "Quick Answer"): remove the
+    # entire "(Quick Answer)" label (words + brackets) from H2s, sitewide.
+    content, _n_qa = re.subn(r'\s*\(Quick Answer\)', '', content)
+    TAB44['qa_labels'] += _n_qa
+    # CLEANUP 2026-11-05 (user: "Han, dono hata do"): remove the bare
+    # ": Quick Answer" suffix (no parens) from the 9 area H2s, colon included.
+    content, _n_bare = re.subn(r':\s*Quick Answer', '', content)
+    TAB44['bare_qa'] += _n_bare
     content = nobr_h2(content)
     path = os.path.join(APP, 'page.jsx') if slug == '' else os.path.join(APP, slug, 'page.jsx')
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -1266,7 +1423,7 @@ def write_hub(slug, title, slugs, by_slug, hero_by_slug, body_by_slug, neutral=N
         {'@type': 'ListItem', 'position': 2, 'name': title, 'item': DOMAIN + f'/{slug}/'}]}
     content = f'''export const metadata = {{ title: {json.dumps(title + " | Water Damage Restoration Plano, TX")}, description: {json.dumps(title + " — Water Damage Restoration Plano, TX. Call (972) 472-7917.")}, alternates: {{ canonical: "{DOMAIN}/{slug}/" }}, openGraph: {{ title: {json.dumps(title + " | Water Damage Restoration Plano, TX")}, description: {json.dumps(title + " — Water Damage Restoration Plano, TX. Call (972) 472-7917.")}, url: "{DOMAIN}/{slug}/", images: ["{DOMAIN}/images/{hero_file[:-5]}-800.webp"] }} }};
 export default function Page() {{
-  return (<><div className="hero"><div className="wrap hero-grid"><div><h1>{esc(title)}</h1><p><a className="btn-call" href="{TEL}">Call Now: <span className="nowrap">{PHONE}</span></a></p></div>{hero_img}</div></div>
+  return (<><div className="hero"><div className="wrap hero-grid"><div><div className="hero-accent" aria-hidden="true"></div><h1>{h1_html(title)}</h1><p><a className="btn-call" href="{TEL}">Call Now: <span className="nowrap">{PHONE}</span></a></p></div>{hero_img}</div></div>
   {cards}
   {map_html}
   {jsonld(_hub_schema)}
@@ -1323,6 +1480,11 @@ def main():
     for p in pages:
         hero, picks = page_imgs[p['slug']]
         write_page(p, hero, picks, by_slug, hero_by_slug, body_by_slug, neutral)
+    tab44_log = {'qa_labels_removed': TAB44['qa_labels'], 'done_line_removed': TAB44['done_removed'],
+                 'glance_boxes': TAB44['glance_boxes'], 'qa_cards': TAB44['qa_cards'],
+                 'bare_qa_removed': TAB44['bare_qa'], 'short_done_removed': TAB44['short_done']}
+    json.dump(tab44_log, open(os.path.join(BASE, 'tab44-log.json'), 'w'), indent=1)
+    print(f"TAB44 qa_labels={TAB44['qa_labels']} done_removed={TAB44['done_removed']} glance_boxes={TAB44['glance_boxes']} qa_cards={TAB44['qa_cards']} bare_qa={TAB44['bare_qa']} short_done={TAB44['short_done']}")
     write_hub('services', 'Our Water Damage Services in Plano, TX', SERVICE_SLUGS, by_slug, hero_by_slug, body_by_slug, neutral)
     write_hub('areas', 'Water Damage Restoration Areas Around Plano, TX', AREA_SLUGS, by_slug, hero_by_slug, body_by_slug, neutral)
     write_hub('guides', 'Plano Water Damage Guides', GUIDE_SLUGS, by_slug, hero_by_slug, body_by_slug, neutral)

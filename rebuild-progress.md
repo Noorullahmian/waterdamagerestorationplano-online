@@ -57,3 +57,19 @@
 
 ## Blockers
 - None yet.
+
+## TAB 44 ROUND — 2026-11-05 (LOCAL ONLY, not pushed)
+- All 14 items implemented in gen4.py; one rebuild (gen4.py + npx next build).
+- CORRECTED mid-round (parent ~18:43 PKT, user's screenshot): the word in "Remove only this word" is "Quick Answer" — the ENTIRE "(Quick Answer)" label (words + brackets) removed from 33 H2s (99 rendered occurrences). NOT parens-only. Cheapest stays.
+- QA cards 42/43 (murphy has no QA section in source). Done line removed home only (1). Glance boxes 31. Related: services 2, areas 3-4 (all doc-linked), guides 3 (FLAGGED reading), about/contact 6. Desktop H1: accent bar + gold loc hoisted, font-size unchanged. Cards + tables restyled. Images not redone (combined round already covered).
+- Gates fresh: qa4 word-diff 0 except the 2 exceptions; links 517/517 (0/0/0/0); sitemap 46/46; overflow 0 @1440/768/390/320; CLS 0; console 0; splits 6/6; H1=1/page; small targets 2 on /contact/ only (pre-existing checkboxes).
+- Flags for user: (A) bare "Quick Answer" still on 9 area H2s; (B) short "Done? Call (972) 472-7917." still on 10 pages (emergency + 9 areas); (C) item-13 guide reading to confirm; (D) H1 2-line decision still pending.
+- Log: ~/workspace/your_files/plano3-tab44/tab44-log.txt; screenshots: ~/workspace/your_files/plano3-tab44/ (16 PNGs); tab44-log.json, qa4.json, tab44-measure.json in this dir.
+
+## TAB 44 CLEANUP ROUND — 2026-11-05 ~19:31 PKT (LOCAL ONLY, not pushed)
+- User: "Han, dono hata do" — BOTH Tab 44 flags removed in one rebuild (gen4.py + npx next build).
+- (1) Bare ": Quick Answer" suffix removed from the 9 area H2s, colon included — bare_qa=9, 0 "Quick Answer" left sitewide (app + out). H2s clean, no trailing colon (e.g. "Water Damage Restoration in Allen"). QA cards still 42.
+- (2) Short "Done? Call (972) 472-7917." removed from emergency + 9 area pages — short_done=10, 0 "Done?" left sitewide. Full home line untouched (already gone in Tab 44, done_removed=1).
+- Gates fresh: qa4 word-diff misses ONLY user-ordered exception words (answer, done, page, quick, rest, while); links 517/517 (0/0/0/0); sitemap 46/46; H1=1/page; splits 6/6; overflow 0 @1440/768/390/320; CLS 0; console 0; First Load JS 87.2 kB.
+- Screenshots viewed: allen QA card (H2 clean), allen glance box, allen mobile hero, emergency Done-line area (checklist ends clean, no Done line). Log + 7 PNGs: ~/workspace/your_files/plano3-tab44-cleanup/tab44-cleanup-log.txt. Records: tab44-log.json, qa4.json, cleanup-measure.json, audit/shoot_cleanup.py.
+- NO push — parent handles the authorized push (combined + Tab 44 + cleanup together) with the user's fresh token.

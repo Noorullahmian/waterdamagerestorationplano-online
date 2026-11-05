@@ -4,7 +4,14 @@
    "slug": "",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "done",
+    "page",
+    "quick",
+    "rest",
+    "while"
+   ],
    "meta_ok": true,
    "faq_vis": 11,
    "faq_doc": 11,
@@ -32,7 +39,11 @@
    "slug": "emergency-water-damage",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "done",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 8,
    "faq_doc": 8,
@@ -48,7 +59,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -60,7 +71,10 @@
    "slug": "water-extraction",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -76,7 +90,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -88,7 +102,10 @@
    "slug": "structural-drying",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -104,7 +121,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -116,7 +133,10 @@
    "slug": "burst-pipe-cleanup",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -132,7 +152,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -144,7 +164,10 @@
    "slug": "sewage-cleanup",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -160,7 +183,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -172,7 +195,10 @@
    "slug": "slab-leak",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -188,7 +214,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -200,7 +226,10 @@
    "slug": "water-heater-leak",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -216,7 +245,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -228,7 +257,10 @@
    "slug": "ceiling-leak",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -244,7 +276,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -256,7 +288,10 @@
    "slug": "flood-cleanup",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -272,7 +307,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -284,7 +319,10 @@
    "slug": "commercial-water-damage",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -300,7 +338,7 @@
    "tables_doc": 3,
    "tables_ren": 3,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -312,7 +350,10 @@
    "slug": "hardwood-floor-drying",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -328,7 +369,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -340,7 +381,10 @@
    "slug": "ac-overflow",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -356,7 +400,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -368,7 +412,10 @@
    "slug": "cabinet-drying",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -384,7 +431,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -396,7 +443,10 @@
    "slug": "laundry-overflow",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -412,7 +462,7 @@
    "tables_doc": 3,
    "tables_ren": 3,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -424,7 +474,10 @@
    "slug": "crawl-space-drying",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -440,7 +493,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -452,7 +505,10 @@
    "slug": "appliance-leak",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -468,7 +524,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -480,7 +536,10 @@
    "slug": "fire-sprinkler-cleanup",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -496,7 +555,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -508,7 +567,10 @@
    "slug": "moisture-mapping",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -524,7 +586,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -536,7 +598,10 @@
    "slug": "attic-insulation-drying",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -552,7 +617,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -564,7 +629,10 @@
    "slug": "wall-drying",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -580,7 +648,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 9,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -592,7 +660,10 @@
    "slug": "west-plano",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 9,
    "faq_doc": 9,
@@ -608,7 +679,7 @@
    "tables_doc": 4,
    "tables_ren": 4,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -620,7 +691,10 @@
    "slug": "legacy-west",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "done",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 9,
    "faq_doc": 9,
@@ -636,7 +710,7 @@
    "tables_doc": 4,
    "tables_ren": 4,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -648,7 +722,10 @@
    "slug": "north-plano",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "done"
+   ],
    "meta_ok": true,
    "faq_vis": 8,
    "faq_doc": 8,
@@ -664,7 +741,7 @@
    "tables_doc": 4,
    "tables_ren": 4,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -676,7 +753,11 @@
    "slug": "central-plano",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "done",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 8,
    "faq_doc": 8,
@@ -692,7 +773,7 @@
    "tables_doc": 4,
    "tables_ren": 4,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 11,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -704,7 +785,11 @@
    "slug": "east-plano",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "done",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 8,
    "faq_doc": 8,
@@ -720,7 +805,7 @@
    "tables_doc": 4,
    "tables_ren": 4,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -732,7 +817,10 @@
    "slug": "frisco",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "done"
+   ],
    "meta_ok": true,
    "faq_vis": 8,
    "faq_doc": 8,
@@ -748,7 +836,7 @@
    "tables_doc": 4,
    "tables_ren": 4,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 11,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -760,7 +848,11 @@
    "slug": "allen",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "done",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 8,
    "faq_doc": 8,
@@ -776,7 +868,7 @@
    "tables_doc": 4,
    "tables_ren": 4,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 11,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -788,7 +880,11 @@
    "slug": "mckinney",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "done",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 8,
    "faq_doc": 8,
@@ -804,7 +900,7 @@
    "tables_doc": 4,
    "tables_ren": 4,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -816,7 +912,11 @@
    "slug": "richardson",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "done",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 8,
    "faq_doc": 8,
@@ -832,7 +932,7 @@
    "tables_doc": 4,
    "tables_ren": 4,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -844,7 +944,9 @@
    "slug": "shut-off-valve",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -860,7 +962,7 @@
    "tables_doc": 1,
    "tables_ren": 1,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -872,7 +974,10 @@
    "slug": "warm-spot-on-floor",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -888,7 +993,7 @@
    "tables_doc": 1,
    "tables_ren": 1,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -900,7 +1005,9 @@
    "slug": "ceiling-dripping",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -916,7 +1023,7 @@
    "tables_doc": 1,
    "tables_ren": 1,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -928,7 +1035,9 @@
    "slug": "water-damage-cost",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -944,7 +1053,7 @@
    "tables_doc": 1,
    "tables_ren": 1,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -956,7 +1065,10 @@
    "slug": "fans-wont-dry-walls",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -972,7 +1084,7 @@
    "tables_doc": 1,
    "tables_ren": 1,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -984,7 +1096,10 @@
    "slug": "storm-water-category-3",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -1000,7 +1115,7 @@
    "tables_doc": 2,
    "tables_ren": 2,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -1012,7 +1127,10 @@
    "slug": "mold-after-water-damage",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -1028,7 +1146,7 @@
    "tables_doc": 1,
    "tables_ren": 1,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -1040,7 +1158,10 @@
    "slug": "copper-pinhole-leaks",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -1056,7 +1177,7 @@
    "tables_doc": 1,
    "tables_ren": 1,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -1068,7 +1189,10 @@
    "slug": "sagging-ceiling",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer",
+    "quick"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -1084,7 +1208,7 @@
    "tables_doc": 1,
    "tables_ren": 1,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -1112,7 +1236,7 @@
    "tables_doc": 1,
    "tables_ren": 1,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -1124,7 +1248,9 @@
    "slug": "about",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer"
+   ],
    "meta_ok": true,
    "faq_vis": 6,
    "faq_doc": 6,
@@ -1152,7 +1278,9 @@
    "slug": "contact",
    "h1_count": 1,
    "h1_match": true,
-   "miss": [],
+   "miss": [
+    "answer"
+   ],
    "meta_ok": true,
    "faq_vis": 7,
    "faq_doc": 7,
@@ -1196,7 +1324,7 @@
    "tables_doc": 4,
    "tables_ren": 4,
    "tables_ok": true,
-   "imgs": 13,
+   "imgs": 10,
    "splits": 6,
    "hero_imgs": 1,
    "bad_alt": 0,
@@ -1220,14 +1348,14 @@
   {
    "slug": "emergency-water-damage",
    "hero_bytes": 19030,
-   "splits_bytes": 73124,
-   "content_total": 92154
+   "splits_bytes": 72126,
+   "content_total": 91156
   },
   {
    "slug": "water-extraction",
    "hero_bytes": 16800,
-   "splits_bytes": 73442,
-   "content_total": 90242
+   "splits_bytes": 84604,
+   "content_total": 101404
   },
   {
    "slug": "structural-drying",
@@ -1244,14 +1372,14 @@
   {
    "slug": "sewage-cleanup",
    "hero_bytes": 23042,
-   "splits_bytes": 132508,
-   "content_total": 155550
+   "splits_bytes": 84318,
+   "content_total": 107360
   },
   {
    "slug": "slab-leak",
    "hero_bytes": 59610,
-   "splits_bytes": 70504,
-   "content_total": 130114
+   "splits_bytes": 73050,
+   "content_total": 132660
   },
   {
    "slug": "water-heater-leak",
@@ -1268,8 +1396,8 @@
   {
    "slug": "flood-cleanup",
    "hero_bytes": 113022,
-   "splits_bytes": 88990,
-   "content_total": 202012
+   "splits_bytes": 105386,
+   "content_total": 218408
   },
   {
    "slug": "commercial-water-damage",
@@ -1280,8 +1408,8 @@
   {
    "slug": "hardwood-floor-drying",
    "hero_bytes": 24126,
-   "splits_bytes": 97358,
-   "content_total": 121484
+   "splits_bytes": 89654,
+   "content_total": 113780
   },
   {
    "slug": "ac-overflow",
@@ -1298,8 +1426,8 @@
   {
    "slug": "laundry-overflow",
    "hero_bytes": 12914,
-   "splits_bytes": 72372,
-   "content_total": 85286
+   "splits_bytes": 74846,
+   "content_total": 87760
   },
   {
    "slug": "crawl-space-drying",
@@ -1310,32 +1438,32 @@
   {
    "slug": "appliance-leak",
    "hero_bytes": 35258,
-   "splits_bytes": 64362,
-   "content_total": 99620
+   "splits_bytes": 65314,
+   "content_total": 100572
   },
   {
    "slug": "fire-sprinkler-cleanup",
    "hero_bytes": 41064,
-   "splits_bytes": 43614,
-   "content_total": 84678
+   "splits_bytes": 38482,
+   "content_total": 79546
   },
   {
    "slug": "moisture-mapping",
    "hero_bytes": 10454,
-   "splits_bytes": 44004,
-   "content_total": 54458
+   "splits_bytes": 38406,
+   "content_total": 48860
   },
   {
    "slug": "attic-insulation-drying",
    "hero_bytes": 20468,
-   "splits_bytes": 66334,
-   "content_total": 86802
+   "splits_bytes": 62850,
+   "content_total": 83318
   },
   {
    "slug": "wall-drying",
    "hero_bytes": 27262,
-   "splits_bytes": 114952,
-   "content_total": 142214
+   "splits_bytes": 129760,
+   "content_total": 157022
   },
   {
    "slug": "west-plano",
@@ -1382,8 +1510,8 @@
   {
    "slug": "mckinney",
    "hero_bytes": 96172,
-   "splits_bytes": 83314,
-   "content_total": 179486
+   "splits_bytes": 94416,
+   "content_total": 190588
   },
   {
    "slug": "richardson",
@@ -1418,8 +1546,8 @@
   {
    "slug": "fans-wont-dry-walls",
    "hero_bytes": 97454,
-   "splits_bytes": 74350,
-   "content_total": 171804
+   "splits_bytes": 68580,
+   "content_total": 166034
   },
   {
    "slug": "storm-water-category-3",
@@ -1430,8 +1558,8 @@
   {
    "slug": "mold-after-water-damage",
    "hero_bytes": 22352,
-   "splits_bytes": 108646,
-   "content_total": 130998
+   "splits_bytes": 108666,
+   "content_total": 131018
   },
   {
    "slug": "copper-pinhole-leaks",
@@ -1448,14 +1576,14 @@
   {
    "slug": "water-damage-insurance-texas",
    "hero_bytes": 30650,
-   "splits_bytes": 90968,
-   "content_total": 121618
+   "splits_bytes": 97542,
+   "content_total": 128192
   },
   {
    "slug": "about",
    "hero_bytes": 51532,
-   "splits_bytes": 94890,
-   "content_total": 146422
+   "splits_bytes": 89648,
+   "content_total": 141180
   },
   {
    "slug": "contact",

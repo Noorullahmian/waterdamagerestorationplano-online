@@ -1,0 +1,3050 @@
+{
+ "": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 3,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 3,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 3,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-30707539-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "suburban-home-186077-800.webp",
+     "w": 558,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "emergency-water-damage": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "water-extraction-6195949-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "flooded-floor-7924140-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "burst-pipe-18274115-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "plumber-work-6419128-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "burst-pipe-15206136-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "water-extraction": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "flooded-floor-7924140-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "burst-pipe-15206136-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "drying-fan-37634966-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "burst-pipe-18274115-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "burst-pipe-4406597-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "water-extraction-6195949-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "structural-drying": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "drying-equipment-16243255-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "drying-fan-28726413-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "moisture-meter-8961703-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "moisture-meter-8293746-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "moisture-meter-8293640-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "burst-pipe-cleanup": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "plumber-work-6419128-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "plumber-work-35290675-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "burst-pipe-8488035-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "sewage-cleanup": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "sewage-drain-29608837-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "sewage-drain-13961561-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "sewage-drain-3964564-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "sewage-drain-15242228-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "sewage-drain-17375718-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "mold-wall-9127236-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "shower-drain-5768318-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "slab-leak": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "burst-pipe-11658940-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "hardwood-floor-3935327-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "slab-leak-21366138-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "water-shutoff-4494656-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "burst-pipe-15206136-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "burst-pipe-18274115-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "wet-tile-9376351-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "water-heater-leak": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "plumber-work-6419128-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "attic-insulation-9043415-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "water-heater-12502433-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "plumber-work-35290675-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "attic-insulation-4482829-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "water-heater-19980200-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "ceiling-leak": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "ceiling-stain-14032089-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "attic-insulation-6124239-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "attic-insulation-4482829-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "ceiling-stain-8624464-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "ceiling-stain-5641421-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "ceiling-stain-3708564-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "flood-cleanup": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "storm-flood-11537987-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "burst-pipe-18274115-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "flooded-floor-7924140-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "flooded-suburban-home-28447764-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "commercial-water-damage": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "commercial-office-36631701-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "fire-sprinkler-6101250-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "fire-sprinkler-30749458-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "fire-sprinkler-14129563-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "fire-sprinkler-36631700-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "drying-equipment-16243255-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "hardwood-floor-drying": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "luxury-interior-36906952-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-30707539-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "hardwood-floor-3935327-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "ac-overflow": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "ceiling-stain-14032089-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "attic-insulation-271743-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "ceiling-crew-8293648-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "cabinet-drying": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "kitchen-leak-34295401-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "kitchen-leak-10961064-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "cabinet-kitchen-2398375-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "cabinet-kitchen-6283972-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "cabinet-kitchen-8146322-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "cabinet-kitchen-37030080-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "cabinet-kitchen-7535073-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "laundry-overflow": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "laundry-room-7282378-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "laundry-room-4993073-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "ceiling-stain-3708564-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "flooded-floor-7924140-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "laundry-room-19846385-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "crawl-space-drying": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "crawl-space-40440109-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "crawl-space-4092030-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "crawl-space-40440114-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "pier-beam-home-26261510-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "plumber-work-6419128-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "crawl-space-35539075-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "crawl-space-4092026-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "appliance-leak": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "appliance-fridge-4469164-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "laundry-room-7282378-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "kitchen-leak-10961064-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "kitchen-leak-34295401-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "appliance-fridge-6593607-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "appliance-fridge-3958962-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "fire-sprinkler-cleanup": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "fire-sprinkler-36631700-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "fire-sprinkler-6101250-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "fire-sprinkler-30749458-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "fire-sprinkler-14129563-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "fire-sprinkler-28196476-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "flooded-floor-7924140-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "moisture-mapping": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "moisture-meter-8293640-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "ceiling-stain-8624464-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "ceiling-stain-14032089-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "moisture-meter-8293746-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "moisture-meter-8961703-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "moisture-meter-8482824-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "thermal-imaging-7859781-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "attic-insulation-drying": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "attic-insulation-271743-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "attic-insulation-4482829-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "ceiling-stain-8624464-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "water-heater-12502433-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "water-heater-34593293-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "attic-insulation-6124239-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "wall-drying": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "mold-wall-9127236-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "mold-wall-18351809-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "moisture-meter-8961703-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "mold-wall-29701042-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "mold-wall-4597285-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "steel-studs-35496414-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "flood-cut-wall-8488031-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "west-plano": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "greenbelt-home-12445995-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-30707539-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "suburban-home-3990589-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "legacy-west": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 3,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "texas-home-23930020-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "texas-home-8278494-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "fire-sprinkler-6101250-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "texas-home-8278493-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "north-plano": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-15303808-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "greenbelt-home-12445995-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "suburban-home-26595553-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "central-plano": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 3,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 3,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 3,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-186077-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "texas-home-8278494.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "east-plano": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-186077-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "pier-beam-home-26261510-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "brick-ranch-8031875-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "frisco": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-186077-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "texas-home-23930020-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "texas-home-8278494-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "allen": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-30707539-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "suburban-home-18280830-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "mckinney": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "texas-home-33404353-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-186077-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "brick-ranch-8031875-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "richardson": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-186077-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-30707539-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "suburban-home-3990589-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "murphy": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "flooded-floor-7924140-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-32711440-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "texas-home-23928963-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "greenbelt-home-12445995-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "shut-off-valve": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "burst-pipe-15206136-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-30707539-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "water-shutoff-4494656.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "warm-spot-on-floor": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "burst-pipe-15206136-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "burst-pipe-36571568-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "drying-equipment-16243255-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "warm-floor-thermal-5853823-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "ceiling-dripping": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "ceiling-stain-14032089-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "ceiling-stain-3708564-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "attic-insulation-4482829-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "ceiling-stain-lived-in-8624466-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "water-damage-cost": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "moisture-meter-8293746-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-30707539-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "suburban-home-26595553-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "fans-wont-dry-walls": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "mold-wall-29701042-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "moisture-meter-7937963-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "mold-wall-18351809-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "moisture-meter-8293746-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "drying-fan-37634966-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "mold-wall-4597285-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "storm-water-category-3": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "flooded-floor-7924140-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-186077-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "storm-flood-11537987-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "insurance-claim-7731397-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "flooded-suburban-home-28447764-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "mold-after-water-damage": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "mold-wall-18351809-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "flood-cut-wall-8488031-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "mold-wall-9127236-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "mold-wall-29701042-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "indoor-mold-18063447-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "copper-pinhole-leaks": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "burst-pipe-4406597-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "slab-leak-21366138-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "plumber-work-6419128-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "water-shutoff-4494656-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "drying-equipment-16243255-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "copper-pipes-6123308-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "sagging-ceiling": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "ceiling-stain-8624464-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-30707539-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "ceiling-stain-14032089-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "ceiling-stain-3708564-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "sagging-ceiling-30499666-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "water-damage-insurance-texas": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 3,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "commercial-office-13068366-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "plumber-work-6419128-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "insurance-claim-7731397-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "about": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 3,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 3,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 3,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [
+    {
+     "src": "plumber-work-35290675-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-3990589-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "drying-equipment-16243255-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-31602311-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "plumber-work-6419128-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "contact": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [
+    {
+     "tag": "INPUT",
+     "h": 22,
+     "w": 22,
+     "txt": "active"
+    },
+    {
+     "tag": "INPUT",
+     "h": 22,
+     "w": 22,
+     "txt": "active"
+    }
+   ],
+   "splits": [
+    {
+     "src": "plumber-work-35290675-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "water-extraction-6195949-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-26595553-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "flooded-floor-7924140-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "plumber-work-6419128-400.webp",
+     "w": 380,
+     "nat": 380
+    },
+    {
+     "src": "suburban-home-7587470-400.webp",
+     "w": 380,
+     "nat": 380
+    }
+   ],
+   "hero": [
+    {
+     "src": "burst-pipe-2339722-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "services": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [],
+   "hero": [
+    {
+     "src": "plumber-work-6419128-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "areas": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 2,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [],
+   "hero": [
+    {
+     "src": "suburban-home-186077-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ },
+ "guides": {
+  "widths": {
+   "1440": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 674
+   },
+   "768": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 728
+   },
+   "390": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 350
+   },
+   "320": {
+    "overflow": 0,
+    "h1_lines": 1,
+    "h1_w": 280
+   }
+  },
+  "desktop": {
+   "cls": 0,
+   "small_targets": [],
+   "splits": [],
+   "hero": [
+    {
+     "src": "thermal-imaging-7859781-800.webp",
+     "w": 498,
+     "nat": 600
+    }
+   ],
+   "console_errors": []
+  }
+ }
+}

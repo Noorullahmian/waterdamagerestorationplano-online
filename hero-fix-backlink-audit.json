@@ -1,0 +1,1125 @@
+{
+ "pages": {
+  "/": {
+   "doc_links": 25,
+   "rendered_content": 25,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "exact",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 28,
+    "cards": 30,
+    "faq": 3,
+    "footer": 13
+   },
+   "tel_links": 11
+  },
+  "emergency-water-damage": {
+   "doc_links": 14,
+   "rendered_content": 14,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 16,
+    "cards": 6,
+    "faq": 3,
+    "footer": 13
+   },
+   "tel_links": 10
+  },
+  "water-extraction": {
+   "doc_links": 15,
+   "rendered_content": 15,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 16,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "structural-drying": {
+   "doc_links": 10,
+   "rendered_content": 10,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 10,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "burst-pipe-cleanup": {
+   "doc_links": 11,
+   "rendered_content": 11,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 9,
+    "cards": 6,
+    "faq": 4,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "sewage-cleanup": {
+   "doc_links": 6,
+   "rendered_content": 6,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 7,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "slab-leak": {
+   "doc_links": 11,
+   "rendered_content": 11,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 11,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "water-heater-leak": {
+   "doc_links": 11,
+   "rendered_content": 11,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 11,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "ceiling-leak": {
+   "doc_links": 12,
+   "rendered_content": 12,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 12,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "flood-cleanup": {
+   "doc_links": 9,
+   "rendered_content": 9,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 9,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "commercial-water-damage": {
+   "doc_links": 7,
+   "rendered_content": 7,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 8,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 8
+  },
+  "hardwood-floor-drying": {
+   "doc_links": 10,
+   "rendered_content": 10,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 10,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "ac-overflow": {
+   "doc_links": 8,
+   "rendered_content": 8,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 9,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "cabinet-drying": {
+   "doc_links": 11,
+   "rendered_content": 11,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 12,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "laundry-overflow": {
+   "doc_links": 12,
+   "rendered_content": 12,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 13,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "crawl-space-drying": {
+   "doc_links": 9,
+   "rendered_content": 9,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 10,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "appliance-leak": {
+   "doc_links": 10,
+   "rendered_content": 10,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 11,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "fire-sprinkler-cleanup": {
+   "doc_links": 8,
+   "rendered_content": 8,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 9,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "moisture-mapping": {
+   "doc_links": 10,
+   "rendered_content": 10,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 10,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "attic-insulation-drying": {
+   "doc_links": 13,
+   "rendered_content": 13,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 14,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "wall-drying": {
+   "doc_links": 11,
+   "rendered_content": 11,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 12,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "west-plano": {
+   "doc_links": 12,
+   "rendered_content": 12,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 12,
+    "cards": 6,
+    "faq": 4,
+    "footer": 13
+   },
+   "tel_links": 9
+  },
+  "legacy-west": {
+   "doc_links": 13,
+   "rendered_content": 13,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 13,
+    "cards": 6,
+    "faq": 5,
+    "footer": 13
+   },
+   "tel_links": 10
+  },
+  "north-plano": {
+   "doc_links": 13,
+   "rendered_content": 13,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 12,
+    "cards": 6,
+    "faq": 5,
+    "footer": 13
+   },
+   "tel_links": 9
+  },
+  "central-plano": {
+   "doc_links": 12,
+   "rendered_content": 12,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 11,
+    "cards": 6,
+    "faq": 5,
+    "footer": 13
+   },
+   "tel_links": 9
+  },
+  "east-plano": {
+   "doc_links": 11,
+   "rendered_content": 11,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 11,
+    "cards": 6,
+    "faq": 4,
+    "footer": 13
+   },
+   "tel_links": 9
+  },
+  "frisco": {
+   "doc_links": 13,
+   "rendered_content": 13,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 12,
+    "cards": 6,
+    "faq": 5,
+    "footer": 13
+   },
+   "tel_links": 9
+  },
+  "allen": {
+   "doc_links": 15,
+   "rendered_content": 15,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 13,
+    "cards": 6,
+    "faq": 6,
+    "footer": 13
+   },
+   "tel_links": 9
+  },
+  "mckinney": {
+   "doc_links": 12,
+   "rendered_content": 12,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 12,
+    "cards": 6,
+    "faq": 4,
+    "footer": 13
+   },
+   "tel_links": 9
+  },
+  "richardson": {
+   "doc_links": 13,
+   "rendered_content": 13,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 13,
+    "cards": 6,
+    "faq": 4,
+    "footer": 13
+   },
+   "tel_links": 9
+  },
+  "shut-off-valve": {
+   "doc_links": 7,
+   "rendered_content": 7,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "outside": 8,
+    "cards": 6,
+    "faq": 3,
+    "footer": 13
+   },
+   "tel_links": 8
+  },
+  "warm-spot-on-floor": {
+   "doc_links": 9,
+   "rendered_content": 9,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "outside": 9,
+    "cards": 6,
+    "faq": 3,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "ceiling-dripping": {
+   "doc_links": 10,
+   "rendered_content": 10,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "outside": 10,
+    "cards": 6,
+    "faq": 3,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "water-damage-cost": {
+   "doc_links": 9,
+   "rendered_content": 9,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "outside": 11,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "fans-wont-dry-walls": {
+   "doc_links": 6,
+   "rendered_content": 6,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "exact",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "outside": 9,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 8
+  },
+  "storm-water-category-3": {
+   "doc_links": 8,
+   "rendered_content": 8,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "outside": 8,
+    "cards": 6,
+    "faq": 3,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "mold-after-water-damage": {
+   "doc_links": 8,
+   "rendered_content": 8,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "outside": 10,
+    "cards": 6,
+    "faq": 1,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "copper-pinhole-leaks": {
+   "doc_links": 14,
+   "rendered_content": 14,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "outside": 15,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "sagging-ceiling": {
+   "doc_links": 7,
+   "rendered_content": 7,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "outside": 8,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "water-damage-insurance-texas": {
+   "doc_links": 9,
+   "rendered_content": 9,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "outside": 9,
+    "cards": 6,
+    "faq": 3,
+    "footer": 13
+   },
+   "tel_links": 7
+  },
+  "about": {
+   "doc_links": 31,
+   "rendered_content": 31,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 34,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 10
+  },
+  "contact": {
+   "doc_links": 32,
+   "rendered_content": 32,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 36,
+    "cards": 6,
+    "faq": 2,
+    "footer": 13
+   },
+   "tel_links": 11
+  },
+  "murphy": {
+   "doc_links": 20,
+   "rendered_content": 20,
+   "missing": [],
+   "extra": [],
+   "order_ok": true,
+   "order_note": "faq-block-last",
+   "self": [],
+   "broken": [],
+   "zones": {
+    "header": 8,
+    "hero": 2,
+    "outside": 19,
+    "cards": 6,
+    "faq": 5,
+    "footer": 13
+   },
+   "tel_links": 9
+  }
+ },
+ "template": {
+  "services": {
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "cards": 20,
+    "footer": 13,
+    "outside": 1
+   },
+   "cards": [
+    [
+     "emergency water damage cleanup plano, tx | 24/7 response",
+     "/emergency-water-damage/"
+    ],
+    [
+     "water extraction plano, tx | 24/7 standing water removal",
+     "/water-extraction/"
+    ],
+    [
+     "structural drying plano, tx | dehumidification & daily logs",
+     "/structural-drying/"
+    ],
+    [
+     "burst pipe water damage cleanup plano, tx | 24/7 help",
+     "/burst-pipe-cleanup/"
+    ],
+    [
+     "sewage backup cleanup plano, tx | 24/7 category 3 cleanup",
+     "/sewage-cleanup/"
+    ],
+    [
+     "slab leak water damage plano, tx | under-floor drying 24/7",
+     "/slab-leak/"
+    ],
+    [
+     "water heater leak cleanup plano, tx | attic & garage 24/7",
+     "/water-heater-leak/"
+    ],
+    [
+     "ceiling water damage plano, tx | roof leak cleanup 24/7",
+     "/ceiling-leak/"
+    ],
+    [
+     "flood cleanup plano, tx | storm water damage restoration 24/7",
+     "/flood-cleanup/"
+    ],
+    [
+     "commercial water damage restoration plano, tx | 24/7",
+     "/commercial-water-damage/"
+    ],
+    [
+     "hardwood floor water damage drying plano, tx | save floors",
+     "/hardwood-floor-drying/"
+    ],
+    [
+     "ac leaking through ceiling plano, tx | drain pan overflow cleanup",
+     "/ac-overflow/"
+    ],
+    [
+     "wet kitchen cabinet drying plano, tx | save cabinets & counters",
+     "/cabinet-drying/"
+    ],
+    [
+     "upstairs washing machine flood cleanup plano, tx | 24/7",
+     "/laundry-overflow/"
+    ],
+    [
+     "crawl space water removal plano, tx | pier & beam drying",
+     "/crawl-space-drying/"
+    ],
+    [
+     "fridge & dishwasher leak cleanup plano, tx | 24/7 drying",
+     "/appliance-leak/"
+    ],
+    [
+     "fire sprinkler water damage cleanup plano, tx | 24/7",
+     "/fire-sprinkler-cleanup/"
+    ],
+    [
+     "thermal imaging moisture inspection plano, tx | hidden leaks",
+     "/moisture-mapping/"
+    ],
+    [
+     "wet attic insulation removal plano, tx | save your ceiling",
+     "/attic-insulation-drying/"
+    ],
+    [
+     "wet wall drying plano, tx | wall cavity drying & flood cuts",
+     "/wall-drying/"
+    ]
+   ],
+   "hero_links": [
+    [
+     "call now: (972) 472-7917",
+     "tel:+19724727917"
+    ]
+   ]
+  },
+  "areas": {
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "cards": 10,
+    "footer": 13,
+    "outside": 1
+   },
+   "cards": [
+    [
+     "water damage restoration west plano 75093 | willow bend 24/7",
+     "/west-plano/"
+    ],
+    [
+     "water damage restoration legacy west plano 75024 | 24/7",
+     "/legacy-west/"
+    ],
+    [
+     "water damage restoration north plano 75025 | whiffletree 24/7",
+     "/north-plano/"
+    ],
+    [
+     "water damage restoration central plano 75023 & 75075 | 24/7",
+     "/central-plano/"
+    ],
+    [
+     "water damage restoration east plano 75074 | downtown & los rios",
+     "/east-plano/"
+    ],
+    [
+     "water damage restoration frisco, tx | 24/7 extraction & drying",
+     "/frisco/"
+    ],
+    [
+     "water damage restoration allen, tx (75002 & 75013) | 24/7",
+     "/allen/"
+    ],
+    [
+     "water damage restoration mckinney, tx | 24/7 extraction & drying",
+     "/mckinney/"
+    ],
+    [
+     "water damage restoration richardson, tx | 24/7 cleanup",
+     "/richardson/"
+    ],
+    [
+     "water damage restoration murphy, parker & wylie, tx | 24/7",
+     "/murphy/"
+    ]
+   ],
+   "hero_links": [
+    [
+     "call now: (972) 472-7917",
+     "tel:+19724727917"
+    ]
+   ]
+  },
+  "guides": {
+   "zones": {
+    "header": 8,
+    "hero": 1,
+    "cards": 10,
+    "footer": 13,
+    "outside": 1
+   },
+   "cards": [
+    [
+     "where is the main water shut-off valve in a plano, tx home?",
+     "/shut-off-valve/"
+    ],
+    [
+     "warm spot on floor in plano, tx? slab leak signs & what to do",
+     "/warm-spot-on-floor/"
+    ],
+    [
+     "water dripping from ceiling in plano? ac, water heater or roof",
+     "/ceiling-dripping/"
+    ],
+    [
+     "water damage restoration cost in plano, tx (2026 estimates)",
+     "/water-damage-cost/"
+    ],
+    [
+     "can fans & a shop-vac dry wet carpet and walls? (plano guide)",
+     "/fans-wont-dry-walls/"
+    ],
+    [
+     "is storm water in my house dangerous? plano category 3 guide",
+     "/storm-water-category-3/"
+    ],
+    [
+     "how fast does mold grow after water damage? plano 48-hour guide",
+     "/mold-after-water-damage/"
+    ],
+    [
+     "why copper pipes get pinhole & slab leaks in plano, tx",
+     "/copper-pinhole-leaks/"
+    ],
+    [
+     "ceiling sagging or bubbling from water? 6 safety steps (plano)",
+     "/sagging-ceiling/"
+    ],
+    [
+     "does homeowners insurance cover water damage in texas? (plano)",
+     "/water-damage-insurance-texas/"
+    ]
+   ],
+   "hero_links": [
+    [
+     "call now: (972) 472-7917",
+     "tel:+19724727917"
+    ]
+   ]
+  },
+  "header_links": [
+   [
+    "water damage restoration plano",
+    "/"
+   ],
+   [
+    "home",
+    "/"
+   ],
+   [
+    "services",
+    "/services/"
+   ],
+   [
+    "areas",
+    "/areas/"
+   ],
+   [
+    "guides",
+    "/guides/"
+   ],
+   [
+    "about",
+    "/about/"
+   ],
+   [
+    "contact",
+    "/contact/"
+   ],
+   [
+    "call 24/7: (972) 472-7917",
+    "tel:+19724727917"
+   ]
+  ],
+  "footer_links": [
+   [
+    "(972) 472-7917",
+    "tel:+19724727917"
+   ],
+   [
+    "24/7 emergency water damage cleanup",
+    "/emergency-water-damage/"
+   ],
+   [
+    "standing water extraction",
+    "/water-extraction/"
+   ],
+   [
+    "structural drying",
+    "/structural-drying/"
+   ],
+   [
+    "burst & frozen pipe cleanup",
+    "/burst-pipe-cleanup/"
+   ],
+   [
+    "slab leak water damage",
+    "/slab-leak/"
+   ],
+   [
+    "sewage backup cleanup",
+    "/sewage-cleanup/"
+   ],
+   [
+    "all services",
+    "/services/"
+   ],
+   [
+    "service areas",
+    "/areas/"
+   ],
+   [
+    "guides",
+    "/guides/"
+   ],
+   [
+    "about us",
+    "/about/"
+   ],
+   [
+    "contact us",
+    "/contact/"
+   ],
+   [
+    "call 24/7: (972) 472-7917",
+    "tel:+19724727917"
+   ]
+  ]
+ },
+ "footer_text": {
+  "home_footer_raw": "Water Damage Restoration PlanoPlano, TX & Collin County(972) 472-7917Open 24/7Best Services24/7 Emergency Water Damage CleanupStanding Water ExtractionStructural DryingBurst & Frozen Pipe CleanupSlab Leak Water DamageSewage Backup CleanupQuick LinksAll ServicesService AreasGuidesAbout UsContact UsEmergency HelpWater spreading right now? Call first, then shut off the water and power to wet rooms. Crews stage along US-75, the Dallas North Tollway, the George Bush Turnpike and SH-121.Call 24/7: (972) 472-7917Water Damage Restoration Plano \u00b7 Plano, TX & Collin County \u00b7 (972) 472-7917 \u00b7 Open 24/7"
+ }
+}
